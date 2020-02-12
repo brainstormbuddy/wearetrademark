@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="573px" height="571px" viewBox="0 0 573 571" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 62 (101010) - https://sketch.com -->
+    <title>86F463FC-403A-4FF2-A5F6-FFADA7302D6D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M1076.42652,940.677286 C1049.27954,967.796939 1005.25972,967.796939 978.109323,940.677286 L810.967357,773.724593 L643.82881,940.677286 C616.678412,967.796939 572.658594,967.796939 545.508196,940.677286 C518.361217,913.554219 518.361217,869.587664 545.508196,842.471427 L712.650162,675.515318 L545.508196,508.562625 C518.361217,481.446388 518.361217,437.476418 545.508196,410.356765 C572.658594,383.237113 616.678412,383.237113 643.82881,410.356765 L810.967357,577.309459 L978.109323,410.356765 C1005.25972,383.237113 1049.27954,383.237113 1076.42652,410.356765 C1103.58033,437.476418 1103.58033,481.446388 1076.42652,508.562625 L909.28797,675.515318 L1076.42652,842.471427 C1103.58033,869.587664 1103.58033,913.554219 1076.42652,940.677286 L1076.42652,940.677286 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-trademark-landing-page-main-nav-area-03-v3" transform="translate(-659.000000, -3418.000000)">
+            <g id="charity-x" transform="translate(134.000000, 3027.000000)">
+                <g id="Screen-Shot-2019-07-12-at-7.29.29-PM" transform="translate(0.751480, 0.982974)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Path" fill="#0D1B23" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
