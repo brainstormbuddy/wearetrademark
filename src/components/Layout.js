@@ -7,7 +7,7 @@ import './all.sass'
 import GlobalStyle from '../global-styles'
 import userConfig from '../../config'
 
-import FooterWrapper from '../components/Footer'
+//import FooterWrapper from '../components/Footer'
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -19,7 +19,7 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
     <Navbar />
     <div>{children}</div>
-    <FooterWrapper />
+    {/*<FooterWrapper />*/}
   </div>
 )
 

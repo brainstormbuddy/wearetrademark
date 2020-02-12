@@ -9,7 +9,7 @@ import FooterLogo from './FooterLogo.svg'
 
 const FooterWrapper = () => {
 	return(
-		<Footer className="hero is-medium">
+		<Footer className="section is-medium fp-auto-height">
 		<div className="hero-body">
 	      <div className="container">
 	      	<div className="columns">

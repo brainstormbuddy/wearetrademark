@@ -23,7 +23,7 @@ const CasestudyStyle = styled.div`
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-// 	min-height: 225vh;
+ 	min-height: 100vh;
 	margin: auto;
 }
 
@@ -61,11 +61,11 @@ p{
 }
 
 .react-slideshow-container .nav:first-of-type{
-	right: 53%;
+	right: calc(100vw - 48vw);
     bottom: 41%;
 }
 .react-slideshow-container .nav:last-of-type{
-	left: 53%;
+	left: calc(100vw - 48vw);
     bottom: 41%;
 }
 
@@ -141,6 +141,15 @@ p{
 	position: absolute;
 	background-color: transparent;
 	outline: 0;
+}
+
+@media screen and (min-width: 1408px){
+	.react-slideshow-container .nav:last-of-type{
+		left: calc(100vw - 50vw);
+	}
+	.react-slideshow-container .nav:first-of-type{
+		right: calc(100vw - 45vw);
+	}
 }
 
 `;

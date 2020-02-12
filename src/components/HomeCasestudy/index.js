@@ -41,7 +41,7 @@ class Slideshow extends React.Component {
 		  transitionDuration: 500,
 		  infinite: true,
 		  indicators: false,
-		  arrows: false,
+		  arrows: true,
 		  onChange: (oldIndex, newIndex) => {
 		    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
 		  }

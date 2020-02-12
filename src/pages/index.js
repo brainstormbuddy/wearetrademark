@@ -10,6 +10,7 @@ import SectionAbout from '../components/HomeAbout'
 import SectionCasestudy from '../components/HomeCasestudy'
 import SectionClientLogo from '../components/HomeClientLogo'
 import Contact from '../components/HomeContact'
+import FooterWrapper from '../components/Footer'
 
 //import userConfig from '../../config'
 //import Navbar from '../components/Navbar'
@@ -43,8 +44,8 @@ const FullPage = () => (
 		scrollHorizontally = {true}  /* Because we are using the extension */
 		scrollHorizontallyKey = {'YOUR KEY HERE'}
 		scrollBar = {true}
-		paddingTop = '3em'
-		paddingBottom = '3em'
+		//paddingTop = '3em'
+		//paddingBottom = '3em'
 	
 	render={({ state, fullpageApi }) => {
    
@@ -87,21 +88,16 @@ const FullPage = () => (
 				    		<div className="columns is-centered">
 				    			<div className="column is-three-quarters">
 				    				<div className="contactTitle">
-				    				
-				    				
-				<h2 className="has-text-white is-size-0">
-					<span>Want to</span>
-					<div className="rw-words rw-words-1">
-						<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>chat</span>
-						<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>plan</span>
-						<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>create</span>
-						<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>make</span>
-						<div className="pulled-last">with us?</div>
-					</div>
-					
-				</h2>
-				    				
-				    				
+										<h2 className="has-text-white is-size-0">
+											<span>Want to</span>
+											<div className="rw-words rw-words-1">
+												<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>chat</span>
+												<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>plan</span>
+												<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>create</span>
+												<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>make</span>
+												<div className="pulled-last">with us?</div>
+											</div>
+										</h2>
 				    				</div>
 									<Contact />
 								</div>
@@ -109,6 +105,7 @@ const FullPage = () => (
 				    	</div>
 				    </div>
 			    </section>
+			    <FooterWrapper />
 			    </ReactFullpage.Wrapper>
 		    </Layout>
 		);
