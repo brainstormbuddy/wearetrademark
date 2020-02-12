@@ -1,7 +1,7 @@
-X Trademark
+# X Trademark
 
 ## Concept
-
+Develop Gatsby application from Invision design.
 
 ## Developer notes
 
@@ -12,3 +12,11 @@ To develop, run
 To build, run
 
 `gatsby build`
+
+## Credit
+
+
+## Tools
+
+
+## Screenshots

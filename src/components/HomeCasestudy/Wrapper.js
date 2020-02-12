@@ -118,6 +118,7 @@ p{
 	font-size: 15.6px;
 	font-weight: 400;
 	line-height: 20px;
+	z-index: 1;
 }
 .xx:after,
 .xx:before{
