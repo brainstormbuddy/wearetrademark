@@ -3,7 +3,7 @@ import Section from './Wrapper'
 
 const HomeAbout = () => {
 	return (
-		<Section className="section bg-yellow hero is-fullheight" id="goBoldly">
+		<Section className="section" id="goBoldly">
 	    	<div className="hero-body">
 		    	<div className="container">
 		    		<div className="columns">

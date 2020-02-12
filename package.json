@@ -1,9 +1,10 @@
 {
-  "name": "casestudy",
+  "name": "xtrademark",
   "description": "Gatsby v2 starter for WordPress",
   "version": "0.1.0",
   "author": "Zakir Sajib",
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.17",
     "babel-plugin-styled-components": "^1.10.6",
     "bulma": "^0.7.5",
     "gatsby": "^2.19.12",
@@ -43,6 +44,7 @@
     "react-dom": "^16.9.0",
     "react-dropzone": "^10.2.1",
     "react-facebook": "^8.1.4",
+    "react-fullpage": "^0.1.19",
     "react-helmet": "^5.2.1",
     "react-modal-video": "^1.2.3",
     "react-scroll-up-button": "^1.6.4",

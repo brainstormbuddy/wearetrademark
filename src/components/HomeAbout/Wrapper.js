@@ -7,7 +7,7 @@ const HomeAbout = styled.section`
 	background: #F2ED66 url(${HomeAboutSVG});
 	background-position: center center;
 	background-repeat: no-repeat;
-	padding: 15rem 0;
+	//padding: 15rem 0;
 
 	h2{
 		font-size: 60px;

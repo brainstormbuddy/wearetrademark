@@ -23,7 +23,7 @@ const CasestudyStyle = styled.div`
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-	min-height: 225vh;
+// 	min-height: 225vh;
 	margin: auto;
 }
 

@@ -1,6 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import ReactDOM from 'react-dom'
 import Layout from '../components/Layout'
+import ReactFullpage from '@fullpage/react-fullpage'
+//import {ScrollToTopOnMount, SectionsContainer, Section} from 'react-fullpage'
 
 import SectionWhatMarkWillYouLeave from '../components/HomeTopSection'
 import SectionAbout from '../components/HomeAbout'
@@ -19,17 +22,31 @@ import Contact from '../components/HomeContact'
 import ClientLogo from '../img/logo-farm.png'
 import ClientLogo2x from '../img/logo-farm@2x.png'
 
-export default class TemplateWrapper extends React.Component{
+
+const FullPage = () => (
+
+//export default class TemplateWrapper extends React.Component{
 	
-	constructor() {
-	    super();
-	}
+//	constructor() {
+//	    super();
+//	}
 	
 	//toggleSidenav() {
 	//    this.setState({close: !this.state.close})
 	//}
-
-	render() {
+	
+	<ReactFullpage
+	
+    	//fullpage options
+		licenseKey = {'YOUR_KEY_HERE'}
+		scrollingSpeed = {1000} /* Options here */
+		scrollHorizontally = {true}  /* Because we are using the extension */
+		scrollHorizontallyKey = {'YOUR KEY HERE'}
+		scrollBar = {true}
+		paddingTop = '3em'
+		paddingBottom = '3em'
+	
+	render={({ state, fullpageApi }) => {
    
 	//	let sidebar_close = 'crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1'; 
 	  
@@ -38,10 +55,13 @@ export default class TemplateWrapper extends React.Component{
 	//	let sidebar_status = this.state.close ? `${sidebar_close}` : `${sidebar_open}`;
 	    
 	//    let social_sidebar ='text-primary';
+
     
 		return(
 		    <Layout>
-			    <section className="section bg-white hero is-fullheight" id="watchVideo">
+		    	<ReactFullpage.Wrapper>
+		    
+			    <section className="section" id="watchVideo">
 			    	<div className="hero-body">
 				    	<div className="container">
 				    		<SectionWhatMarkWillYouLeave />
@@ -51,17 +71,17 @@ export default class TemplateWrapper extends React.Component{
 			    
 			    <SectionAbout />
 			    
-			    <section className="section bg-pink hero is-fullheight" id="caseStudy">
+			    <section className="section" id="caseStudy">
 					<SectionCasestudy />
 			    </section>
-			    <section className="section bg-green hero is-fullheight" id="logos">
+			    <section className="section bg-green" id="logos">
 			    	<div className="hero-body">
 				    	<div className="container">
 				    		<SectionClientLogo />
 				    	</div>
 				    </div>
 			    </section>
-			    <section className="section hero has-bg-black is-fullheight" id="homeContactForm">
+			    <section className="section has-bg-black" id="homeContactForm">
 			    	<div className="hero-body">
 				    	<div className="container">
 				    		<div className="columns is-centered">
@@ -89,8 +109,11 @@ export default class TemplateWrapper extends React.Component{
 				    	</div>
 				    </div>
 			    </section>
-		    
+			    </ReactFullpage.Wrapper>
 		    </Layout>
 		);
-	}
-}
+	 }}
+	/>
+);
+
+export default FullPage
