@@ -78,7 +78,7 @@ class Navbar extends Component {
 	              </div>
               </div>
             </nav>
-            : <nav className="has-text-centered x-nav"> 
+            : <nav className="has-text-centered x-nav posAbsolute"> 
                 <div className="container">
 	                <div className="navbar-brand level-item has-text-centered">
 	                  <a onClick={() => this.onClick()} className="logo">

@@ -6,6 +6,9 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 import Contact from '../components/HomeContact'
+
+import Privacy from '../components/Privacy'
+
 import FooterWrapper from '../components/Footer'
 
 
@@ -85,14 +88,7 @@ export const PageTemplate = ({ title, content, slug }) => {
 	    ): null }
 	    
 	    {slug == 'privacy-policy' ? (
-	    	<section className="hero is-medium">
-	    		<div className="hero-body">
-		    		<div className="container">
-		    			<h2 className="has-text-centered has-text-black title is-size-1">Privacy Policy</h2>
-		    			<h3 className="has-text-centered has-text-black subtitle is-size-2">Coming soon</h3>
-		    		</div>
-		    	</div>
-		    </section>
+	    	<Privacy />
 	    ): null }
 	    
 	    {slug == 'sitemap' ? (

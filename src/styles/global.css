@@ -1,8 +1,7 @@
 html {box-sizing:border-box}
 
 body{
-	font-family: 'Open Sans', sans-serif;
-	font-weight:400;
+	font-family: 'Open Sans', sans-serif!important;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -48,6 +47,14 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
     bottom: 10px;
 }
 
+/*
+.posAbsolute{
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+*/
 
 .x-nav{
 	padding: 2rem 0;

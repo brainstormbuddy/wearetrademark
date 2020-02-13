@@ -136,7 +136,7 @@ module.exports = {
       resolve:'gatsby-plugin-purgecss',
       options: {
         // Activates purging in gatsby develop
-        develop: true,
+        develop: false,
         // Ignore
         ignore: ['styles/page.css'],
         // Purge only the main css file
