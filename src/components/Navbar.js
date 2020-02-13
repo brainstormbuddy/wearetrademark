@@ -23,7 +23,7 @@ class Navbar extends Component {
           return (
 	        <div>  
 	        {this.state.childVisible ?  
-            <nav className="has-bg-black has-text-centered x-nav">
+            <nav className="has-bg-black has-text-centered x-nav slide-down">
             	<div className="container">
 	                <div className="navbar-brand level-item has-text-centered">
 	                  <a onClick={() => this.onClick()} className="logo">
@@ -78,7 +78,7 @@ class Navbar extends Component {
 	              </div>
               </div>
             </nav>
-            : <nav className="has-text-centered x-nav posAbsolute"> 
+            : <nav className="has-text-centered x-nav posAbsolute slide-up"> 
                 <div className="container">
 	                <div className="navbar-brand level-item has-text-centered">
 	                  <a onClick={() => this.onClick()} className="logo">
