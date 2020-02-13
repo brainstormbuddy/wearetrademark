@@ -11,10 +11,12 @@ import FooterWrapper from '../components/Footer'
 
 import userConfig from '../../config'
 
-import '../components/all.sass'
+//import '../components/all.sass'
 
-import '../styles/page.css'
-import indexStyles from '../styles/index.module.css'
+//import GlobalStyle from '../global-styles'
+
+//import '../styles/page.css'
+//import indexStyles from '../styles/index.module.css'
 
 export const PageTemplate = ({ title, content, slug }) => {
   return (
@@ -50,7 +52,7 @@ export const PageTemplate = ({ title, content, slug }) => {
 	    ): null }
 	    
 	    {slug == 'about' ? (
-	    	<section className="hero is-fullheight">
+	    	<section className="hero is-medium">
 	    		<div className="hero-body">
 		    		<div className="container">
 		    			<h2 className="has-text-centered has-text-black title is-size-1">About</h2>
@@ -72,7 +74,7 @@ export const PageTemplate = ({ title, content, slug }) => {
 	    ): null }
 	    
 	    {slug == 'blog' ? (
-	    	<section className="hero is-fullheight">
+	    	<section className="hero is-medium">
 	    		<div className="hero-body">
 		    		<div className="container">
 		    			<h2 className="has-text-centered has-text-black title is-size-1">Blog</h2>
@@ -83,7 +85,7 @@ export const PageTemplate = ({ title, content, slug }) => {
 	    ): null }
 	    
 	    {slug == 'privacy-policy' ? (
-	    	<section className="hero is-fullheight">
+	    	<section className="hero is-medium">
 	    		<div className="hero-body">
 		    		<div className="container">
 		    			<h2 className="has-text-centered has-text-black title is-size-1">Privacy Policy</h2>
@@ -94,7 +96,7 @@ export const PageTemplate = ({ title, content, slug }) => {
 	    ): null }
 	    
 	    {slug == 'sitemap' ? (
-	    	<section className="hero is-fullheight">
+	    	<section className="hero is-medium">
 	    		<div className="hero-body">
 		    		<div className="container">
 		    			<h2 className="has-text-centered has-text-black title is-size-1">Sitemap</h2>

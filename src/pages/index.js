@@ -17,7 +17,6 @@ import FooterWrapper from '../components/Footer'
 
 
 //import '../components/all.sass'
-//import GlobalStyle from '../global-styles'
 
 
 import ClientLogo from '../img/logo-farm.png'

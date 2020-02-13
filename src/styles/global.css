@@ -1,8 +1,57 @@
-.navbar-menu [aria-current]{color:#3273dc;}
-.single-case-study .navbar-item{
-	color: #fff;
+html {box-sizing:border-box}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
+
+#navMenu {
+	padding-top: 50px;	
+}
+
+#navMenu a.navbar-item{
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.82px;
+	line-height: 18px;
+	text-transform: uppercase;
+	padding-left: 120px;
+}
+
+#navMenu a.navbar-item:hover{
+	background-color: transparent;
+}
+#navMenu a.navbar-item[aria-current] {color:#66BFF2;}
+
+#navMenu a.navbar-item[aria-current]::before{
+	content: "";
+	border-left: 75px solid #66BFF2;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    left: 30px;
+    bottom: 10px;
+}
+
+#navMenu a.navbar-item:hover::before{
+	content: "";
+	border-left: 75px solid #66BFF2;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    left: 30px;
+    bottom: 10px;
+}
+
+
+.x-nav{
+	padding: 2rem 0;
+}
 
 #caseStudy{
 	padding: 0;

@@ -15,13 +15,22 @@ class Navbar extends Component {
     }
   }
 
-
+  onClick() {
+    this.setState({childVisible: !this.state.childVisible});
+  }
+  
   render() {      
           return (
-            <nav className="is-transparent has-text-centered">
-                <div className="container">
+	        <div>  
+	        {this.state.childVisible ?  
+            <nav className="has-bg-black has-text-centered x-nav">
+            	<div className="container">
 	                <div className="navbar-brand level-item has-text-centered">
-	                  <a onClick={() => this.onClick()} className="logo"><img src={LogoBlack} alt="X Trademark logo" /></a>
+	                  <a onClick={() => this.onClick()} className="logo">
+	                  {this.state.childVisible ? 
+	                  <img src={LogoYellow} alt="X Trademark Yellow logo" />
+	                  : <img src={LogoBlack} alt="X Trademark Black logo" /> }
+	                  </a>
 	                  <div className="navbar-burger burger" data-target="navMenu">
 	                    <span />
 	                    <span />
@@ -69,10 +78,64 @@ class Navbar extends Component {
 	              </div>
               </div>
             </nav>
+            : <nav className="has-text-centered x-nav"> 
+                <div className="container">
+	                <div className="navbar-brand level-item has-text-centered">
+	                  <a onClick={() => this.onClick()} className="logo">
+	                  {this.state.childVisible ? 
+	                  <img src={LogoYellow} alt="X Trademark Yellow logo" />
+	                  : <img src={LogoBlack} alt="X Trademark Black logo" /> }
+	                  </a>
+	                  <div className="navbar-burger burger" data-target="navMenu">
+	                    <span />
+	                    <span />
+	                    <span />
+	                  </div>
+	                </div>
+	                <div id="navMenu" className="level-item">
+	                  {this.state.childVisible ?
+	                  <div className="level-item has-text-centered">
+	                      <Link
+	                        className="navbar-item"
+	                        to="/"
+	                      >
+	                        Home
+	                      </Link>
+	                      <Link
+	                        className="navbar-item"
+	                        to="work"
+	                      >
+	                        Work
+	                      </Link>
+	                      
+	                      <Link
+	                        className="navbar-item"
+	                        to="about"
+	                      >
+	                        About
+	                      </Link>
+	                      
+	                      <Link
+	                        className="navbar-item"
+	                        to="contact"
+	                      >
+	                        Contact
+	                      </Link>
+	                      
+	                      <Link
+	                        className="navbar-item"
+	                        to="blog"
+	                      >
+	                        Blog
+	                      </Link>
+	                  </div>
+	                  : null }
+	              </div>
+              </div>
+            </nav>
+            }
+        </div>
     );
-  }
-  onClick() {
-    this.setState({childVisible: !this.state.childVisible});
   }
 };
 
