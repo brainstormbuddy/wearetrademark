@@ -18,13 +18,33 @@ const FooterNav = () => {
 	`)
   	return (
       	<div className="navbar-end has-text-right footer-menu">
-            {data.allWordpressPage.edges.map(page => (
-              <Link
-                className="navbar-item"
-                to={`/${page.node.slug}`}
-                key={page.node.wordpress_id}
-              >{page.node.title}</Link>
-            ))}
+          <Link
+            className="navbar-item"
+            to="work"
+          >
+            Work
+          </Link>
+          
+          <Link
+            className="navbar-item"
+            to="about"
+          >
+            About
+          </Link>
+          
+          <Link
+            className="navbar-item"
+            to="contact"
+          >
+            Contact
+          </Link>
+          
+          <Link
+            className="navbar-item"
+            to="blog"
+          >
+            Blog
+          </Link>
         </div>
     );
 };

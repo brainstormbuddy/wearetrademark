@@ -4,7 +4,6 @@ const { createFilePath } = require('gatsby-source-filesystem')
 const { paginate } = require('gatsby-awesome-pagination')
 const userConfig = require('./config');
 
-/*
 const getOnlyPublished = edges =>
   _.filter(edges, ({ node }) => node.status === 'publish')
 
@@ -241,4 +240,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
-*/

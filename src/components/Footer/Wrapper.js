@@ -10,15 +10,34 @@ const Footer = styled.section`
 	
 	.footer-menu a{
 		color: #fff;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 1.18px;
+		line-height: 18px;
 	}
 	.footer-menu a:hover{
 		background-color: transparent;
 	}
 	
+	.footer-menu a.navbar-item:after{
+		content: "";
+		border-left: 1px solid #fff;
+		position: absolute;
+		height: 10px;
+		right: 0px;
+	}
+	
+	.footer-menu a.navbar-item:last-child:after{
+		border-left:0;
+	}
+	
 	p{
-		font-size:14px;
-		color:#fff;
+		font-size:12px;
+		font-weight:400;
+		color: #fff;
 		text-align:right;
+		line-height: 15px;
 	}
 	a{
 		color:#fff;
@@ -28,7 +47,7 @@ const Footer = styled.section`
 		content: "";
 		border-right: 1px solid #000;
 		position: absolute;
-		right: 15px;
+		right: 20px;
 		height:15px;
 		bottom: 22px;
 	}

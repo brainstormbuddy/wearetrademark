@@ -7,7 +7,9 @@ const HomeAbout = styled.section`
 	background: #F2ED66 url(${HomeAboutSVG});
 	background-position: center center;
 	background-repeat: no-repeat;
-	//padding: 15rem 0;
+	@media screen and (min-height: 666px) and (max-height: 900px){
+		background-size: 70%;	
+	}
 
 	h2{
 		font-size: 60px;

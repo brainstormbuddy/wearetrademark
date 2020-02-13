@@ -144,6 +144,25 @@ p{
 	outline: 0;
 }
 
+@media screen and (min-height: 666px) and (max-height: 900px){
+	
+	.xImage{
+		max-width: 50%;
+		margin: 0 auto;
+		display: table;
+	}
+	.react-slideshow-container .nav:last-of-type,
+	.react-slideshow-container .nav:first-of-type{
+		bottom: 45%;	
+	}
+	.xicon-txt{
+		bottom: 200px;
+	}
+	.x-icon:after{
+		height: 140px;	
+	}
+}
+
 @media screen and (min-width: 1408px){
 	.react-slideshow-container .nav:last-of-type{
 		left: calc(100vw - 50vw);
@@ -152,6 +171,13 @@ p{
 		right: calc(100vw - 45vw);
 	}
 }
+
+@media screen and (min-width: 2000px){
+	.react-slideshow-container .nav:first-of-type{
+		right: calc(100vw - 46vw);
+	}
+}
+
 
 `;
 

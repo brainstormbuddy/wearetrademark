@@ -27,7 +27,7 @@ const FooterWrapper = () => {
 	      		<div className="column">
 	      			<FooterNavbar />
 	      			<Social />
-		  			<p>©2020 Trademark Event Productions, Inc. | <Link to="">Privacy</Link> | <Link to="">Sitemap</Link></p>
+		  			<p>©2020 Trademark Event Productions, Inc. | <Link to="privacy-policy">Privacy</Link> | <Link to="sitemap">Sitemap</Link></p>
 		  		</div>
 		  	</div>
 	      </div>

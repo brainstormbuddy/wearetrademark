@@ -27,6 +27,7 @@ class Slideshow extends React.Component {
 	openModal () {
 	  this.setState({isOpen: true})
 	}
+	
     
     
     
@@ -56,7 +57,7 @@ class Slideshow extends React.Component {
             <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='128729855' onClose={() => this.setState({isOpen: false})} />
           	  <div className="columns">
 				  <div className="column is-half is-offset-one-quarter x-icon" style={{position: `relative`}}>
-				  		<img src={XIcon} alt="x icon" />
+				  		<img className="xImage" src={XIcon} alt="x icon" />
 				  		
 				  		<div className="case-meta">
 				  			<a onClick={this.openModal} className="play-video">Play video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
@@ -76,12 +77,12 @@ class Slideshow extends React.Component {
           
           <div className="each-slide" style={{backgroundImage: `url(${slideImages[1]})`, backgroundColor: `rgba(149,168,76,0.58)`}}>
             <div className="container">
+            <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='128729855' onClose={() => this.setState({isOpen: false})} />
           	  <div className="columns">
 				  <div className="column is-half is-offset-one-quarter x-icon" style={{position: `relative`}}>
-				  		<img src={XIcon} alt="x icon" />
+				  		<img className="xImage" src={XIcon} alt="x icon" />
 				  		<div className="case-meta">
-				  			<a className="play-video" href="#">Play video <img src={FullscreenIcon} 
-				alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
+				  			<a onClick={this.openModal} className="play-video">Play video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
 				  			<a href="#">Case study</a>
 				  		</div>
 	              		<h2 className="title has-text-white">Adobe</h2>
@@ -95,12 +96,12 @@ class Slideshow extends React.Component {
           
           <div className="each-slide" style={{backgroundImage: `url(${slideImages[2]})`, backgroundColor: `#66BFF2`}}>
             <div className="container">
+            <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='128729855' onClose={() => this.setState({isOpen: false})} />
           	  <div className="columns">
 				  <div className="column is-half is-offset-one-quarter x-icon" style={{position: `relative`}}>
-				  		<img src={XIcon} alt="x icon" />
+				  		<img className="xImage" src={XIcon} alt="x icon" />
 				  		<div className="case-meta">
-				  			<a className="play-video" href="#">Play video <img src={FullscreenIcon} 
-				alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
+				  			<a onClick={this.openModal} className="play-video">Play video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
 				  			<a href="#">Case study</a>
 				  		</div>
 	              		<h2 className="title has-text-white">charity: water</h2>
