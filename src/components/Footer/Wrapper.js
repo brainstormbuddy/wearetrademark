@@ -15,14 +15,13 @@ const Footer = styled.section`
 		background-position: 0% 50%;
 	}
 	@media screen and (min-width: 1100px) and (max-width: 1216px ){
-		background-position: 550% 50%;
+		background-position: 350% 50%;
 	}
-	@media screen and (min-width: 1071px) and (max-width: 1099px ){
+	@media screen and (min-width: 1023px) and (max-width: 1099px ){
 		background-position: 250% 50%;
 	}
-	
-	@media screen and (min-width: 1023px) and (max-width: 1070px ){
-		background-position: 250% 50%;
+	@media screen and (min-width: 769px) and (max-width: 1022px ){
+		background-position: 150% 50%;
 	}
 	@media screen and (max-width: 768px){
 		background-position: 75% -50%;
