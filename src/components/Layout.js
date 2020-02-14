@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Navbar from './Navbar'
-//import './all.sass'
+import './all.sass'
 
 //import GlobalStyle from '../global-styles'
 import userConfig from '../../config'

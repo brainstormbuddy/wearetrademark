@@ -69,7 +69,7 @@ p{
     bottom: 41%;
 }
 
-.xicon-txt{
+.x-icon-txt{
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
@@ -77,7 +77,7 @@ p{
 	line-height: 20px;
 	transform: rotate(90deg);
     position: absolute;
-    bottom: 350px;
+    bottom: 80px;
     right: -142px;
 }
 
@@ -92,7 +92,7 @@ p{
 }
 .case-meta{
 	position: absolute;
-	top: 34%;
+	top: 25%;
 	right: 0;
 }
 
@@ -120,18 +120,18 @@ p{
 	line-height: 20px;
 	z-index: 1;
 }
-.xx:after,
-.xx:before{
+.xx::after,
+.xx::before{
 	content: "";
 }
-.xx:before{
+.xx::before{
 	border-left: calc(100vw - 60vw) solid rgba(255,255,255,0.5);
     position: absolute;
     top: 40%;
     height: 2px;
     left: 0;
 }
-.xx:after{
+.xx::after{
 	border-right: calc(100vw - 60vw) solid rgba(255,255,255,0.5);
     position: absolute;
     top: 40%;
@@ -144,37 +144,118 @@ p{
 	outline: 0;
 }
 
-@media screen and (min-height: 666px) and (max-height: 900px){
-	
-	.xImage{
+.xImage{
 		max-width: 50%;
 		margin: 0 auto;
 		display: table;
 	}
-	.react-slideshow-container .nav:last-of-type,
-	.react-slideshow-container .nav:first-of-type{
-		bottom: 45%;	
+
+@media screen and (max-width: 1230px){
+	.xx::after{
+		border-right: calc(100vw - 70vw) solid rgba(255,255,255,0.5);
 	}
-	.xicon-txt{
-		bottom: 200px;
-	}
-	.x-icon:after{
-		height: 140px;	
+	.xx::before{
+		border-left: calc(100vw - 70vw) solid rgba(255,255,255,0.5);
 	}
 }
 
-@media screen and (min-width: 1408px){
+@media screen and (max-width: 768px){
+	.x-icon-txt,
+	.x-icon::after{
+		display: none;
+		height: 0;
+	}
+	h2.title{
+		font-size: 40px;
+	}
+	h3.subtitle{
+		font-size: 16px;
+	}
+	.case-meta{
+		top:20%;
+	}
+	.react-slideshow-container .nav:first-of-type{
+		right: calc(100vw - 45vw);
+		bottom: 48%;
+	}
 	.react-slideshow-container .nav:last-of-type{
-		left: calc(100vw - 50vw);
+		left: calc(100vw - 45vw);
+		bottom: 48%;
+	}
+}
+@media screen and (max-width: 700px){
+	.react-slideshow-container .nav:first-of-type,
+	.react-slideshow-container .nav:last-of-type{
+		bottom: 50%;
+	}
+}
+@media screen and (max-width: 655px){
+	.xx::after{
+		border-right: calc(100vw - 80vw) solid rgba(255,255,255,0.5);
+	}
+	.xx::before{
+		border-left: calc(100vw - 80vw) solid rgba(255,255,255,0.5);
+	}
+}
+@media screen and (max-width: 550px){
+	.case-meta{
+		top:15%;
+	}	
+}
+@media screen and (max-width: 414px){
+	.case-meta{
+		top:10%;
+		right: -10%;
+	}
+	.react-slideshow-container .nav:first-of-type{
+		right: calc(100vw - 40vw);
+	}
+	.react-slideshow-container .nav:last-of-type{
+		left: calc(100vw - 40vw);
+	}
+	.react-slideshow-container .nav:first-of-type,
+	.react-slideshow-container .nav:last-of-type{
+		bottom: 62%;
+	}
+}
+@media screen and (max-width: 375px){
+	
+}
+@media screen and (max-width: 320px){
+	.react-slideshow-container .nav:first-of-type,
+	.react-slideshow-container .nav:last-of-type{
+		bottom: 74%;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.react-slideshow-container .nav:last-of-type,
+	.react-slideshow-container .nav:first-of-type{
+		bottom: 50%;
+	}
+	.react-slideshow-container .nav:last-of-type{
+		left: calc(100vw - 45vw);
 	}
 	.react-slideshow-container .nav:first-of-type{
 		right: calc(100vw - 45vw);
 	}
 }
 
-@media screen and (min-width: 2000px){
+
+@media screen and (min-width: 1200px){
+	.react-slideshow-container .nav:last-of-type,
 	.react-slideshow-container .nav:first-of-type{
-		right: calc(100vw - 46vw);
+		bottom: 50%;
+	}
+}
+@media screen and (min-width: 1408px){
+	.react-slideshow-container .nav:last-of-type{
+		left: calc(100vw - 47vw);
+		bottom: 45%;
+	}
+	.react-slideshow-container .nav:first-of-type{
+		right: calc(100vw - 47vw);
+		bottom: 45%;
 	}
 }
 

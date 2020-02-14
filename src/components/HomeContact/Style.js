@@ -110,6 +110,12 @@ const ContactForm = styled.div`
 		line-height: 18px;
 		margin-bottom:10px;
 	}
+	@media screen and (max-width: 1024px){
+		.call-us{
+			display: none;
+		}	
+	}
+	
 `;
 
 export default ContactForm

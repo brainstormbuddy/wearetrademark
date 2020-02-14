@@ -55,8 +55,8 @@ class Slideshow extends React.Component {
           <div className="each-slide" style={{backgroundImage: `url(${slideImages[0]})`, backgroundColor: `#FF4274`}}>
             <div className="container">
             <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='128729855' onClose={() => this.setState({isOpen: false})} />
-          	  <div className="columns">
-				  <div className="column is-half is-offset-one-quarter x-icon" style={{position: `relative`}}>
+          	  <div className="columns is-mobile is-centered">
+				  <div className="column is-half-desktop is-two-thirds-tablet is-two-thirds-mobile x-icon" style={{position: `relative`}}>
 				  		<img className="xImage" src={XIcon} alt="x icon" />
 				  		
 				  		<div className="case-meta">
@@ -68,7 +68,7 @@ class Slideshow extends React.Component {
 	              		<h2 className="title has-text-white">Slack</h2>
 	              		<h3 className="subtitle has-text-white">Slack Frontiers Conference 2019</h3>
 	              		<p>With over 10 million active users in over 150 countries, Slack is changing how the world works on a global scale. After producing their inaugural Frontiers conference in 2017, Slack asked us to join forces again. Our challenge? To create an inspiring experience that would bring together and celebrate the unique and varied worlds Slack connects on a daily basis.</p>
-	              		<div className="xicon-txt">whatmarkwillyouleave</div>
+	              		<div className="x-icon-txt">whatmarkwillyouleave</div>
 	              </div>
 	            </div>				  
             </div> 
@@ -78,8 +78,8 @@ class Slideshow extends React.Component {
           <div className="each-slide" style={{backgroundImage: `url(${slideImages[1]})`, backgroundColor: `rgba(149,168,76,0.58)`}}>
             <div className="container">
             <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='128729855' onClose={() => this.setState({isOpen: false})} />
-          	  <div className="columns">
-				  <div className="column is-half is-offset-one-quarter x-icon" style={{position: `relative`}}>
+          	  <div className="columns is-mobile is-centered">
+				  <div className="column is-half-desktop is-two-thirds-tablet is-two-thirds-mobile x-icon" style={{position: `relative`}}>
 				  		<img className="xImage" src={XIcon} alt="x icon" />
 				  		<div className="case-meta">
 				  			<a onClick={this.openModal} className="play-video">Play video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
@@ -88,7 +88,7 @@ class Slideshow extends React.Component {
 	              		<h2 className="title has-text-white">Adobe</h2>
 	              		<h3 className="subtitle has-text-white">Adobe Max Executive Reception</h3>
 	              		<p>How do you inspire some of the world’s most inspirational creative VIPs? That was our challenge for The Adobe Max Executive Reception–an invite-only event for the world’s most cutting edge and innovative leaders, designers and Chief Creative Officers. With color as our inspiration, we delivered FILTER–a full sensory experience that embraced the concept of how filters alter and enhance our perception of the world around us and celebrated the wide and creative influence of this exclusive group.</p>
-	              		<div className="xicon-txt">whatmarkwillyouleave</div>
+	              		<div className="x-icon-txt">whatmarkwillyouleave</div>
 	              </div>
 	            </div>				  
             </div>
@@ -97,8 +97,8 @@ class Slideshow extends React.Component {
           <div className="each-slide" style={{backgroundImage: `url(${slideImages[2]})`, backgroundColor: `#66BFF2`}}>
             <div className="container">
             <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='128729855' onClose={() => this.setState({isOpen: false})} />
-          	  <div className="columns">
-				  <div className="column is-half is-offset-one-quarter x-icon" style={{position: `relative`}}>
+          	  <div className="columns is-mobile is-centered">
+				  <div className="column is-half-desktop is-two-thirds-tablet is-two-thirds-mobile x-icon" style={{position: `relative`}}>
 				  		<img className="xImage" src={XIcon} alt="x icon" />
 				  		<div className="case-meta">
 				  			<a onClick={this.openModal} className="play-video">Play video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
@@ -107,7 +107,7 @@ class Slideshow extends React.Component {
 	              		<h2 className="title has-text-white">charity: water</h2>
 	              		<h3 className="subtitle has-text-white">charity: ball</h3>
 	              		<p>One in ten people lack access to clean water. charity: water is on a mission to change that. And when CEO Scott Harrison decided to bring their charity: ball to the Bay area–home turf for their biggest donors–we were on a mission to help. See how our unique immersive, 360° experience helped bring clean water to Ethiopian communities and raised close to $7 in one night.</p>
-	              		<div className="xicon-txt">whatmarkwillyouleave</div>
+	              		<div className="x-icon-txt">whatmarkwillyouleave</div>
 	              </div>
 	            </div>				  
             </div>

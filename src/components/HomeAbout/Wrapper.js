@@ -7,8 +7,12 @@ const HomeAbout = styled.section`
 	background: #F2ED66 url(${HomeAboutSVG});
 	background-position: center center;
 	background-repeat: no-repeat;
+	background-size: auto;
+	@media screen and (max-width: 1023px){
+		background-size: auto;
+	}
 	@media screen and (min-height: 666px) and (max-height: 900px){
-		background-size: 70%;	
+		height: 100vh;
 	}
 
 	h2{
@@ -23,13 +27,13 @@ const HomeAbout = styled.section`
 		margin-bottom: 25px;
 	}
 	.home-about{position: relative;}
-	.home-about:after{
+	.home-about::after{
 		content: "";
 		position: absolute;
 		right: -35px;
 		top:0;
 		width: 2px;
-		height: 280px;
+		height: 250px;
 		background-color: #fff;
 	}
 	
@@ -43,8 +47,20 @@ const HomeAbout = styled.section`
 		-ms-transform: rotate(90deg);
 		transform: rotate(90deg);
 		position: absolute;
-		bottom: 10px;
+		bottom: 80px;
 		right: -90px;
+	}
+	@media screen and (max-width: 1023px){
+		h2{
+			font-size: 40px;
+		}
+		
+		.home-about::after{
+			height: 0;
+		}
+		.who-we-are{
+			display: none;	
+		}
 	}
 
 `;

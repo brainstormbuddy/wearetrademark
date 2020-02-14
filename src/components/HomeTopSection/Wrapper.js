@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 const WhatMarkWillYouLeave = styled.div`
-	max-width:1003px;
-	margin: 0 auto;
 	
 	svg {
 		width: 0;
@@ -10,10 +8,7 @@ const WhatMarkWillYouLeave = styled.div`
 		position: absolute;
 	}
 	.video-container{
-	  	margin: 40px auto 0;
-	}
-	.watch-video {
-	  	margin: 0 auto;
+	  	margin: 40px auto;
 	}
 	
 	.watch-video{
@@ -38,6 +33,9 @@ const WhatMarkWillYouLeave = styled.div`
 	  	width: 100%;
 	  	display: block;
 	  	clip-path: url(#clip-00);
+	}
+	@media screen and (max-width: 1023px){
+		
 	}
 
 `;

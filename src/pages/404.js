@@ -1,8 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-import '../components/all.sass'
-
 const NotFoundPage = () => (
   <Layout>
     <div>

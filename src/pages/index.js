@@ -3,17 +3,15 @@ import Helmet from 'react-helmet'
 import ReactDOM from 'react-dom'
 import Layout from '../components/Layout'
 import ReactFullpage from '@fullpage/react-fullpage'
-//import {ScrollToTopOnMount, SectionsContainer, Section} from 'react-fullpage'
 
+
+import Navbar from '../components/Navbar'
 import SectionWhatMarkWillYouLeave from '../components/HomeTopSection'
 import SectionAbout from '../components/HomeAbout'
 import SectionCasestudy from '../components/HomeCasestudy'
 import SectionClientLogo from '../components/HomeClientLogo'
 import Contact from '../components/HomeContact'
 import FooterWrapper from '../components/Footer'
-
-//import userConfig from '../../config'
-//import Navbar from '../components/Navbar'
 
 
 //import '../components/all.sass'
@@ -47,20 +45,12 @@ const FullPage = () => (
 		//paddingBottom = '3em'
 	
 	render={({ state, fullpageApi }) => {
-   
-	//	let sidebar_close = 'crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1'; 
-	  
-	//	let sidebar_open = 'crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1 crt-sidebar-opened';
-	  
-	//	let sidebar_status = this.state.close ? `${sidebar_close}` : `${sidebar_open}`;
-	    
-	//    let social_sidebar ='text-primary';
-
     
 		return(
-		    <Layout>
 		    	<ReactFullpage.Wrapper>
-		    
+				<section className="section fp-auto-height" style={{padding: `0rem`}}>
+					<Navbar />
+				</section>
 			    <section className="section" id="watchVideo">
 			    	<div className="hero-body">
 				    	<div className="container">
@@ -77,7 +67,9 @@ const FullPage = () => (
 			    <section className="section bg-green" id="logos">
 			    	<div className="hero-body">
 				    	<div className="container">
-				    		<SectionClientLogo />
+				    		<div className="is-hidden-mobile">
+				    			<SectionClientLogo />
+				    		</div>
 				    	</div>
 				    </div>
 			    </section>
@@ -106,7 +98,6 @@ const FullPage = () => (
 			    </section>
 			    <FooterWrapper />
 			    </ReactFullpage.Wrapper>
-		    </Layout>
 		);
 	 }}
 	/>
