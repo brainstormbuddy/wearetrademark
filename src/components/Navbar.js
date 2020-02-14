@@ -31,11 +31,6 @@ class Navbar extends Component {
 	                  <img src={LogoYellow} alt="X Trademark Yellow logo" />
 	                  : <img src={LogoBlack} alt="X Trademark Black logo" /> }
 	                  </a>
-	                  <div className="navbar-burger burger" data-target="navMenu">
-	                    <span />
-	                    <span />
-	                    <span />
-	                  </div>
 	                </div>
 	                <div id="navMenu" className="level-item">
 	                  {this.state.childVisible ?
@@ -86,11 +81,6 @@ class Navbar extends Component {
 	                  <img src={LogoYellow} alt="X Trademark Yellow logo" />
 	                  : <img src={LogoBlack} alt="X Trademark Black logo" /> }
 	                  </a>
-	                  <div className="navbar-burger burger" data-target="navMenu">
-	                    <span />
-	                    <span />
-	                    <span />
-	                  </div>
 	                </div>
 	                <div id="navMenu" className="level-item">
 	                  {this.state.childVisible ?

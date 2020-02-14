@@ -19,7 +19,8 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 	letter-spacing: 0.82px;
 	line-height: 18px;
 	text-transform: uppercase;
-	padding-left: 120px;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
 #navMenu a.navbar-item:hover{
@@ -33,7 +34,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
     height: 1px;
     position: absolute;
     right: 0;
-    left: 30px;
+    left: -30px;
     bottom: 10px;
 }
 
@@ -43,7 +44,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
     height: 1px;
     position: absolute;
     right: 0;
-    left: 30px;
+    left: -30px;
     bottom: 10px;
 }
 
@@ -153,6 +154,9 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
 	80% { opacity: 0; }
     100% { opacity: 0; }
+}
+@media screen and (max-width: 1023px){
+	#navMenu{display: none;}
 }
 @media screen and (max-width: 768px){
 	

@@ -79,6 +79,12 @@ const Footer = styled.section`
 		margin-right: 15px;
 	}
 	
+	@media screen and (min-width: 769px) and (max-width: 1023px){
+		.footer-menu a.navbar-item:after{
+			border-left: 0;
+		}
+	}
+	
 	@media screen and (max-width: 768px){
 		
 		.mobile{
