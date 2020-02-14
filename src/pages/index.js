@@ -48,14 +48,10 @@ const FullPage = () => (
     
 		return(
 		    	<ReactFullpage.Wrapper>
-				<section className="section fp-auto-height" style={{padding: `0rem`}}>
-					<Navbar />
-				</section>
-			    <section className="section" id="watchVideo">
-			    	<div className="hero-body">
-				    	<div className="container">
-				    		<SectionWhatMarkWillYouLeave />
-				    	</div>
+			    <section className="section fp-auto-height" id="watchVideo" style={{padding: `0 0 3rem`}}>
+			    	<Navbar />
+				    <div className="container">
+				    	<SectionWhatMarkWillYouLeave />
 				    </div>
 			    </section>
 			    

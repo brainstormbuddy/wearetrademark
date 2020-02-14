@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 const WhatMarkWillYouLeave = styled.div`
-	
+	padding: 3rem 0 0;
 	svg {
 		width: 0;
 		height: 0;
 		position: absolute;
 	}
 	.video-container{
-	  	margin: 40px auto;
+	  	//margin: 40px auto;
 	}
 	
 	.watch-video{
