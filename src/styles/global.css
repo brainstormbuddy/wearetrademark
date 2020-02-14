@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 
 #navMenu a.navbar-item:hover{
 	background-color: transparent;
+	color: #66BFF2;
 }
 #navMenu a.navbar-item[aria-current] {color:#66BFF2;}
 
@@ -49,7 +50,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 }
 
 .x-nav{
-	padding: 2rem 0;
+	padding-top: 2rem;
 }
 
 
@@ -155,12 +156,57 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 	80% { opacity: 0; }
     100% { opacity: 0; }
 }
-@media screen and (max-width: 1023px){
-	#navMenu{display: none;}
-}
-@media screen and (max-width: 768px){
+
+
+@media screen and (max-width: 1024px){
+	#navMenu{
+		display: none;
+	}
+	.slide-down #navMenu{ 
+		padding-top: 0;
+	}
+	.logo{
+		max-width: 80%;
+	}
+	.mobile-menu a{
+		color: #FFFFFF;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.82px;
+		line-height: 18px;
+		text-transform: uppercase;
+		padding-left: 120px;
+		padding-right: 60px;
+		padding-top: 30px;
+	}
+	.mobile-menu a.navbar-item:hover{
+		background-color: transparent;
+		color: #66BFF2;
+	}
+	.mobile-menu a.navbar-item[aria-current] {color:#66BFF2;}
+	
+	.mobile-menu a.navbar-item[aria-current]::before{
+		content: "";
+		border-left: 100px solid #66BFF2;
+	    height: 1px;
+	    position: absolute;
+	    right: 0;
+	    left: 0px;
+	    bottom: 10px;
+	}
+	
+	.mobile-menu a.navbar-item:hover::before{
+		content: "";
+		border-left: 100px solid #66BFF2;
+	    height: 1px;
+	    position: absolute;
+	    right: 0;
+	    left: 0px;
+	    bottom: 10px;
+	}
 	
 }
+
 @media screen and (max-width: 320px){
 	
 }
