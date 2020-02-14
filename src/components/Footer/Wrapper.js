@@ -8,6 +8,26 @@ const Footer = styled.section`
 	background-position: left center;
 	background-repeat: no-repeat;
 	
+	@media screen and (min-width: 1350px) and (max-width: 1439px ){
+		background-position: -100% 50%;
+	}
+	@media screen and (min-width: 1217px) and (max-width: 1349px ){
+		background-position: 0% 50%;
+	}
+	@media screen and (min-width: 1100px) and (max-width: 1216px ){
+		background-position: 550% 50%;
+	}
+	@media screen and (min-width: 1071px) and (max-width: 1099px ){
+		background-position: 250% 50%;
+	}
+	
+	@media screen and (min-width: 1023px) and (max-width: 1070px ){
+		background-position: 250% 50%;
+	}
+	@media screen and (max-width: 768px){
+		background-position: 75% -50%;
+	}
+	
 	.footer-menu a{
 		color: #fff;
 		text-transform: uppercase;
@@ -58,6 +78,26 @@ const Footer = styled.section`
 		vertical-align: top;
 		display: inline-block;
 		margin-right: 15px;
+	}
+	
+	@media screen and (max-width: 768px){
+		
+		.mobile{
+			text-align: center;
+		}
+		.has-text-right{
+			text-align: center!important;
+		}
+		.footer-menu a{
+			display: inline-block;	
+		}
+		.footer-menu a.navbar-item:after{
+			height: 15px;
+		}
+		
+		p{
+			text-align: center;
+		}
 	}
 `;
 

@@ -9,15 +9,16 @@ const Privacy = () => {
     		<div className="hero-body">
 	    		<div className="container">
 	    			<PrivacyStyle>
-	    			<div className="column is-half is-offset-one-quarter">
-		    			<h2 className="has-text-left has-text-white">Privacy Policy</h2>
-		    			<div className="columns">
-		    				<div className="column">
-		    					<p className="has-text-white">We value your business and we know your privacy is important to you. Accordingly, we have implemented this Privacy Policy to inform you of the information that we collect from you, how we collect it and what we do with it. By using this website you are accepting the practices described in this Privacy Policy.</p>
-		    				</div>
-		    			</div>
-		    			<div className="columns" style={{borderTop: `1px solid #4E6F7B`, borderBottom: `1px solid #4E6F7B`}}>
-		    				<div className="column col-left" style={{paddingLeft: `1.5rem`, paddingRight: `1.5rem`}}>
+	    			
+	    			<div className="columns is-mobile is-centered ">
+					  <div className="column is-half-desktop is-full-mobile is-full-tablet">
+					    <h2 className="has-text-left has-text-white">Privacy Policy</h2>
+					    <p className="has-text-white">We value your business and we know your privacy is important to you. Accordingly, we have implemented this Privacy Policy to inform you of the information that we collect from you, how we collect it and what we do with it. By using this website you are accepting the practices described in this Privacy Policy.</p>
+					  </div>
+					</div>
+	    			
+		    		<div className="columns is-centered" style={{borderTop: `1px solid #4E6F7B`, borderBottom: `1px solid #4E6F7B`}}>
+		    				<div className="column col-left is-one-quarter-desktop is-full-mobile is-half-tablet">
 		    					<h3 className="has-text-left has-text-white" style={{border:`0`}}>How and when we collect information</h3>
 		    					<p className="has-text-white">For a better experience, we may collect certain personally identifiable information, including but not limited to your name, company, and email address. The information that we collect will be used to contact or identify you.</p>
 		    					<br />
@@ -35,10 +36,8 @@ const Privacy = () => {
 		    					<p className="has-text-white">We also collect “non-personal” information from you, such as your browser type, the URL of the previous web site you visited, your ISP, operating system, and your IP address. “Non-personal” information cannot be easily used to personally identify you. We may use your non-personal information to help diagnose problems with our server and to administer our website. Your non-personal information may also be used to gather broad demographic information and to recognize customer traffic patterns and website usage. This information aids us in merchandising and in developing the design and layout of the website.</p>
 <p className="has-text-white">Our website also uses “cookies” to collection information and to improve your experience. Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer’s hard drive. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our service.</p>
 		    					
-		    					
-		    					
 		    				</div>
-		    				<div className="column col-right" style={{paddingLeft: `1.5rem`, paddingRight: `1.5rem`}}>
+		    				<div className="column col-right is-one-quarter-desktop is-full-mobile is-half-tablet">
 		    					<h3 className="has-text-left has-text-white" style={{border:`0`}}>Links to other websites</h3>
 		    					<p className="has-text-white">Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
 		    				<br />
@@ -61,16 +60,14 @@ const Privacy = () => {
 		    			
 		    			
 		    			
-		    			<div className="columns">
-		    				<div className="column">
+		    			<div className="columns is-mobile is-centered">
+		    				<div className="column is-half-desktop is-full-mobile is-full-tablet">
 		    					<h3 className="has-text-left has-text-white" style={{border: `0`}}>Contact us</h3>
 		    					<p className="has-text-white">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <a href="mailto:info@trademarkevents.com">info@trademarkevents.com</a>.</p>
 		    				</div>
 		    			</div>
 		    			
 		    			
-		    			
-	    			</div>
 	    			</PrivacyStyle>
 	    		</div>
 	    	</div>

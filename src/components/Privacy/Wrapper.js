@@ -24,6 +24,12 @@ const PrivacyStyle = styled.div`
 		line-height: 24px;
 		padding-bottom: 20px;
 	}
+	
+	@media screen and (max-width: 768px){
+		.column.col-left{
+			border-right: 0;
+		}
+	}
 
 `;
 

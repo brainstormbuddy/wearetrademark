@@ -6,8 +6,8 @@ const HomeAbout = () => {
 		<Section className="section" id="goBoldly">
 	    	<div className="hero-body">
 		    	<div className="container">
-		    		<div className="columns">
-						<div className="column is-half is-offset-one-quarter home-about">
+		    		<div className="columns is-mobile is-centered">
+						<div className="column is-half-desktop is-full-mobile is-full-tablet home-about">
 							<h2 className="title has-text-white has-text-left">Go boldly forth and leave your mark.</h2>
 								<p className="has-text-white">It’s what we do every day. But leaving your mark—truly indelible marks—takes imagination, vision and hard work. Not to mention a complete disregard for following the status quo. There’s also the technical expertise and logistical wizardry. Plus a few (hundred) established partners who share your vision.
 								</p>

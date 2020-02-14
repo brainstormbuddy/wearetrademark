@@ -84,8 +84,8 @@ const FullPage = () => (
 			    <section className="section has-bg-black" id="homeContactForm">
 			    	<div className="hero-body">
 				    	<div className="container">
-				    		<div className="columns is-centered">
-				    			<div className="column is-three-quarters">
+				    		<div className="columns is-mobile is-centered">
+				    			<div className="column is-three-quarters-desktop is-full-mobile is-full-tablet">
 				    				<div className="contactTitle">
 										<h2 className="has-text-white is-size-0">
 											<span>Want to</span>

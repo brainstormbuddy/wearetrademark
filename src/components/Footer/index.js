@@ -21,7 +21,7 @@ const FooterWrapper = () => {
 		  						<img src={FooterLogo} alt="X Trademark logo" style={{ width: '100px', height: '137px'}}/>
 	      					</Link>
 		  				</div>
-		  				<div className="column" style={{lineHeight:`2.4`}}>What mark will you leave?</div>
+		  				<div className="column mobile" style={{lineHeight:`2.4`}}>What mark will you leave?</div>
 	      			</div>
 	      		</div>
 	      		<div className="column">
