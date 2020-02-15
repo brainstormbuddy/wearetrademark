@@ -37,10 +37,13 @@ const FullPage = () => (
 	
     	//fullpage options
 		licenseKey = {'YOUR_KEY_HERE'}
-		scrollingSpeed = {1000} /* Options here */
+		scrollingSpeed = {700} /* Options here */
 		scrollHorizontally = {true}  /* Because we are using the extension */
 		scrollHorizontallyKey = {'YOUR KEY HERE'}
 		scrollBar = {true}
+		css3 = {true}
+		fitToSection ={true}
+		responsiveWidth = {769}
 		//paddingTop = '3em'
 		//paddingBottom = '3em'
 	

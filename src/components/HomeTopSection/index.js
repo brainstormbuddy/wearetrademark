@@ -35,7 +35,7 @@ class TopSection extends React.Component {
 </svg>
 
 		<div className="columns is-mobile is-centered">
-			<div className="column is-half-desktop is-full-mobile is-full-tablet">
+			<div className="column is-three-quarters-fullhd is-half-widescreen is-half-desktop is-three-quarters-tablet is-three-quarters-mobile">
 				<div className="video-container">
 					<video loop autoPlay muted playsInline>
 						<source src="https://css-tricks.com/wp-content/uploads/2018/05/mt-baker_bhtftq.webm" type="video/webm" />

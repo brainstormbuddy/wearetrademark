@@ -12,6 +12,8 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 	padding-top: 50px;	
 }
 
+.blackLogo img{max-width: 60%;}
+
 #navMenu a.navbar-item{
 	color: #FFFFFF;
 	font-size: 14px;
@@ -161,7 +163,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
     100% { opacity: 0; }
 }
 	
-	@media screen and (max-width: 1024px){
+	@media screen and (max-width: 1023px){
 		#navMenu{
 			display: none;
 		}
@@ -210,6 +212,7 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 		
 	}
 	@media screen and (max-width: 768px){
+		.yelloLogo img{max-width: 60%;}
 		.contactTitle{
 			background-size: 100%;
 		}

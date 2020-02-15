@@ -70,7 +70,7 @@ class Navbar extends Component {
 	                  
 	                  <a className="is-hidden-desktop" style={{alignItems: `center`, display: `flex`}}><img src={TelIcon} alt="telephone icon" /></a>
 	                  
-	                  <a onClick={() => this.onClick()} className="logo">
+	                  <a onClick={() => this.onClick()} className="yelloLogo">
 	                  {this.state.childVisible ? 
 	                  <img src={LogoYellow} alt="X Trademark Yellow logo" />
 	                  : <img src={LogoBlack} alt="X Trademark Black logo" /> }
@@ -123,7 +123,7 @@ class Navbar extends Component {
             : <nav className="has-text-centered padding-top-2 slide-up"> 
                 <div className="container">
 	                <div className="navbar-brand level-item has-text-centered">
-	                  <a onClick={() => this.onClick()} className="logo">
+	                  <a onClick={() => this.onClick()} className="blackLogo">
 	                  {this.state.childVisible ? 
 	                  <img src={LogoYellow} alt="X Trademark Yellow logo" />
 	                  : <img src={LogoBlack} alt="X Trademark Black logo" /> }
