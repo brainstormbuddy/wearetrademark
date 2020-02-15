@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 
+import WorkPage from '../components/Work'
 import Contact from '../components/HomeContact'
 
 import Privacy from '../components/Privacy'
@@ -66,14 +67,7 @@ export const PageTemplate = ({ title, content, slug }) => {
 	    ): null }
 	    
 	    {slug == 'work' ? (
-	    	<section className="hero is-fullheight">
-	    		<div className="hero-body">
-		    		<div className="container">
-		    			<h2 className="has-text-centered has-text-black title is-size-1">Work - Our latest reel</h2>
-		    			<h3 className="has-text-centered has-text-black subtitle is-size-2">Coming soon</h3>
-		    		</div>
-		    	</div>
-		    </section>
+		   	<WorkPage />
 	    ): null }
 	    
 	    {slug == 'blog' ? (
