@@ -40,7 +40,7 @@ const FullPage = () => (
 				return(
 				    	<ReactFullpage.Wrapper>
 				    	
-					    <section className="section fp-auto-height" id="watchVideo" style={{padding: `0 0 3rem`}}>
+					    <section className="section" id="watchVideo" style={{padding: `0`}}>
 					    	<Navbar />
 						    <div className="container">
 						    	<SectionWhatMarkWillYouLeave />
