@@ -61,6 +61,7 @@ const WorkStyle = styled.section`
 		text-transform: uppercase;
 		min-height: 46px;
 	}
+
 	
 	p.heading {
     	padding: 0 10px 20px;
