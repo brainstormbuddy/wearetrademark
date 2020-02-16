@@ -29,7 +29,7 @@ module.exports = {
         ],
         thanks: [`Gatsby`, `Node`],
         site: {
-          'Last update': `2020/02/01`,
+          'Last update': `2020/02/15`,
           Standards: `JavaScript`,
           Components: `humans-generator`,
           Softwares: `Visual Studio Code`
@@ -66,7 +66,7 @@ module.exports = {
         // The protocol. This can be http or https.
         protocol: 'http',
         // Use 'Advanced Custom Fields' Wordpress plugin
-        useACF: false,
+        useACF: true,
         perPage: userConfig.postsPerPage,
         concurrentRequests: 100,
         includedRoutes: [
@@ -77,6 +77,7 @@ module.exports = {
           "**/tags",
           "**/taxonomies",
           "**/users",
+          "**/casestudy",
         ],
         // Set to true to debug endpoints on 'gatsby build'
         verboseOutput: false,

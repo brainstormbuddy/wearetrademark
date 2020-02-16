@@ -9,7 +9,7 @@ import WorkStyle from './Wrapper'
 const WorkPage = () => {
 	return (
 		<WorkStyle className="is-fullheight">
-			<div className="container is-fluid">
+			<div className="container-is-fluid">
 				<div className="columns hero-body" style={{padding: `3rem 0`}}>
 					<div className="column hero">
 						<div className="hero-body filter-box has-text-centered">

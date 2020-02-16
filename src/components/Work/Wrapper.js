@@ -30,12 +30,13 @@ const WorkStyle = styled.section`
 		border-right: 1px solid #DBDBDB;
 		padding: 1rem;
 		position: relative;
+		border-bottom: 1px solid #DBDBDB;
 	}
 	.allcases .column:nth-child(4){
 		border-right: 0;
 	}
 	.allcases .columns:last-child{
-		border-bottom: 1px solid #DBDBDB;
+		//border-bottom: 1px solid #DBDBDB;
 		margin-bottom: 5rem;
 	}
 	
