@@ -43,22 +43,23 @@ const AllCases = () => {
 		<div className="allcases hero">
 			<div className="columns is-multiline">
 			{data.allWordpressWpCasestudy.nodes.map((casestudy, i) => (
-			  <div key={i} className="column is-one-quarter-desktop is-one-quarter-tablet is-full-mobile">
+			  <div key={casestudy.slug} className="column is-one-quarter-desktop is-one-quarter-tablet is-full-mobile">
 			      <div className=" has-text-centered">
 			      	<cite>Client</cite>	
 				  	<p className="heading hast-text-centered">{casestudy.title}</p>
 			      </div>
+			      <Link to={`/casestudy/${casestudy.slug}`}>
 			      <Img 
 			      imgStyle={{borderRadius: `290486px`}} 
 			      fluid ={casestudy.featured_media.localFile.childImageSharp.fluid}
-			      alt={casestudy.acf.client_name}/>
+			      alt={casestudy.acf.client_name}/></Link>
 				  
 				  <div className="caseMeta has-text-right-desktop has-text-centered-mobile ">
 				  	 <em>Project</em>
 				  	 <h3>{casestudy.acf.project_event_name}</h3>
 				  	 <p>
 				  	 {casestudy.acf.client_category.map((categoryName, n) => (
-				  	 	<span>{categoryName.value} </span>
+				  	 	<span key={n}>{categoryName.value} </span>
 				  	 ))}
 				  	 </p>
 				  </div>

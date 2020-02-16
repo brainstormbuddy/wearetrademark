@@ -78,6 +78,7 @@ exports.createPages = ({ actions, graphql }) => {
 
       const postTemplate = path.resolve(`./src/templates/post.js`)
       const blogTemplate = path.resolve(`./src/templates/blog.js`)
+      
 
       // In production builds, filter for only published posts.
       const allPosts = result.data.allWordpressPost.edges
@@ -215,6 +216,7 @@ exports.createPages = ({ actions, graphql }) => {
       }
 
       const authorTemplate = path.resolve(`./src/templates/author.js`)
+      const casestudyTemplate = path.resolve(`./src/templates/casestudy.js`)
 
       _.each(result.data.allWordpressWpUsers.edges, ({ node: author }) => {
         createPage({
@@ -226,6 +228,55 @@ exports.createPages = ({ actions, graphql }) => {
         })
       })
     })
+    // Custom post type Case Study
+    .then(() => {
+      return graphql(`
+        {
+          allWordpressWpCasestudy {
+		    edges {
+		      node {
+		        title
+		        slug
+		        content
+		        id
+		        acf {
+		          video_url
+		          venue
+		          project_event_name
+		          location
+		          client_name
+		          client_category {
+		            value
+		            label
+		          }
+		        }
+		      }
+		    }
+		  }
+        }
+      `)
+    })
+    .then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+
+      const casestudyTemplate = path.resolve(`./src/templates/casestudy.js`)
+
+      _.each(result.data.allWordpressWpCasestudy.edges, ({ node: casestudy }) => {
+        createPage({
+          path: `/casestudy/${casestudy.slug}`,
+          component: casestudyTemplate,
+          context: {
+	        slug: casestudy.slug,
+            id: casestudy.id,
+          },
+        })
+      })
+    })
+    
+    
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

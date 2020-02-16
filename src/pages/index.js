@@ -22,6 +22,7 @@ const FullPage = () => (
 			<meta name="google-site-verification" content={`${userConfig.googleSiteVerification}`} />
 			<meta name="author" content={`${userConfig.author}`} />
 			<meta name="description" content={`${userConfig.description}`} />
+			<body className="home xtrademark" />
 		</Helmet>
 	
 		<ReactFullpage
