@@ -1,3 +1,10 @@
 .single.casestudy.xtrademark{
 	background-color: #0D1B23;
 }
+.single.casestudy.xtrademark nav.has-bg-black.has-text-centered.padding-top-2.padding-bottom-2.slide-down,
+.single.casestudy.xtrademark nav.has-text-centered.padding-top-2.slide-up{
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}

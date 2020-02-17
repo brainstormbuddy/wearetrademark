@@ -81,7 +81,7 @@ p{
     right: -142px;
 }
 
-.x-icon:after{
+.x-icon::after{
 	content: "";
     position: absolute;
     right: -35px;

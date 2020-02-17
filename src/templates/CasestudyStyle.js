@@ -57,8 +57,94 @@ const CaseStudyStyle = styled.div`
 		padding: 0.5rem 1rem; 
 	}
 	
-	media screen and (max-width: 1023px){
+	.has-background-yellow{
+		background-color: #FFC709;
+	}
+	.has-background-green{
+		background-color: #033B45;	
+	}
+	.scroller{
+		color: #fff;
+		font-size: 10px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		transform: rotate(-90deg);
+	    position: absolute;
+	    bottom: 120px;
+	    left: -60px;
+	}	
+	.scroller-wrapper{position: relative;}
+	.scroller-wrapper::after{
+		content: "";
+	    position: absolute;
+	    left: 20px;
+	    bottom: 0;
+	    width: 2px;
+	    height: 50px;
+	    bottom: 220px;
+	    background-color: #66BFF2;
+	}
+	.has-border-right,
+	.has-border-left{
+		padding: 0 0.75rem;
+		line-height: 0;
+	}
+	.has-border-right{
+		border-right: 1px solid;
+	}
+	.has-border-left{
+		border-left: 1px solid;
 		
+	}
+	.infographics{
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+	}
+	
+	.infographics .column > div{
+		color: #FFFFFF;	
+		font-size: 11px;	
+		font-weight: 400;	
+		letter-spacing: 1.2px;	
+		line-height: 14px;
+		text-transform: uppercase;
+	}
+	.infographics .column > em{
+		color: #8F91A3;	
+		font-size: 9px;	
+		line-height: 13px;
+	}
+	.infographics-info{
+		padding-top: 1rem;
+	}
+	
+	@media screen and (min-width: 769px){
+		.hero.is-small .hero-body {
+			padding-bottom: 4rem;
+			padding-top: 4rem;
+		}
+	}
+	
+	@media screen and (max-width: 1074px){
+		.scroller-section{display:none;}
+	}
+	@media screen and (max-width: 768px){
+		.parallax,
+		.noParallax{
+			background-attachment: scroll!important;
+		}
+		.infographics{
+			margin-left: -0.75rem;
+			margin-right: -0.75rem;
+		}
+		.has-border-right,
+		.has-border-left{
+			border: 0;	
+		}
+		.hero.is-small .hero-body{
+			padding-bottom: 3rem;
+			padding-top: 3rem;
+		}
 	}
 
 `;
