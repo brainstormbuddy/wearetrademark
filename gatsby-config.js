@@ -137,11 +137,11 @@ module.exports = {
       resolve:'gatsby-plugin-purgecss',
       options: {
         // Activates purging in gatsby develop
-        develop: false,
+        //develop: false,
         // Ignore
-        ignore: ['styles/page.css'],
+        //ignore: ['styles/page.css'],
         // Purge only the main css file
-        purgeOnly: ['/all.sass','styles/'],
+        //purgeOnly: ['/all.sass','styles/'],
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
