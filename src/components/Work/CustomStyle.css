@@ -1,0 +1,65 @@
+.sidebar {
+	  height: 100%;
+	  width: 0;
+	  position: absolute;
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #fff;
+	  color: #000;
+	  overflow-x: hidden;
+	  transition: all .8s ease-out;
+	  padding-top: 60px;
+}
+
+.filter-categories-parent {
+    padding-bottom: 1rem;
+}
+.filter-location-parent{
+	border-top: 1px solid #66BFF2;
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+}
+
+.filter-categories,
+.filter-location{
+	text-align: center;
+}
+
+.filter-categories em,
+.filter-location em{
+	font-family: 'Maven Pro';
+	font-size: 12px;	
+	letter-spacing: 0.7px;	
+	line-height: 17px;
+	color: #8F91A3;
+}
+
+.filter-categories ul,
+.filter-location ul {
+	padding-top: 0.5rem;
+}
+.filter-location ul li,
+.filter-categories ul li{
+	color: #141825;
+	font-size: 14px;	
+	font-weight: 500;	
+	letter-spacing: 0.54px;	
+	line-height: 2.5;
+	text-transform: uppercase;
+	font-family: 'Maven Pro';
+}
+.filter-location ul li:hover{
+	background-color: #F2ED66;
+	cursor: pointer;
+} 
+.filter-categories ul li:hover {
+    background-color: #ED7D31;
+    cursor: pointer;
+}
+@media screen and (max-width: 1023px){
+	.sidebar{
+		width: 0!important;
+		display:none;
+	}	
+}

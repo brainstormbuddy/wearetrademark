@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 
 import WorkStyle from './Wrapper'
 
-const AllCases = () => {
+const AllCases = (props) => {
 	
 	const data = useStaticQuery(graphql`
 		query CaseStudyQuery {
@@ -43,7 +43,7 @@ const AllCases = () => {
 		<div className="allcases hero">
 			<div className="columns is-multiline">
 			{data.allWordpressWpCasestudy.nodes.map((casestudy, i) => (
-			  <div key={casestudy.slug} className="column is-one-quarter-desktop is-one-quarter-tablet is-full-mobile">
+			  <div key={casestudy.slug} className={"column is-one-quarter-tablet is-full-mobile" + " " + props.sidebarClassName}>
 			      <div className=" has-text-centered">
 			      	<cite>Client</cite>	
 				  	<p className="heading hast-text-centered">{casestudy.title}</p>

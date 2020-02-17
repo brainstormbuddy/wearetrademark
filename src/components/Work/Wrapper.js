@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 const WorkStyle = styled.section`
-	
+	@media screen and (max-width: 1023px){
+		margin-left:0!important;
+		background-color:transparent!important;
+		cursor: auto!important;	
+	}
 	.is-267{
 		max-width: 267px;
 		margin: auto;
@@ -101,6 +105,15 @@ const WorkStyle = styled.section`
 		letter-spacing: 0.7px;
 		line-height: 17px;
 	}
+	
+	.indexCaseStudies{
+		transition: all .8s ease-out;
+	}
+	.sidebar-opened{
+		background-color: rgba(0,0,0,0.2);
+	}
+	
+	
 	
 	
 	@media screen and (max-width: 768px){

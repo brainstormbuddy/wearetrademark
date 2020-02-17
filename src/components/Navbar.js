@@ -1,6 +1,7 @@
 import React , { Component } from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 
+import LogoWhite from '../img/White.svg'
 import LogoBlack from '../img/logoBlack.svg'
 import LogoYellow from '../img/LogoYellow.svg'
 
@@ -10,8 +11,8 @@ import userConfig from '../../config'
 
 class Navbar extends Component {
   
-  constructor() {
-    super();
+  constructor(prps) {
+    super(prps);
     this.state = {
       childVisible: false
     }
@@ -21,7 +22,14 @@ class Navbar extends Component {
     this.setState({childVisible: !this.state.childVisible});
   }
   
-  render() {      
+  render() { 
+	  
+	let url, lastUrl
+    if (typeof window !== `undefined`) {
+      url = window.location.href;
+      lastUrl= url.includes("casestudy");
+    }  
+	       
           return (
 	        <div>  
 	        {this.state.childVisible ?  
@@ -123,10 +131,18 @@ class Navbar extends Component {
             : <nav className="has-text-centered padding-top-2 slide-up"> 
                 <div className="container">
 	                <div className="navbar-brand level-item has-text-centered">
+	                  
 	                  <a onClick={() => this.onClick()} className="blackLogo">
 	                  {this.state.childVisible ? 
 	                  <img src={LogoYellow} alt="X Trademark Yellow logo" />
-	                  : <img src={LogoBlack} alt="X Trademark Black logo" /> }
+	                  : 
+		                <img src={LogoBlack} alt="X Trademark Black logo" className="BlackLogo"/>
+	                  }
+	                  
+	                  {lastUrl ? 
+			            <img src={LogoWhite} alt="X Trademark White logo" className="WhiteLogo"/>
+			           : null }	                  
+	                  
 	                  </a>
 	                </div>
 	                <div id="navMenu" className="level-item">
