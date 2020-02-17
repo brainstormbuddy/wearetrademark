@@ -1,7 +1,7 @@
 # X Trademark
 
 ## Concept
-Develop Gatsby application from Invision design.
+Develop React/Gatsby application from Invision design.
 
 ## Developer notes
 
@@ -14,6 +14,10 @@ To build, run
 `gatsby build`
 
 ## Credit
+
+1. React Fullpage.js
+2. React Modal Video
+3. React Slideshow Image
 
 
 ## Tools

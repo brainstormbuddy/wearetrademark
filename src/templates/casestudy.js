@@ -4,7 +4,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 
-import ModalVideo from '../components/Work/XModalVideo'
+import ModalVideo from './CasestudyModalVideo'
 
 import FooterWrapper from '../components/Footer'
 import userConfig from '../../config'
@@ -23,7 +23,7 @@ export default CaseStudy => {
   	if (singleCaseStudy.acf.second_landscape_image && singleCaseStudy.acf.second_landscape_image.source_url ) {
     	secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.source_url;
   	}
-	
+  		
 	return (
 		<Layout>
 	      	
@@ -60,7 +60,7 @@ export default CaseStudy => {
 						  	<div dangerouslySetInnerHTML={{ __html: singleCaseStudy.content }} />
 					      
 					  	 <div style={{paddingTop: `1.5rem`}}>
-					  	 	<ModalVideo />
+					  	 	<ModalVideo videoID = {singleCaseStudy.acf.video_url} />
 					  	 </div>
 					  	 
 					  	 
