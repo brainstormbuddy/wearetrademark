@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 const WorkStyle = styled.section`
 	
+	.is-267{
+		max-width: 267px;
+		margin: auto;
+	}
+	
 	.watch-video{
 		box-sizing: border-box;
 	}

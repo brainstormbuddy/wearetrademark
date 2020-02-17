@@ -50,6 +50,7 @@ const AllCases = () => {
 			      </div>
 			      <Link to={`/casestudy/${casestudy.slug}`}>
 			      <Img 
+			      className="is-267"
 			      imgStyle={{borderRadius: `290486px`}} 
 			      fluid ={casestudy.featured_media.localFile.childImageSharp.fluid}
 			      alt={casestudy.acf.client_name}/></Link>
