@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import { Slide } from 'react-slideshow-image'
+//import { Slide } from 'react-slideshow-image'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 
@@ -49,6 +49,7 @@ export default CaseStudy => {
 	  backgroundRepeat: `no-repeat`,
 	  backgroundSize: `cover`
   	}
+{/*
   	
   	let properties = {
 	  autoplay: false,
@@ -61,6 +62,7 @@ export default CaseStudy => {
 	    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
 	  }
 	}
+*/}
   	
   	
   	
@@ -157,6 +159,7 @@ export default CaseStudy => {
 						</div>
 					</div>
 				</section> {/*end section*/}
+{/*
 				
 				<section className="has-background-white hero is-medium gallery">
 					<div className="hero-body">
@@ -179,7 +182,8 @@ export default CaseStudy => {
 							}
 						</div>
 					</div>
-				</section> {/*end section*/}
+				</section>
+*/} {/*end section*/}
 				
 				<section className="has-background-yellow hero is-large">
 					<div className="hero-body">
