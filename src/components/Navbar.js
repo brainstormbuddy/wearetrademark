@@ -1,7 +1,7 @@
 import React , { Component } from 'react'
 import { Link } from 'gatsby'
 
-import LogoWhite from '../img/White.svg'
+import LogoWhite from '../img/LogoWhite.svg'
 import LogoBlack from '../img/logoBlack.svg'
 import LogoYellow from '../img/LogoYellow.svg'
 
