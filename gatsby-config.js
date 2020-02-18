@@ -137,9 +137,9 @@ module.exports = {
       resolve:'gatsby-plugin-purgecss',
       options: {
         // Activates purging in gatsby develop
-        develop: false,
+        develop: true,
         // Ignore
-        ignore: ['styles/page.css', 'react-slideshow-image'],
+        ignore: ['styles/page.css', 'react-slideshow-image', 'react-responsive-carousel'],
         // Purge only the main css file
         purgeOnly: ['/all.sass','styles/'],
       },

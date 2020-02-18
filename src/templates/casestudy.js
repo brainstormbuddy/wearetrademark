@@ -26,7 +26,7 @@ export default CaseStudy => {
     	firstImage = singleCaseStudy.acf.first_image.source_url;
   	}
   	if (singleCaseStudy.acf.second_landscape_image && singleCaseStudy.acf.second_landscape_image.source_url ) {
-    	secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.source_url;
+    	secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.localFile.childImageSharp.fluid.src;    	
   	}
   	if (singleCaseStudy.acf.case_study_gallery ) {
     	caseStudyGallery = singleCaseStudy.acf.case_study_gallery;
