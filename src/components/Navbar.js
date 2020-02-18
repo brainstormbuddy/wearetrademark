@@ -78,7 +78,7 @@ class Navbar extends Component {
 	                  
 	                  <a className="is-hidden-desktop" style={{alignItems: `center`, display: `flex`}}><img src={TelIcon} alt="telephone icon" /></a>
 	                  
-	                  <a onClick={() => this.onClick()} className="yelloLogo">
+	                  <a onClick={() => this.onClick()} className="yellowLogo">
 	                  {this.state.childVisible ? 
 	                  <img src={LogoYellow} alt="X Trademark Yellow logo" />
 	                  : <img src={LogoBlack} alt="X Trademark Black logo" /> }

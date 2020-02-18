@@ -158,7 +158,13 @@ export default CaseStudy => {
 								<div className="slide-container">
 							        <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true}>
 							          {singleCaseStudy.acf.case_study_gallery.map((each, index)=> (
-							            <img key={index} src={each.source_url} alt={singleCaseStudy.acf.client_name}/>
+							            
+							            <Img 
+								fluid ={each.localFile.childImageSharp.fluid}
+								alt={singleCaseStudy.acf.client_name}/>
+							            
+							            //<img key={index} src={each.source_url} alt={singleCaseStudy.acf.client_name}/>
+							            
 							          ))}
 							        </Carousel>
 							    </div>

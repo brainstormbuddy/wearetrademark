@@ -7,25 +7,19 @@ const Footer = styled.section`
 	background-color: #0D1B23;
 	background-position: left center;
 	background-repeat: no-repeat;
+	background-size: 70%;
 	
-	@media screen and (min-width: 1350px) and (max-width: 1439px ){
-		background-position: -100% 50%;
-	}
-	@media screen and (min-width: 1217px) and (max-width: 1349px ){
-		background-position: 0% 50%;
-	}
-	@media screen and (min-width: 1100px) and (max-width: 1216px ){
-		background-position: 350% 50%;
-	}
-	@media screen and (min-width: 1023px) and (max-width: 1099px ){
-		background-position: 250% 50%;
-	}
-	@media screen and (min-width: 769px) and (max-width: 1022px ){
-		background-position: 150% 50%;
-	}
 	@media screen and (max-width: 768px){
-		background-position: 75% -50%;
+		background-size: 100%;
+		background-position: 0% 20%;
 	}
+	@media screen and (max-width: 450px){
+		background-size: auto;
+		background-position: 0% -50%;
+	}
+	
+	
+	
 	
 	.footer-menu a{
 		color: #fff;
@@ -99,11 +93,15 @@ const Footer = styled.section`
 		.footer-menu a.navbar-item:after{
 			height: 15px;
 		}
+		#footer-logo:after{
+			border-right: 0;	
+		}
 		
 		p{
 			text-align: center;
 		}
 	}
+
 `;
 
 export default Footer;

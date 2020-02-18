@@ -6,6 +6,7 @@ import ReactFullpage from '@fullpage/react-fullpage'
 
 import userConfig from '../../config'
 
+import '../styles/home.css'
 
 import Navbar from '../components/Navbar'
 import SectionWhatMarkWillYouLeave from '../components/HomeTopSection'
@@ -75,8 +76,8 @@ const FullPage = () => (
 														<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>plan</span>
 														<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>create</span>
 														<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>make</span>
-														<div className="pulled-last">with us?</div>
 													</div>
+													<span className="pulled-last">with us?</span>
 												</h2>
 						    				</div>
 											<Contact />

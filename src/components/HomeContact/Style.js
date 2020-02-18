@@ -101,6 +101,15 @@ const ContactForm = styled.div`
 	    transition: border .24s ease-in-out;
 	    min-height: 173px;
 	}
+	.control.has-icons-left .input{
+		padding-left: 0;
+	}
+	.control.has-icons-left .icon.is-left{
+		top: 25%;
+		left: -30px;
+		width: 1rem;
+		color: #FF4274;
+	}
 	
 	p{
 		font-size:14px;

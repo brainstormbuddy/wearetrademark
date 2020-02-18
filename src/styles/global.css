@@ -12,7 +12,9 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 	padding-top: 30px;	
 }
 
-.blackLogo img{max-width: 60%;}
+.blackLogo img,
+.yellowLogo img
+{max-width: 60%;}
 
 #navMenu a.navbar-item{
 	color: #FFFFFF;
@@ -76,8 +78,6 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
   transition: all .8s ease-out;
 } 
 
-
-
 #caseStudy{
 	padding: 0;
 }
@@ -98,13 +98,11 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 	align-items: center;
 	min-height: 486px;
 	max-height: 100%;
-	position: relative;
 }
 
 .pulled-last{
 	position: absolute;
-	right: 150px;
-	line-height: 0;
+	right: 220px;
 }
 
 .is-size-0{

@@ -21,20 +21,21 @@ class Form extends Component {
         <p hidden><label>Don’t fill this out: <input name="bot-field"/></label></p>    
         {/* Name field */}
         <div className="field">
-            <div className="control">
+            <div className="control has-icons-left">
                 <input className="input" type="text" placeholder="First and Last name" name="name" required="required" />
+                <span className="icon is-small is-left">*</span>
             </div>
         </div>
         {/* Email field */}
         <div className="field">
-            <div className="control">
-                <input className="input" type="email" placeholder="email" name="email" required="required" />
+            <div className="control has-icons-left">
+                <input className="input" type="email" placeholder="email" name="email" required="required" /><span className="icon is-small is-left">*</span>
             </div>
         </div>
         {/* Company field */}
         <div className="field">
-            <div className="control">
-                <input className="input" type="text" placeholder="Company" name="company" required="required" />
+            <div className="control has-icons-left">
+                <input className="input" type="text" placeholder="Company" name="company" required="required" /><span className="icon is-small is-left">*</span>
             </div>
         </div>
         

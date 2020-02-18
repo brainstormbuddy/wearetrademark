@@ -26,7 +26,8 @@ class TopSection extends React.Component {
 	
 	
 	return (
-		<WhatMarkWillYouLeave>
+		<WhatMarkWillYouLeave className="hero is-medium">
+		<div className="hero-body">
 <svg>
     <defs>
     <clipPath id="clip-00" clipPathUnits="objectBoundingBox" transform="scale(0.000925925925925926, 0.0019908333333333333)">
@@ -45,19 +46,19 @@ class TopSection extends React.Component {
 			</div>
 		</div>
 			
-			<div>
-		        <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
-		        <div className="columns is-mobile is-centered">
-					<div className="column is-half-desktop is-full-mobile is-full-tablet">
-				        <div className="watch-video has-text-centered">
-							<a onClick={this.openModal}>Watch Video <img src={FullscreenIcon} 
-								alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `15px`}}/></a>
-						</div>
+		<div>
+	        <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
+	        <div className="columns is-mobile is-centered">
+				<div className="column is-half-desktop is-full-mobile is-full-tablet">
+			        <div className="watch-video has-text-centered">
+						<a onClick={this.openModal}>Watch Video <img src={FullscreenIcon} 
+							alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `15px`}}/></a>
 					</div>
 				</div>
-		    </div>
-		
-		</WhatMarkWillYouLeave>
+			</div>
+	    </div>
+	</div>
+	</WhatMarkWillYouLeave>
 	)
   }
 }

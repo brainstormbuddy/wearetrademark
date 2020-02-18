@@ -43,8 +43,8 @@ export const PageTemplate = ({ title, content, slug }) => {
 										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>plan</span>
 										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>create</span>
 										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>make</span>
-										<div className="pulled-last">with us?</div>
 									</div>
+									<span className="pulled-last">with us?</span>
 								</h2>
 		    				</div>
 							<Contact />

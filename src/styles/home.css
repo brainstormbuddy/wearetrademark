@@ -1,0 +1,7 @@
+.home.xtrademark .slide-up,
+.home.xtrademark .slide-down {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
