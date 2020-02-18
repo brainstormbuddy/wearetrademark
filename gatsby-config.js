@@ -139,7 +139,7 @@ module.exports = {
         // Activates purging in gatsby develop
         develop: false,
         // Ignore
-        ignore: ['styles/page.css'],
+        ignore: ['styles/page.css', 'react-slideshow-image'],
         // Purge only the main css file
         purgeOnly: ['/all.sass','styles/'],
       },

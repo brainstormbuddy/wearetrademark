@@ -1,7 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-//import { Slide } from 'react-slideshow-image'
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from 'react-responsive-carousel'
+
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 
@@ -49,20 +52,8 @@ export default CaseStudy => {
 	  backgroundRepeat: `no-repeat`,
 	  backgroundSize: `cover`
   	}
-{/*
   	
-  	let properties = {
-	  autoplay: false,
-	  duration: 5000,
-	  transitionDuration: 500,
-	  infinite: true,
-	  indicators: true,
-	  arrows: true,
-	  onChange: (oldIndex, newIndex) => {
-	    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-	  }
-	}
-*/}
+  	
   	
   	
   	
@@ -159,18 +150,17 @@ export default CaseStudy => {
 						</div>
 					</div>
 				</section> {/*end section*/}
-{/*
 				
 				<section className="has-background-white hero is-medium gallery">
 					<div className="hero-body">
 						<div className="container">
 							{caseStudyGallery ? (						
 								<div className="slide-container">
-							        <Slide {...properties}>
+							        <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true}>
 							          {singleCaseStudy.acf.case_study_gallery.map((each, index)=> (
 							            <img key={index} src={each.source_url} alt={singleCaseStudy.acf.client_name}/>
 							          ))}
-							        </Slide>
+							        </Carousel>
 							    </div>
 							    ) :
 							    <section className="hero is-small is-warning is-bold">
@@ -182,8 +172,7 @@ export default CaseStudy => {
 							}
 						</div>
 					</div>
-				</section>
-*/} {/*end section*/}
+				</section> {/*end section*/}
 				
 				<section className="has-background-yellow hero is-large">
 					<div className="hero-body">
