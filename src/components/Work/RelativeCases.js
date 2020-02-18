@@ -4,11 +4,11 @@ import Img from 'gatsby-image'
 
 import WorkStyle from './Wrapper'
 
-const AllCases = (props) => {
+const RelativeCases = (props) => {
 		
 	const data = useStaticQuery(graphql`
-		query CaseStudyQuery {
-		  allWordpressWpCasestudy(sort: {order: ASC, fields: title}) {
+		query RelCaseStudyQuery {
+		  allWordpressWpCasestudy(limit: 3, sort: {order: ASC, fields: title}) {
 		    totalCount
 		      nodes {
 		        content
@@ -40,10 +40,11 @@ const AllCases = (props) => {
 	`)
 	
 	return (
+		<WorkStyle>
 		<div className="allcases hero">
-			<div className="columns is-multiline">
+			<div className="columns is-centered">
 			{data.allWordpressWpCasestudy.nodes.map((casestudy, i) => (
-			  <div key={casestudy.slug} className={"column is-one-quarter-tablet is-full-mobile" + " " + props.sidebarClassName}>
+			  <div key={casestudy.slug} className="column is-one-quarter-desktop is-one-quarter-tablet is-full-mobile">
 			      <div className=" has-text-centered">
 			      	<cite>Client</cite>	
 				  	<p className="heading hast-text-centered">{casestudy.title}</p>
@@ -70,8 +71,8 @@ const AllCases = (props) => {
 			</div>
 			
 		</div>
-				
+	</WorkStyle>			
 	)
 }
 
-export default AllCases
+export default RelativeCases

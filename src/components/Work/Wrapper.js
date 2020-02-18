@@ -6,8 +6,8 @@ const WorkStyle = styled.section`
 		background-color:transparent!important;
 		cursor: auto!important;	
 	}
-	.is-267{
-		max-width: 267px;
+	.is-215{
+		max-width: 215px;
 		margin: auto;
 	}
 	

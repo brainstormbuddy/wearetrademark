@@ -7,7 +7,7 @@ import { Carousel } from 'react-responsive-carousel'
 
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
-
+import RelativeCase from '../components/Work/RelativeCases'
 import ModalVideo from './CasestudyModalVideo'
 
 import FooterWrapper from '../components/Footer'
@@ -53,9 +53,7 @@ export default CaseStudy => {
 	  backgroundSize: `cover`
   	}
   	
-  	
-  	
-  	
+    	
   	
   		
 	return (
@@ -180,11 +178,11 @@ export default CaseStudy => {
 					</div>
 				</section> {/*end section*/}
 				
-				<section className="has-background-yellow hero is-large">
+				<section className="has-background-yellow hero is-medium">
 					<div className="hero-body">
 						<div className="container">
 							<div className="related-article">
-								
+								<RelativeCase />
 							</div>
 						</div>
 					</div>
