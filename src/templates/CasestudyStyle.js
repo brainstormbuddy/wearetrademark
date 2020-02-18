@@ -84,6 +84,31 @@ const CaseStudyStyle = styled.div`
 	    bottom: 220px;
 	    background-color: #66BFF2;
 	}
+	.rel-article{position: relative;}
+	.relatedTxt{
+		transform: rotate(-90deg);	
+		color: #0D1B23;	
+		font-size: 12px;	
+		font-weight: 400;	
+		letter-spacing: 0.87px;	
+		line-height: 24px;
+		position: absolute;
+		bottom: -40px;
+	}
+	.rel-article::after{
+		content: "";
+	    position: absolute;
+	    background-color: #E0435D;
+	    width: 1px;
+	    height: 650px;
+	    left: 9.1%;
+	    top:0;
+	}
+	
+	.caseMeta{
+		padding-right: 3rem;
+	}
+	
 	.has-border-right,
 	.has-border-left{
 		padding: 0 0.75rem;
@@ -121,6 +146,7 @@ const CaseStudyStyle = styled.div`
 	
 	.related-article{
 		background-color: rgba(255,199,9,0.3);
+		position: relative;
 	}
 	.related-article .allcases .columns{
 		border-top: 0;

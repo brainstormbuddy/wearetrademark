@@ -6,9 +6,12 @@ const WorkStyle = styled.section`
 		background-color:transparent!important;
 		cursor: auto!important;	
 	}
-	.is-215{
-		max-width: 215px;
+	.is-250{
+		max-width: 250px;
 		margin: auto;
+	}
+	.caseMeta{
+		padding-right: 3rem;
 	}
 	
 	.watch-video{

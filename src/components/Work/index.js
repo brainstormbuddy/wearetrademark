@@ -95,8 +95,8 @@ class WorkPage extends Component {
 				</div>
 			
 				<WorkStyle onClick={() => this.onClick()} className="is-fullheight indexCaseStudies sidebar-opened" style={{marginLeft: `300px`, backgroundColor: `rgba(0,0,0,0.2)`, width:`100%`, height: `100%`, cursor: `pointer`, overflow:`hidden`}}>
-				<div className="container-is-fluid">
-				<div className="columns hero-body" style={{padding: `3rem 0`}}>
+				<div className="container is-fluid is-marginless">
+				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`}}>
 					<div className="column is-full-desktop is-full-mobile is-full-tablet hero latest-reel">
 						<div className="columns hero-body is-vcentered">
 							<div className="column is-half-desktop is-full-mobile is-half-tablet">
@@ -107,7 +107,7 @@ class WorkPage extends Component {
 					</div>
 				</div>
 			</div>
-			<div className="container is-fluid">
+			<div className="container is-fluid is-marginless">
 				<AllCases sidebarClassName = {sidebarOpened}/>
 			</div>
 		</WorkStyle>
@@ -116,8 +116,8 @@ class WorkPage extends Component {
 			) :
 				
 			<WorkStyle className="is-fullheight indexCaseStudies sidebar-closed">
-			<div className="container-is-fluid">
-				<div className="columns hero-body">
+			<div className="container is-fluid is-marginless">
+				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`, marginTop: `0`}}>
 					<div className="column hero">
 						<div className="hero-body filter-box has-text-centered">
 							<a onClick={() => this.onClick()}>Filter -</a>

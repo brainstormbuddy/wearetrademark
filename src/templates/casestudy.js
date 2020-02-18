@@ -101,7 +101,7 @@ export default CaseStudy => {
 				
 				{/* Scroll for full case study*/}
 				<section className="scroller-section">
-					<div className="columns" style={{marginBottom: `0`}}>
+					<div className="columns">
 						<div className="column is-7"></div>
 						<div className="column is-4 scroller-wrapper">
 							<div className="scroller">Scroll for full case study</div>
@@ -178,11 +178,12 @@ export default CaseStudy => {
 					</div>
 				</section> {/*end section*/}
 				
-				<section className="has-background-yellow hero is-medium">
+				<section className="has-background-yellow hero is-medium rel-article">
 					<div className="hero-body">
 						<div className="container">
 							<div className="related-article">
 								<RelativeCase />
+								<div className="relatedTxt">Related</div>
 							</div>
 						</div>
 					</div>
