@@ -5,3 +5,10 @@
     right: 0;
     z-index: 9;
 }
+
+@media screen and (max-width: 768px){
+	.home.xtrademark .slide-up,
+	.home.xtrademark .slide-down {
+		position: relative;	
+	}
+}
