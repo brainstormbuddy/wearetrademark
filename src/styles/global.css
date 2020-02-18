@@ -98,11 +98,12 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 	align-items: center;
 	min-height: 486px;
 	max-height: 100%;
+	position: relative;
 }
 
 .pulled-last{
 	position: absolute;
-	right: 220px;
+	right: calc(100vw - 90vw);
 }
 
 .is-size-0{
@@ -165,6 +166,17 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
     100% { opacity: 0; }
 }
 	
+	@media screen and (min-width: 1024px) and (max-width: 1250px){
+		.contactTitle .is-size-0{
+			font-size: 54.2px;
+		}
+	}
+	@media screen and (min-width: 768px) and (max-width: 1023px){
+		.contactTitle .is-size-0{
+			font-size: 54.2px;
+		}
+	}
+	
 	@media screen and (max-width: 1023px){
 		#navMenu{
 			display: none;
@@ -219,17 +231,19 @@ h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 			background-size: 100%;
 		}
 	}
+	@media screen and (max-width: 767px){
+		.pulled-last {
+		    position: relative;
+		    right: 0;
+		    display: block;
+		}
+	}
 	@media screen and (max-width: 540px){
 		.contactTitle{
 			min-height: 285px;
 		}
 		.contactTitle .is-size-0{
 			font-size: 40.2px;
-		}
-	}
-	@media screen and (max-width: 414px){
-		.pulled-last{
-			right: 0;
 		}
 	}
 	

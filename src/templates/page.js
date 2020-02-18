@@ -34,7 +34,7 @@ export const PageTemplate = ({ title, content, slug }) => {
 	    	<div className="hero-body">
 		    	<div className="container">
 		    		<div className="columns is-centered">
-		    			<div className="column is-three-quarters">
+		    			<div className="column is-three-quarters-desktop is-full-tablet is-full-mobile">
 		    				<div className="contactTitle">
 								<h2 className="has-text-white is-size-0">
 									<span>Want to</span>

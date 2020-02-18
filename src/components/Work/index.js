@@ -27,7 +27,7 @@ class WorkPage extends Component {
 	
 	render(){
 		
-	let sidebarOpened='is-half-desktop';	
+	let sidebarOpened='is-half-desktop is-one-third-widescreen is-one-quarter-fullhd';	
 	let sidebarClosed='is-one-quarter-desktop';	
 	
 {/*	
@@ -63,14 +63,14 @@ class WorkPage extends Component {
 						<div className="filter-categories">
 							<em>Filter by: </em>
 							<ul>
-								<li>COMPANY PARTIES</li>
-								<li>Brand Activation</li>
-								<li>Product Launch</li>
-								<li>Roadshows</li>
-								<li>Tradeshows</li>
-								<li>Sales Meetings</li>
-								<li>Special Events</li>
-								<li>User Conference</li>
+								<li><a href="#">COMPANY PARTIES</a></li>
+								<li><a href="#">Brand Activation</a></li>
+								<li><a href="#">Product Launch</a></li>
+								<li><a href="#">Roadshows</a></li>
+								<li><a href="#">Tradeshows</a></li>
+								<li><a href="#">Sales Meetings</a></li>
+								<li><a href="#">Special Events</a></li>
+								<li><a href="#">User Conference</a></li>
 							</ul>
 						</div>
 						</div>
@@ -78,23 +78,23 @@ class WorkPage extends Component {
 						<div className="filter-location">
 							<em>Location: </em>
 							<ul>
-								<li>San Francisco</li>
-								<li>Portland</li>
-								<li>Atlanta</li>
-								<li>New York City</li>
-								<li>Washington D.C.</li>
-								<li>Chicago</li>
-								<li>Denver</li>
-								<li>Orlando</li>
-								<li>Detroit</li>
-								<li>London</li>
+								<li><a href="#">San Francisco</a></li>
+								<li><a href="#">Portland</a></li>
+								<li><a href="#">Atlanta</a></li>
+								<li><a href="#">New York City</a></li>
+								<li><a href="#">Washington D.C.</a></li>
+								<li><a href="#">Chicago</a></li>
+								<li><a href="#">Denver</a></li>
+								<li><a href="#">Orlando</a></li>
+								<li><a href="#">Detroit</a></li>
+								<li><a href="#">London</a></li>
 							</ul>
 						</div>
 						</div>
 					</div>
 				</div>
 			
-				<WorkStyle onClick={() => this.onClick()} className="is-fullheight indexCaseStudies sidebar-opened" style={{marginLeft: `300px`, backgroundColor: `rgba(0,0,0,0.2)`, width:`100%`, height: `100%`, cursor: `pointer`}}>
+				<WorkStyle onClick={() => this.onClick()} className="is-fullheight indexCaseStudies sidebar-opened" style={{marginLeft: `300px`, backgroundColor: `rgba(0,0,0,0.2)`, width:`100%`, height: `100%`, cursor: `pointer`, overflow:`hidden`}}>
 				<div className="container-is-fluid">
 				<div className="columns hero-body" style={{padding: `3rem 0`}}>
 					<div className="column is-full-desktop is-full-mobile is-full-tablet hero latest-reel">
@@ -117,7 +117,7 @@ class WorkPage extends Component {
 				
 			<WorkStyle className="is-fullheight indexCaseStudies sidebar-closed">
 			<div className="container-is-fluid">
-				<div className="columns hero-body" style={{padding: `3rem 0`}}>
+				<div className="columns hero-body">
 					<div className="column hero">
 						<div className="hero-body filter-box has-text-centered">
 							<a onClick={() => this.onClick()}>Filter -</a>
@@ -133,7 +133,7 @@ class WorkPage extends Component {
 					</div>
 				</div>
 			</div>
-			<div className="container is-fluid">
+			<div className="container is-fluid is-marginless">
 				<AllCases sidebarClassName = {sidebarClosed}/>
 			</div>
 		</WorkStyle>

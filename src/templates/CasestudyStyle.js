@@ -118,6 +118,31 @@ const CaseStudyStyle = styled.div`
 		padding-top: 1rem;
 	}
 	
+	
+	.related-article{
+		background-color: rgba(255,199,9,0.3);
+	}
+	.related-article .allcases .columns{
+		border-top: 0;
+		margin-top: 0;
+	}
+	.related-article .allcases .column{
+		background-color: rgba(255,255,255,0.9);
+		width: 30%;
+		border-bottom: 0;
+		padding: 2rem 1rem;
+	}
+	.related-article .allcases .column p{
+		color: #96A8B3;
+	}
+	.related-article .allcases .column:last-child{
+		border-right: 0;
+	}
+	.related-article .allcases .columns:last-child{
+		margin-bottom: 0;
+	}
+	
+	
 	@media screen and (min-width: 769px){
 		.hero.is-small .hero-body {
 			padding-bottom: 4rem;
@@ -144,6 +169,10 @@ const CaseStudyStyle = styled.div`
 		.hero.is-small .hero-body{
 			padding-bottom: 3rem;
 			padding-top: 3rem;
+		}
+		.related-article .allcases .column{
+			width: 100%;
+			border-bottom: 1px solid #DBDBDB;
 		}
 	}
 
