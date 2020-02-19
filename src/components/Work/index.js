@@ -43,8 +43,8 @@ class WorkPage extends Component {
 	
 	
 	//var btnContainer = document.getElementById("myBtnContainer");
-	var btns = document.getElementsByClassName("btn");
-	//var btns = 13;
+	//var btns = document.getElementsByClassName("btn");
+	var btns = 18;
 
 	for (var i = 0; i < btns.length; i++) {
 	  btns[i].addEventListener("click", function() {
