@@ -154,7 +154,7 @@ export default CaseStudy => {
 						<div className="container">
 							{caseStudyGallery ? (						
 								<div className="slide-container">
-							        <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={false} infiniteLoop={true}>
+							        <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true}>
 							          {singleCaseStudy.acf.case_study_gallery.map((each, index)=> (
 							            <Img 
 								fluid ={each.localFile.childImageSharp.fluid}
@@ -163,7 +163,7 @@ export default CaseStudy => {
 							            
 							          ))}
 							        </Carousel>
-							        <Carousel className="captionTxt" showThumbs={false} useKeyboardArrows={false} autoPlay={false} infiniteLoop={true} showArrows={false} showIndicators={false} showStatus={false}>
+							        <Carousel className="captionTxt" showThumbs={false} useKeyboardArrows={false} autoPlay={true} infiniteLoop={true} showArrows={false} showIndicators={false} showStatus={false}>
 							          {singleCaseStudy.acf.case_study_gallery.map((each, index)=> (
 							         <div className="columns is-vcentered has-text-left">
 							         	<div className="column is-3 has-text-right-desktop has-text-left-tablet has-text-left-mobile firstColumn">
