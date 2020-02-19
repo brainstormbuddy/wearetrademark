@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>9CF1E92F-EB5D-40A4-9800-8A8E0A63FF74</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M32.9285714,70.2222222 C32.9285714,73.4 35.5642857,76 38.7857143,76 L62.2142857,76 C65.4357143,76 68.0714286,73.4 68.0714286,70.2222222 L68.0714286,35.5555556 L32.9285714,35.5555556 L32.9285714,70.2222222 Z M50.5,44.2222222 L62.2142857,55.7777778 L56.3571429,55.7777778 L56.3571429,67.3333333 L44.6428571,67.3333333 L44.6428571,55.7777778 L38.7857143,55.7777778 L50.5,44.2222222 Z M60.75,26.8888889 L57.8214286,24 L43.1785714,24 L40.25,26.8888889 L30,26.8888889 L30,32.6666667 L71,32.6666667 L71,26.8888889 L60.75,26.8888889 Z" id="path-1"></path>
+    </defs>
+    <g id="case-study-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="case-study-/-slack-/-closed-nav" transform="translate(-578.000000, -3543.000000)">
+            <g id="Infograph-/-Slack" transform="translate(0.000000, 1896.000000)">
+                <g id="icon/action/restore_from_trash_24px" transform="translate(578.000000, 1647.000000)">
+                    <circle id="Oval" fill="#6ABA65" cx="50" cy="50" r="50"></circle>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g fill-rule="nonzero"></g>
+                    <g id="↳-Color" mask="url(#mask-2)" fill="#FFFFFF">
+                        <rect id="Rectangle" x="0" y="0" width="101" height="101"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

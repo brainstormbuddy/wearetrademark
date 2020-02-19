@@ -10,6 +10,8 @@ import Layout from '../components/Layout'
 import RelativeCase from '../components/Work/RelativeCases'
 import ModalVideo from './CasestudyModalVideo'
 
+import Infographics from './Infographics'
+
 import FooterWrapper from '../components/Footer'
 import userConfig from '../../config'
 
@@ -143,7 +145,7 @@ export default CaseStudy => {
 							</div>
 								
 							<div className="infographics-info">
-								<img src="https://picsum.photos/1920/1937.jpg" alt="no image yet"/>
+								<Infographics />
 							</div>
 						</div>
 					</div>

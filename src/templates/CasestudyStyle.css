@@ -11,3 +11,26 @@
 .single.casestudy.xtrademark img.BlackLogo {
     display: none;
 }
+
+#infographics h2{
+	font-size: 40px;
+	color: #FFFFFF;
+	line-height: 60px;
+}
+#infographics h3{
+	font-size: 30px;
+	color: #FFFFFF;
+}
+
+#infographics p{
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: 400;
+	line-height: 25px;
+}
+#infographics li{
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 400;
+	line-height: 25px;
+}
