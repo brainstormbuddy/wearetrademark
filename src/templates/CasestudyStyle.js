@@ -84,7 +84,10 @@ const CaseStudyStyle = styled.div`
 	    bottom: 220px;
 	    background-color: #66BFF2;
 	}
-	.rel-article{position: relative;}
+	#threeCases,
+	.rel-article{
+		position: relative;
+	}
 	.relatedTxt{
 		transform: rotate(-90deg);	
 		color: #0D1B23;	
@@ -95,14 +98,15 @@ const CaseStudyStyle = styled.div`
 		position: absolute;
 		bottom: -40px;
 	}
-	.rel-article::after{
+	
+	#threeCases::after{
 		content: "";
 	    position: absolute;
 	    background-color: #E0435D;
 	    width: 1px;
 	    height: 650px;
-	    left: 9.1%;
-	    top:0;
+	    left: 25px;
+	    top:-143px;
 	}
 	
 	.caseMeta{
@@ -143,6 +147,30 @@ const CaseStudyStyle = styled.div`
 		padding-top: 1rem;
 	}
 	
+	.captionTxt{
+		position: relative;
+		padding-top: 2rem;
+	}
+	.captionTxt .carousel .slider-wrapper.axis-horizontal .slider .slide{
+		height: 100px;
+		background: #fff;
+	}
+	.captionTxt .carousel .slider-wrapper.axis-horizontal .slider .firstColumn{
+		border-right: 1px solid #66BFF2;
+	}
+	
+	.captionTxt .carousel .slider-wrapper.axis-horizontal .slider .slide h6{
+		color: #0D1B23;
+		font-size: 21px;
+		line-height: 19px;
+	}
+	.captionTxt .carousel .slider-wrapper.axis-horizontal .slider .slide p{
+		color: #0D1B23;
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
 	
 	.related-article{
 		background-color: rgba(255,199,9,0.3);
@@ -174,16 +202,30 @@ const CaseStudyStyle = styled.div`
 			padding-bottom: 4rem;
 			padding-top: 4rem;
 		}
+		.hero.gallery .hero-body{
+			padding-bottom:0;
+			padding-top: 7rem;
+		}
 	}
 	
 	@media screen and (max-width: 1074px){
 		.scroller-section{display:none;}
 	}
 	@media screen and (max-width: 768px){
+		.client-details{
+			padding: 0.75rem;
+		}
 		.parallax,
 		.noParallax{
 			background-attachment: scroll!important;
 		}
+		.captionTxt .carousel .slider-wrapper.axis-horizontal .slider .slide{
+			height: 100%;
+		}
+		.captionTxt .carousel .slider-wrapper.axis-horizontal .slider .firstColumn{
+			border-right: 0
+		}
+		
 		.infographics{
 			margin-left: -0.75rem;
 			margin-right: -0.75rem;

@@ -1,11 +1,18 @@
 import React, {Component} from 'react'
+import ReactDOM from 'react-dom'
+
 import { useStaticQuery, Link, graphql } from 'gatsby'
+
+import FilterSidebar from './Sidebar'
+
 import AllCases from './AllCases'
 
 import ModalVideo from './XModalVideo'
 
 import WorkStyle from './Wrapper'
 import './CustomStyle.css'
+
+import { filterSelection, w3AddClass, w3RemoveClass } from './Filter'
 
 class WorkPage extends Component {
 	
@@ -18,11 +25,15 @@ class WorkPage extends Component {
 	
 	onClick() {
     	this.setState({childVisible: !this.state.childVisible});
-    	
+    	//filterSelection('all');
   	}
   	onClose() {
     	this.setState({childVisible: !this.state.childVisible});
   	}
+  	
+  	componentDidMount() {
+  		filterSelection('all');
+	}
 
 	
 	render(){
@@ -30,27 +41,19 @@ class WorkPage extends Component {
 	let sidebarOpened='is-half-desktop is-one-third-widescreen is-one-quarter-fullhd';	
 	let sidebarClosed='is-one-quarter-desktop';	
 	
-{/*	
-	const data = useStaticQuery(graphql`
-		query AnotherQuery {
-		  allWordpressWpCasestudy{
-		    totalCount
-		      nodes {
-		        acf {
-		          location
-		          client_category {
-			          value
-			          label
-			        }
-		        }
-		    }
-		  }
-		}	
-	`)
-*/}	
 	
-	
-	
+	//var btnContainer = document.getElementById("myBtnContainer");
+	var btns = document.getElementsByClassName("btn");
+	//var btns = 13;
+
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+	    var current = document.getElementsByClassName("active");
+	    current[0].className = current[0].className.replace(" active", "");
+	    this.className += " active";
+	  });
+	}
+		
 	
 	return (
 		
@@ -59,38 +62,7 @@ class WorkPage extends Component {
 			<div>
 				<div className="sidebar hero" id="xSidebar" style={{width: `300px`}}>
 					<div className="inner has-text-left">
-						<div className="filter-categories-parent">
-						<div className="filter-categories">
-							<em>Filter by: </em>
-							<ul>
-								<li><a href="#">COMPANY PARTIES</a></li>
-								<li><a href="#">Brand Activation</a></li>
-								<li><a href="#">Product Launch</a></li>
-								<li><a href="#">Roadshows</a></li>
-								<li><a href="#">Tradeshows</a></li>
-								<li><a href="#">Sales Meetings</a></li>
-								<li><a href="#">Special Events</a></li>
-								<li><a href="#">User Conference</a></li>
-							</ul>
-						</div>
-						</div>
-						<div className="filter-location-parent">
-						<div className="filter-location">
-							<em>Location: </em>
-							<ul>
-								<li><a href="#">San Francisco</a></li>
-								<li><a href="#">Portland</a></li>
-								<li><a href="#">Atlanta</a></li>
-								<li><a href="#">New York City</a></li>
-								<li><a href="#">Washington D.C.</a></li>
-								<li><a href="#">Chicago</a></li>
-								<li><a href="#">Denver</a></li>
-								<li><a href="#">Orlando</a></li>
-								<li><a href="#">Detroit</a></li>
-								<li><a href="#">London</a></li>
-							</ul>
-						</div>
-						</div>
+						<FilterSidebar />
 					</div>
 				</div>
 			
@@ -107,14 +79,13 @@ class WorkPage extends Component {
 					</div>
 				</div>
 			</div>
-			<div className="container is-fluid is-marginless">
+			<div className="container is-fluid is-marginless" style={{minHeight: `100vh`}}>
 				<AllCases sidebarClassName = {sidebarOpened}/>
 			</div>
 		</WorkStyle>
 		</div>		
 				
-			) :
-				
+			) :			
 			<WorkStyle className="is-fullheight indexCaseStudies sidebar-closed">
 			<div className="container is-fluid is-marginless">
 				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`, marginTop: `0`}}>
@@ -136,8 +107,7 @@ class WorkPage extends Component {
 			<div className="container is-fluid is-marginless">
 				<AllCases sidebarClassName = {sidebarClosed}/>
 			</div>
-		</WorkStyle>
-				
+		</WorkStyle>			
 		}
 		
 		</div>

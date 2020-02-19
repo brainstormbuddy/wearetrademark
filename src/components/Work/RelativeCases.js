@@ -41,7 +41,7 @@ const RelativeCases = (props) => {
 	
 	return (
 		<WorkStyle>
-		<div className="allcases hero">
+		<div className="allcases hero" id="threeCases">
 			<div className="columns is-centered">
 			{data.allWordpressWpCasestudy.nodes.map((casestudy, i) => (
 			  <div key={casestudy.slug} className="column is-one-quarter-desktop is-one-quarter-tablet is-full-mobile">

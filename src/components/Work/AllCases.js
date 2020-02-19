@@ -43,7 +43,7 @@ const AllCases = (props) => {
 		<div className="allcases hero">
 			<div className="columns is-multiline">
 			{data.allWordpressWpCasestudy.nodes.map((casestudy, i) => (
-			  <div key={casestudy.slug} className={"column is-one-quarter-tablet is-full-mobile" + " " + props.sidebarClassName}>
+			  <div key={i} className={"filterDiv show column is-one-quarter-tablet is-full-mobile" + " " + props.sidebarClassName + " " + casestudy.acf.location + " " + casestudy.acf.client_category.map((categoryName, n) => (categoryName.value))}>
 			      <div className=" has-text-centered">
 			      	<cite>Client</cite>	
 				  	<p className="heading hast-text-centered">{casestudy.title}</p>
