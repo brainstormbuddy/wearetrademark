@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import { filterSelection, w3AddClass, w3RemoveClass } from './Filter'
 
-const Sidebar = () => {
+const Sidebar = (props) => {
 	
 	const dataMy = useStaticQuery(graphql`
 		{

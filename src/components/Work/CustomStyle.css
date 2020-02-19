@@ -1,7 +1,3 @@
-.containerFilter {
-  overflow: hidden;
-}
-
 .filterDiv {
   display: none; /* Hidden by default */
 }
@@ -11,39 +7,18 @@
   display: block;
 }
 
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-/* Add a light grey background on mouse-over */
-.btn:hover {
-  background-color: #ddd;
-}
-
-/* Add a dark background to the active button */
-/*
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-*/
-
-
-
 .sidebar {
-	  width: 0;
-	  position: absolute;
-	  z-index: 1;
-	  top: 0;
-	  left: 0;
-	  background-color: #fff;
-	  color: #000;
-	  overflow-x: hidden;
-	  transition: all .8s ease-out;
-	  padding-top: 110px;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #000;
+  overflow-x: hidden;
+  transition: all .8s ease-out;
+  padding-top: 110px;
+  height: 100%;
 }
 
 .filter-categories-parent {

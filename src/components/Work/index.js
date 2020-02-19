@@ -71,7 +71,7 @@ class WorkPage extends Component {
 				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`}}>
 					<div className="column is-full-desktop is-full-mobile is-full-tablet hero latest-reel">
 						<div className="columns hero-body is-vcentered">
-							<div className="column is-half-desktop is-full-mobile is-half-tablet">
+							<div className="column is-full-mobile is-half-tablet is-half-desktop is-one-third-widescreen">
 								<h2 className="has-text-centered">Our latest reel</h2>
 							</div>
 							<div className="column is-one-quarter-desktop is-full-mobile is-half-tablet"><ModalVideo /></div>
@@ -96,7 +96,7 @@ class WorkPage extends Component {
 					</div>
 					<div className="column is-three-quarters-desktop is-full-mobile is-full-tablet hero latest-reel">
 						<div className="columns hero-body is-vcentered">
-							<div className="column is-half-desktop is-full-mobile is-half-tablet">
+							<div className="column is-full-mobile is-half-tablet is-half-desktop is-one-third-widescreen">
 								<h2 className="has-text-centered">Our latest reel</h2>
 							</div>
 							<div className="column is-one-quarter-desktop is-full-mobile is-half-tablet"><ModalVideo /></div>
