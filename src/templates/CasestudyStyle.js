@@ -186,6 +186,14 @@ const CaseStudyStyle = styled.div`
 		border-bottom: 0;
 		padding: 2rem 1rem;
 	}
+	
+	
+	.related-article .allcases .caseMetaParent .column {
+    	background-color: transparent;
+		width: 80%;
+		padding: 1rem 2rem;
+	}
+	
 	.related-article .allcases .column p{
 		color: #96A8B3;
 	}

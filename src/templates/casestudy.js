@@ -28,7 +28,8 @@ export default CaseStudy => {
     	firstImage = singleCaseStudy.acf.first_image.source_url;
   	}
   	if (singleCaseStudy.acf.second_landscape_image && singleCaseStudy.acf.second_landscape_image.source_url ) {
-    	secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.localFile.childImageSharp.fluid.src;    	
+//secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.localFile.childImageSharp.fluid.src; 
+    	secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.source_url;   	
   	}
   	if (singleCaseStudy.acf.case_study_gallery ) {
     	caseStudyGallery = singleCaseStudy.acf.case_study_gallery;
@@ -71,11 +72,11 @@ export default CaseStudy => {
 						<div className="column hero is-7 is-paddingless">
 							<div className="has-text-centered">
 							{firstImage ? (
-								<Img 
-								fluid ={singleCaseStudy.acf.first_image.localFile.childImageSharp.fluid}
-								alt={singleCaseStudy.acf.client_name}/>
+								<img src={singleCaseStudy.acf.first_image.source_url} alt={singleCaseStudy.acf.client_name} />
+								
 							) :
-								<img src="https://picsum.photos/1193/1220.jpg" alt="no image yet"/>
+							<img src="https://via.placeholder.com/1193x1220.png?text=No+Image+Found" alt="No image" />	
+								
 							}
 							</div>
 						</div>
@@ -158,10 +159,8 @@ export default CaseStudy => {
 								<div className="slide-container">
 							        <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true}>
 							          {singleCaseStudy.acf.case_study_gallery.map((each, index)=> (
-							            <Img 
-								fluid ={each.localFile.childImageSharp.fluid}
-								alt={singleCaseStudy.acf.client_name}/>
-							            //<img key={index} src={each.source_url} alt={singleCaseStudy.acf.client_name}/>
+
+							            <img key={index} src={each.source_url} alt={singleCaseStudy.acf.client_name}/>
 							            
 							          ))}
 							        </Carousel>
@@ -181,10 +180,9 @@ export default CaseStudy => {
 							        </Carousel>
 							    </div>
 							    ) :
-							    <section className="hero is-small is-warning is-bold">
-							      <div className="hero-body">
-							          <h2 className="title has-text-centered">No images are found!!</h2>
-							          <p className="subtitle has-text-centered">Please upload images in case study gallery in WordPress dashboard.</p>
+							    <section className="hero is-small is-bold">
+							      <div className="hero-body" style={{paddingBottom: `7rem`}}>
+							          <h2 className="has-text-centered" style={{color: `#000`}}>No images are found!!</h2>
 							      </div>
 							    </section>
 							}
@@ -231,35 +229,14 @@ export const query = graphql`
 		    alt_text
 		    id
 		    source_url  
-		    localFile{
-			    childImageSharp{
-				    fluid(maxWidth: 1193, quality: 100) {
-	      				...GatsbyImageSharpFluid
-	   				}
-			    }
-		    }
 	      }
 	      second_landscape_image{
 		    alt_text
 		    id
 		    source_url
-		    localFile{
-			    childImageSharp{
-				    fluid(maxWidth: 1920, quality: 100) {
-	      				...GatsbyImageSharpFluid
-	   				}
-			    }
-		    }
 	      }
 	      case_study_gallery{
 		    source_url  
-		    localFile{
-			    childImageSharp{
-				    fluid(maxWidth: 1416, quality: 100) {
-	      				...GatsbyImageSharpFluid
-	   				}
-			    }
-		    }
 	      }
 	      client_category {
 	        label

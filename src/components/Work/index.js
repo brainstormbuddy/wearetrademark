@@ -44,16 +44,18 @@ class WorkPage extends Component {
 	
 	//var btnContainer = document.getElementById("myBtnContainer");
 	//var btns = document.getElementsByClassName("btn");
-	var btns = 18;
+//	var btns = 8;
 
-	for (var i = 0; i < btns.length; i++) {
-	  btns[i].addEventListener("click", function() {
-	    var current = document.getElementsByClassName("active");
-	    current[0].className = current[0].className.replace(" active", "");
-	    this.className += " active";
-	  });
-	}
+//	for (var i = 0; i < btns.length; i++) {
+//	  btns[i].addEventListener("click", function() {
+//	    var current = document.getElementsByClassName("active");
+//	    current[0].className = current[0].className.replace(" active", "");
+//	    this.className += " active";
+//	  });
+//	}
 		
+	
+	
 	
 	return (
 		
@@ -70,9 +72,9 @@ class WorkPage extends Component {
 				<div className="container is-fluid is-marginless">
 				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`}}>
 					<div className="column is-full-desktop is-full-mobile is-full-tablet hero latest-reel">
-						<div className="columns hero-body is-vcentered">
-							<div className="column is-full-mobile is-half-tablet is-half-desktop is-one-third-widescreen">
-								<h2 className="has-text-centered">Our latest reel</h2>
+						<div className="columns hero-body is-vcentered" style={{padding: `3rem 1rem`}}>
+							<div className="column is-full-mobile is-half-tablet is-half-desktop is-one-third-widescreen" style={{position: `relative`, padding: `0.75rem 0`}}>
+								<h2 className="has-text-centered reelTxtSidebar">Our latest reel</h2>
 							</div>
 							<div className="column is-one-quarter-desktop is-full-mobile is-half-tablet"><ModalVideo /></div>
 						</div>
@@ -95,9 +97,9 @@ class WorkPage extends Component {
 						</div>
 					</div>
 					<div className="column is-three-quarters-desktop is-full-mobile is-full-tablet hero latest-reel">
-						<div className="columns hero-body is-vcentered">
-							<div className="column is-full-mobile is-half-tablet is-half-desktop is-one-third-widescreen">
-								<h2 className="has-text-centered">Our latest reel</h2>
+						<div className="columns hero-body is-vcentered" style={{padding: `3rem 1rem`}}>
+							<div className="column is-full-mobile is-half-tablet is-half-desktop is-half-widescreen" style={{position: `relative`, padding: `0.75rem 0`}}>
+								<h2 className="has-text-centered reelTxt">Our latest reel</h2>
 							</div>
 							<div className="column is-one-quarter-desktop is-full-mobile is-half-tablet"><ModalVideo /></div>
 						</div>

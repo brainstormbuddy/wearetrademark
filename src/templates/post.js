@@ -39,7 +39,10 @@ import ShareWrapper from '../components/Share'
         <meta name="description" content={`${post.excerpt}`}/>
         <body className="single-case-study" />
       </Helmet>
-      	<div className={postStyles.postImg}><Img fluid={post.featured_media.localFile.childImageSharp.fluid} alt={post.title} /></div>
+      	<div className={postStyles.postImg}>
+      	{/*<Img fluid={post.featured_media.localFile.childImageSharp.fluid} alt={post.title} /> */}
+      	<img src={post.featured_media.source_url} alt="" />
+      	</div>
         <section className="section">
         <div className={postStyles.entryHeader}>
         	<h1 className="title is-size-2 has-text-weight-bold is-bold-light" dangerouslySetInnerHTML={{ __html: post.title}}/>
@@ -159,13 +162,7 @@ export const query = graphql`
         name
       }
       featured_media{
-        localFile{
-          childImageSharp{
-            fluid(maxWidth: 1920, quality: 100) {
-                ...GatsbyImageSharpFluid
-            }
-          }
-        }
+	    source_url
       }
     }
   }

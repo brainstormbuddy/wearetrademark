@@ -15,13 +15,7 @@ const AllCases = (props) => {
 		        slug
 		        title
 		        featured_media{
-				    localFile{
-					    childImageSharp{
-						    fluid(maxWidth: 267, quality: 100) {
-			      				...GatsbyImageSharpFluid
-			   				}
-					    }
-				    }
+			        source_url
 			    }
 		        acf {
 		          video_url
@@ -39,6 +33,11 @@ const AllCases = (props) => {
 		}	
 	`)
 	
+	//const circleBefore = {
+	//  backgroundImage: `url(${secondLandscapeImage})`,
+  	//}
+	
+	
 	return (
 		<div className="allcases hero">
 			<div className="columns is-multiline">
@@ -48,14 +47,19 @@ const AllCases = (props) => {
 			      	<cite>Client</cite>	
 				  	<p className="heading hast-text-centered">{casestudy.title}</p>
 			      </div>
+			      <div className="is-200">
 			      <Link to={`/casestudy/${casestudy.slug}`}>
+			      {/*
 			      <Img 
-			      className="is-250"
+			      className="is-200"
 			      imgStyle={{borderRadius: `290486px`}} 
 			      fluid ={casestudy.featured_media.localFile.childImageSharp.fluid}
-			      alt={casestudy.acf.client_name}/></Link>
-				  
-				  <div className="caseMeta has-text-right-desktop has-text-centered-mobile ">
+			      alt={casestudy.acf.client_name}/> */}
+			      <img style={{borderRadius: `290486px`}} src={casestudy.featured_media.source_url} alt={casestudy.acf.client_name}/>
+			      </Link>
+				  </div>
+				 <div className="columns caseMetaParent"> 
+				  <div className="column caseMeta has-text-right-desktop has-text-centered-mobile is-four-fifths">
 				  	 <em>Project</em>
 				  	 <h3>{casestudy.acf.project_event_name}</h3>
 				  	 <p>
@@ -64,6 +68,12 @@ const AllCases = (props) => {
 				  	 ))}
 				  	 </p>
 				  </div>
+				  <div className="column circle-casestudy-parent">
+				  	<div className="circle-casestudy">{i+1}</div>
+				  </div>
+				 </div> 
+				  
+				  
 			  </div>
 			))} 
 			 

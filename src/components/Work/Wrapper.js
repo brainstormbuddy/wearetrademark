@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Reel from './reel-bg@2x.png';
 
 const WorkStyle = styled.section`
 	@media screen and (max-width: 1023px){
@@ -6,8 +7,8 @@ const WorkStyle = styled.section`
 		background-color:transparent!important;
 		cursor: auto!important;	
 	}
-	.is-250{
-		max-width: 250px;
+	.is-200{
+		max-width: 200px;
 		margin: auto;
 	}
 	.caseMeta{
@@ -32,7 +33,25 @@ const WorkStyle = styled.section`
 		padding: 0.5rem 1rem; 
 	}
 	.latest-reel{
-		background-color: #F2ED66;
+		background: #FAF8C0 url(${Reel});
+		background-repeat: no-repeat;
+		background-position: 0% 50%;
+	}
+	.reelTxt::before{
+		content: "";
+	    border-left: 95px solid #66BFF2;
+	    height: 1px;
+	    position: absolute;
+	    left: 0;
+	    bottom: 30px;
+	}
+	.reelTxtSidebar::before{
+		content: "";
+		border-left: 70px solid #66BFF2;
+		height: 1px;
+	    position: absolute;
+	    left: 0;
+	    bottom: 30px;
 	}
 	
 	.allcases .columns{
@@ -67,13 +86,13 @@ const WorkStyle = styled.section`
 		font-weight: 700;
 	}
 	h3{
-		font-size: 18px;
-		font-weight: 400;
+		font-size: 16px;
+		font-weight: 500;
 		letter-spacing: 1.05px;
 		line-height: 20px;
 		color: #141825;
 		text-transform: uppercase;
-		min-height: 46px;
+		min-height: 36px;
 	}
 
 	
@@ -116,8 +135,21 @@ const WorkStyle = styled.section`
 	.sidebar-opened{
 		background-color: rgba(0,0,0,0.2);
 	}
+	.allcases .caseMeta{
+		padding: 1rem 2rem 1rem;
+	}
 	
-	
+	.allcases .caseMeta,
+	.allcases .circle-casestudy-parent{
+		border-right: 0;
+		border-bottom: 0;
+	}
+	.allcases .columns.caseMetaParent{
+		border-top:0;
+	}
+	.allcases .columns.caseMetaParent:last-child{
+		margin-bottom:0;
+	}
 	
 	
 	@media screen and (max-width: 768px){

@@ -6,7 +6,7 @@ export function filterSelection(c) {
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
+  }    
 }
 
 // Show filtered elements
@@ -33,4 +33,3 @@ export function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-

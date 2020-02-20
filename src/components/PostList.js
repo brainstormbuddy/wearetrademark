@@ -20,7 +20,9 @@ export default class IndexPage extends React.Component {
             <div className="columns postList" key={post.id}>
               <div className="column featuredImage" style={{order: count}}>
               <Link to={post.slug}>
-            <Img fluid ={post.featured_media.localFile.childImageSharp.fluid}/></Link> 
+			  {/*<Img fluid ={post.featured_media.localFile.childImageSharp.fluid}/> */}
+			  <img src={post.featured_media.source_url} alt="" />
+			  </Link> 
               </div>
               <div className="column" id={indexStyles.postContent}>
               <div className="postContentInner">
@@ -70,13 +72,7 @@ export const pageQuery = graphql`
       }
     }
     featured_media{
-	    localFile{
-		    childImageSharp{
-			    fluid(maxWidth: 500, quality: 100) {
-      				...GatsbyImageSharpFluid
-   				}
-		    }
-	    }
+	   source_url
     }
     date(formatString: "DD/MM/YYYY")
     slug
