@@ -146,7 +146,7 @@ export default CaseStudy => {
 							</div>
 								
 							<div className="infographics-info">
-								<Infographics />
+								{/*<Infographics />*/}
 							</div>
 						</div>
 					</div>

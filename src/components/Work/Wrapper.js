@@ -164,6 +164,19 @@ const WorkStyle = styled.section`
 			border-right: 0;
 			border-bottom: 1px solid #DBDBDB;
 		}
+		.allcases .column.caseMeta,
+		.allcases .circle-casestudy-parent{
+			border-top:0;
+			border-bottom:0;
+		}
+		.allcases .columns.caseMetaParent{
+			position: relative;	
+		}
+		.allcases .circle-casestudy-parent{
+			position: absolute;
+			right:20px;
+			top: 50%;	
+		}
 	}
 
 `;
