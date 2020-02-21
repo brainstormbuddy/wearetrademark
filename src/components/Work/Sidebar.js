@@ -101,7 +101,6 @@ class Sidebar extends Component {
   locationHandleClick = id => {
     this.setState({ activeLocLink: id });
   };
-
 	
 	
 	render(){

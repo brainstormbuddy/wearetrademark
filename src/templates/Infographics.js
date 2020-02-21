@@ -5,6 +5,11 @@ import Trash from './restore_from_trash_24px.svg'
 import Truck from './truck.svg'
 
 const InfoGraphics = () => {
+	
+	
+	
+	
+	
 	return (
 	<div id="infographics">
 		<h2>An unconventional space and experience designed for all</h2>

@@ -37,32 +37,24 @@ const WorkStyle = styled.section`
 		background-repeat: no-repeat;
 		background-position: 0% 50%;
 	}
-	.reelTxt,
-	.reelTxtSidebar{
-		position: relative;
-		left: -1rem;
-	}
-	
-	.reelTxtSidebar{
-		left: 1rem;
-	}
-	
-	.reelTxt::before{
-		content: "";
-	    border-left: 90px solid #66BFF2;
-	    height: 1px;
-	    position: absolute;
-	    left: 0;
-	    bottom: 20px;
-	}
-	.reelTxtSidebar::before{
-		content: "";
-		border-left: 90px solid #66BFF2;
+
+	.hrline{
+		background: #66BFF2;
 		height: 1px;
 	    position: absolute;
-	    left: -2rem;
-	    bottom: 20px;
+	    left: -16px;
+	    bottom: 10px;
+	    width: 100%;
 	}
+	.allhrline{
+		background: #66BFF2;
+		height: 1px;
+	    position: absolute;
+	    left: 0;
+	    bottom: 30px;
+	    width: 100%;
+	}
+	
 	
 	.allcases .columns{
 		border-top: 1px solid #DBDBDB;
@@ -80,7 +72,21 @@ const WorkStyle = styled.section`
 		//border-bottom: 1px solid #DBDBDB;
 		margin-bottom: 5rem;
 	}
+	.allcases .column:hover{
+		background-color:#f1ed67;
+	}
 	
+	.allcases .titleHeading .columns:last-child{
+		margin-bottom:0;
+	}
+	.allcases .titleHeading .columns{
+		border-top:0;
+	}
+	.allcases .titleHeading .columns .column{
+		border-right:0;
+		border-bottom:0;
+		padding: 0.75rem;
+	}
 	cite {
 		color: #8F91A3;
 		font-size: 12px;
@@ -114,16 +120,18 @@ const WorkStyle = styled.section`
     	text-transform: capitalize;
     	position: relative;
 	}
+/*
 	
 	p.heading::before{
 		content: "";
-		border-left: 80px solid #66BFF2;
+		background: #66BFF2;
 	    height: 1px;
 	    position: absolute;
-	    right: 0;
 	    left: 0;
 	    top: 60%;
+	    width: 33%;
 	}
+*/
 	
 	p{
 		color: #96A8B3;
@@ -186,6 +194,10 @@ const WorkStyle = styled.section`
 			position: absolute;
 			right:20px;
 			top: 50%;	
+		}
+		.hrline,
+		.allhrline{
+			display: none;	
 		}
 	}
 
