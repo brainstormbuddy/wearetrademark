@@ -37,7 +37,7 @@ class WorkPage extends Component {
 	
 	render(){
 		
-	let sidebarOpened='is-half-desktop is-one-third-widescreen is-one-quarter-fullhd';	
+	let sidebarOpened='is-third-desktop is-one-third-widescreen is-one-quarter-fullhd';	
 	let sidebarClosed='is-one-quarter-desktop';	
 	
 	
@@ -63,10 +63,9 @@ class WorkPage extends Component {
 			<div>
 				
 				{/* Close icon on sidebar opened in tablet, mobile mode*/}
-				<div className="close-filter has-text-right is-hidden-desktop is-hidden-widescreen is-hidden-fullhd">
-					<a onClick={() => this.onClose()} 
-					style={{color:`#4E6F7B`, fontSize:`15px`, fontWeight:`700`,padding:`1rem`}}>
-					X
+				<div className="close-filter has-text-right is-hidden-desktop is-hidden-widescreen is-hidden-fullhd" style={{position:`absolute`, right: `20px`, width: `14px`, height: `14px`}}>
+					<a onClick={() => this.onClose()}>
+					<svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M12.524 0L7 5.524 1.476 0 0 1.476 5.524 7 0 12.524 1.476 14 7 8.476 12.524 14 14 12.524 8.476 7 14 1.476z" fill-rule="evenodd"></path></svg>
 					</a>
 				</div>
 				

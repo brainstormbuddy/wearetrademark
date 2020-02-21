@@ -86,6 +86,7 @@ const WorkStyle = styled.section`
 		border-right:0;
 		border-bottom:0;
 		padding: 0.75rem;
+		background: none;
 	}
 	cite {
 		color: #8F91A3;

@@ -40,10 +40,23 @@ const RelativeCases = (props) => {
 			<div className="columns is-centered">
 			{data.allWordpressWpCasestudy.nodes.map((casestudy, i) => (
 			  <div key={casestudy.slug} className="column is-one-quarter-desktop is-one-quarter-tablet is-full-mobile">
-			      <div className=" has-text-centered">
-			      	<cite>Client</cite>	
-				  	<p className="heading hast-text-centered">{casestudy.title}</p>
+			      
+			      <div className="titleHeading has-text-left">
+				  	<div className="columns">
+				  		<div className="column is-3-tablet is-3-desktop" style={{position:`relative`}}>
+				  			<div className="allhrline"></div>
+				  		</div>
+				  		<div className="column">
+				  			<p 
+				  			className="heading hast-text-left-desktop has-text-centered-mobile" style={{padding: `0 10px 0 0`}}>
+				  			<cite>Client</cite><br />
+				  			{casestudy.title}
+				  			</p>
+				  		</div>
+				  	</div>	
 			      </div>
+			      
+			      
 			      <div className="is-200">
 			      <Link to={`/casestudy/${casestudy.slug}`}>
 			      {/*
