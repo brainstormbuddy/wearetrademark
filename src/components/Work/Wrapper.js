@@ -17,7 +17,7 @@ const WorkStyle = styled.section`
 	
 	.watch-video{
 		box-sizing: border-box;
-	}
+	}	
 	.filter-box a,
 	.watch-video a{
 		display: inline-flex;

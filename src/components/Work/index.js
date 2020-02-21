@@ -92,7 +92,7 @@ class WorkPage extends Component {
 				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`, marginTop: `0`}}>
 					<div className="column hero">
 						<div className="hero-body filter-box has-text-centered">
-							<a onClick={() => this.onClick()}>Filter -</a>
+							<a onClick={() => this.onClick()}>Filter</a>
 						</div>
 					</div>
 					<div className="column is-three-quarters-desktop is-full-mobile is-full-tablet hero latest-reel">

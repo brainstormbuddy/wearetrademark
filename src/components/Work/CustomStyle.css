@@ -100,7 +100,9 @@
 	top: 24px;
 	z-index: 1;
 }
-
+.filter-categories ul li.active_item a::after{
+	background-image: url(White_check_cat.png);
+}
 
 
 .filter-location ul li::after{
