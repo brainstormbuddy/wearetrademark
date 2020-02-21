@@ -23,6 +23,7 @@ const RelativeCases = (props) => {
 		          project_event_name
 		          location
 		          client_name
+		          icon_color
 		          client_category {
 			          value
 			          label
@@ -66,7 +67,7 @@ const RelativeCases = (props) => {
 				  	 </p>
 				  </div>
 				  <div className="column circle-casestudy-parent">
-				  	<div className="circle-casestudy">{i+1}</div>
+				  	<div className="circle-casestudy" style={{background:`${casestudy.acf.icon_color}`}}>{i+1}<span className="circle-casestudy-span" style={{borderRight:`30px solid ${casestudy.acf.icon_color}`}}></span></div>
 				  </div>
 				 </div>
 				  

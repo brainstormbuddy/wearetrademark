@@ -16,6 +16,7 @@
   background-color: #fff;
   color: #000;
   overflow-x: hidden;
+  transform: translateX(-10px);
   transition: all .8s ease-out;
   padding-top: 110px;
   height: 100%;
@@ -85,6 +86,23 @@
     left: 40px;
     top:30%;
 }
+
+.filter-location ul li.active_item a::after,
+.filter-categories ul li.active_item a::after{
+	content: '';
+	background-image: url(White_check.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 11px;
+	position: absolute;
+	left: 45px;
+	top: 24px;
+	z-index: 1;
+}
+
+
+
 .filter-location ul li::after{
 	border: 1px solid #fff;
 }
@@ -176,7 +194,7 @@
     font-size: 15px;
     font-weight: 700;
 }
-.circle-casestudy::before{
+.circle-casestudy-span{
 	content: '';
 	border-right: 30px solid #FFC709;
 	height: 1px;

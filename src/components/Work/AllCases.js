@@ -23,6 +23,7 @@ const AllCases = (props) => {
 		          project_event_name
 		          location
 		          client_name
+		          icon_color
 		          client_category {
 			          value
 			          label
@@ -54,10 +55,13 @@ const AllCases = (props) => {
 			      className="is-200"
 			      imgStyle={{borderRadius: `290486px`}} 
 			      fluid ={casestudy.featured_media.localFile.childImageSharp.fluid}
+			      </Link>
+				  </div>
 			      alt={casestudy.acf.client_name}/> */}
 			      <img style={{borderRadius: `290486px`}} src={casestudy.featured_media.source_url} alt={casestudy.acf.client_name}/>
 			      </Link>
-				  </div>
+			      </div>
+			      
 				 <div className="columns caseMetaParent"> 
 				  <div className="column caseMeta has-text-right-desktop has-text-centered-mobile is-four-fifths">
 				  	 <em>Project</em>
@@ -69,9 +73,10 @@ const AllCases = (props) => {
 				  	 </p>
 				  </div>
 				  <div className="column circle-casestudy-parent">
-				  	<div className="circle-casestudy">{i+1}</div>
+				  	<div className="circle-casestudy" style={{background:`${casestudy.acf.icon_color}`}}>{i+1}<span className="circle-casestudy-span" style={{borderRight:`30px solid ${casestudy.acf.icon_color}`}}></span>
+				  	</div>
 				  </div>
-				 </div> 
+				</div> 
 				  
 				  
 			  </div>

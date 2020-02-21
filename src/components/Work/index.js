@@ -19,16 +19,15 @@ class WorkPage extends Component {
 	constructor(props) {
 	   	super(props);
 	    this.state = {
-	      childVisible: false
+	      sidebarVisible: false
 	    }
 	}
 	
 	onClick() {
-    	this.setState({childVisible: !this.state.childVisible});
-    	//filterSelection('all');
+    	this.setState({sidebarVisible: !this.state.sidebarVisible});
   	}
   	onClose() {
-    	this.setState({childVisible: !this.state.childVisible});
+    	this.setState({sidebarVisible: false});
   	}
   	
   	componentDidMount() {
@@ -60,15 +59,15 @@ class WorkPage extends Component {
 	return (
 		
 		<div>
-			{this.state.childVisible ? (
+			{this.state.sidebarVisible ? (
 			<div>
-				<div className="sidebar hero" id="xSidebar" style={{width: `300px`}}>
+				<div className="sidebar hero" id="xSidebar" style={{width: `300px`, transform: `translateX(0px)`}}>
 					<div className="inner has-text-left">
 						<FilterSidebar />
 					</div>
 				</div>
 			
-				<WorkStyle onClick={() => this.onClick()} className="is-fullheight indexCaseStudies sidebar-opened" style={{marginLeft: `300px`, backgroundColor: `rgba(0,0,0,0.2)`, width:`100%`, height: `100%`, cursor: `pointer`, overflow:`hidden`}}>
+				<WorkStyle onClick={() => this.onClose()} className="is-fullheight indexCaseStudies sidebar-opened" style={{marginLeft: `300px`, backgroundColor: `rgba(0,0,0,0.2)`, width:`100%`, height: `100%`, cursor: `pointer`, overflow:`hidden`}}>
 				<div className="container is-fluid is-marginless">
 				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`}}>
 					<div className="column is-full-desktop is-full-mobile is-full-tablet hero latest-reel">

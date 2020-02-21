@@ -3,73 +3,167 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import { filterSelection, w3AddClass, w3RemoveClass } from './Filter'
 
-class Sidebar extends Component {
+class Sidebar extends Component {	
 	
-/*
-	const dataMy = useStaticQuery(graphql`
-		{
-		  allWordpressWpCasestudy{
-		    nodes {
-		        acf {
-		          location
-		          client_category {
-			        value
-			        label
-			      }
-		        }
-		    }
-		  }
-		}	
-	`)
-*/	
-	
+	state = {
+	    Categories: [
+	      {
+	        id: 1,
+	        name: "Company Parties",
+	        className: "btn yellow"
+	      },
+	      {
+	        id: 2,
+	        name: "Brand Activation",
+	        className: "btn red"
+	      },
+	      {
+	        id: 3,
+	        name: "Roadshows",
+	        className: "btn sky"
+	      },
+	      {
+	        id: 4,
+	        name: "Tradeshows",
+	        className: "btn green"
+	      },
+	      {
+	        id: 5,
+	        name: "Sales Meetings",
+	        className: "btn blue"
+	      },
+	      {
+	        id: 6,
+	        name: "Special Events",
+	        className: "btn orange"
+	      },
+	      {
+	        id: 7,
+	        name: "User Conference",
+	        className: "btn cyan"
+	      }
+	    ],
+	    activeCatLink: null,
+	    
+		Location: [
+	      {
+	        id: 1,
+	        name: "San Francisco",
+	        className: "btn"
+	      },
+	      {
+	        id: 2,
+	        name: "New Orleans",
+	        className: "btn"
+	      },
+	      {
+	        id: 3,
+	        name: "Washington",
+	        className: "btn"
+	      },
+	      {
+	        id: 4,
+	        name: "Orlando",
+	        className: "btn"
+	      },
+	      {
+	        id: 5,
+	        name: "Seattle",
+	        className: "btn"
+	      },
+	      {
+	        id: 6,
+	        name: "Hollywood",
+	        className: "btn"
+	      },
+	      {
+	        id: 7,
+	        name: "London",
+	        className: "btn"
+	      },
+	      {
+	        id: 8,
+	        name: "Sydney",
+	        className: "btn"
+	      },
+	      {
+	        id: 9,
+	        name: "Toronto",
+	        className: "btn"
+	      }
+	    ],
+	    activeLocLink: null
+  };
+
+  handleClick = id => {
+    this.setState({ activeCatLink: id });
+  };
+  locationHandleClick = id => {
+    this.setState({ activeLocLink: id });
+  };
+
 	
 	
 	render(){
-			
+		
+	const { Categories, Location, activeCatLink, activeLocLink } = this.state;
+    	
+		
 	return(
-	<div>
+		
+	<div>		
+		
 		<div className="filter-categories-parent">
 			<div className="filter-categories">
 				<em>Filter by: </em>
-				
+					
 					<ul>
-						<li className="btn yellow" onClick={() => filterSelection('Company Parties')}><a>Company Parties</a></li>
-						
-						<li className="btn red" onClick={() => filterSelection('Brand Activation')}><a>Brand Activation</a></li>
-						
-						<li className="btn sky" onClick={() => filterSelection('Roadshows')}><a>Roadshows</a></li>
-						<li className="btn green" onClick={() => filterSelection('Tradeshows')}><a>Tradeshows</a></li>
-						<li className="btn blue" onClick={() => filterSelection('Sales Meetings')}><a>Sales Meetings</a></li>
-						<li className="btn orange" onClick={() => filterSelection('Special Events')}><a>Special Events</a></li>
-						<li className="btn cyan" onClick={() => filterSelection('User Conference')}><a>User Conference</a></li>
-					</ul>
+						{Categories.map(category => {
+				          	return (
+				                <li
+				                  key={category.id}
+				                  onClick={() =>{ this.handleClick(category.id), filterSelection(category.name)}}
+				                  className={
+				                    category.className +
+				                    (category.id === activeCatLink ? " active_item" : "")
+				                  }
+				                >
+				                  <a>{category.name}</a> 
+				                </li>
+							);
+				        })}
+				    </ul>
 			</div>
 		</div>
 		
 		<div className="filter-location-parent">
 			<div className="filter-location">
 				<em>Location: </em>
+					
 					<ul>
-						<li className="btn" onClick={() => filterSelection('San Francisco')}><a>San Francisco</a></li>
-						<li className="btn" onClick={() => filterSelection('New Orleans')}><a>New Orleans</a></li>
-						<li className="btn" onClick={() => filterSelection('Washington')}><a>Washington D.C.</a></li>
-						
-						<li className="btn" onClick={() => filterSelection('Orlando')}><a>Orlando</a></li>
-						
-						<li className="btn" onClick={() => filterSelection('Seattle')}><a>Seattle</a></li>
-						<li className="btn" onClick={() => filterSelection('Hollywood')}><a>Hollywood</a></li>
-						<li className="btn" onClick={() => filterSelection('London')}><a>London</a></li>
-						<li className="btn" onClick={() => filterSelection('Sydney')}><a>Sydney</a></li>
-						<li className="btn" onClick={() => filterSelection('Toronto')}><a>Toronto</a></li>
-					</ul>
+						{Location.map(location => {
+				          	return (
+				                <li
+				                  key={location.id}
+				                  onClick={() =>{ this.locationHandleClick(location.id), filterSelection(location.name)}}
+				                  className={
+				                    location.className +
+				                    (location.id === activeLocLink ? " active_item" : "")
+				                  }
+				                >
+				                  <a>{location.name}</a> 
+				                </li>
+							);
+				        })}
+				    </ul>
+					
 			</div>
 		</div>
 						
 		<div className="filter-reset-parent">
 			<div className="filter-reset">
 				<ul>
-				<li className="btn" onClick={() => filterSelection('all')}><a>Reset</a></li>
+					<li className="btn" onClick={() => filterSelection('all')}><a>Reset</a></li>
 				</ul>
 			</div>
 		</div>

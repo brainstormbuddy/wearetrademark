@@ -37,21 +37,31 @@ const WorkStyle = styled.section`
 		background-repeat: no-repeat;
 		background-position: 0% 50%;
 	}
+	.reelTxt,
+	.reelTxtSidebar{
+		position: relative;
+		left: -1rem;
+	}
+	
+	.reelTxtSidebar{
+		left: 1rem;
+	}
+	
 	.reelTxt::before{
 		content: "";
-	    border-left: 95px solid #66BFF2;
+	    border-left: 90px solid #66BFF2;
 	    height: 1px;
 	    position: absolute;
 	    left: 0;
-	    bottom: 30px;
+	    bottom: 20px;
 	}
 	.reelTxtSidebar::before{
 		content: "";
-		border-left: 70px solid #66BFF2;
+		border-left: 90px solid #66BFF2;
 		height: 1px;
 	    position: absolute;
-	    left: 0;
-	    bottom: 30px;
+	    left: -2rem;
+	    bottom: 20px;
 	}
 	
 	.allcases .columns{
@@ -98,14 +108,14 @@ const WorkStyle = styled.section`
 	
 	p.heading {
     	padding: 0 10px 20px;
-    	font-size: 29px;
+    	font-size: 25px;
     	line-height: 29px;
     	color: #141825;
     	text-transform: capitalize;
     	position: relative;
 	}
 	
-	p.heading::after{
+	p.heading::before{
 		content: "";
 		border-left: 80px solid #66BFF2;
 	    height: 1px;
