@@ -13,7 +13,6 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #fff;
   color: #000;
   overflow-x: hidden;
   transform: translateX(-10px);
@@ -229,5 +228,20 @@
 		right: 0;
 		margin: 0 auto;
 		padding-top: 0;
-	}	
+	}
+	.filter-location ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.filter-location ul li a{
+		padding-left: 0;
+	}
+	.filter-location ul li::after{
+		left: auto;
+		right: 0;
+	}
+	.filter-location ul li.active_item a::after{
+		left:inherit;
+		right: 5px;
+	}
 }

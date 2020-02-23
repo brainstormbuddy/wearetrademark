@@ -63,7 +63,7 @@ class WorkPage extends Component {
 			<div>
 				
 				{/* Close icon on sidebar opened in tablet, mobile mode*/}
-				<div className="close-filter has-text-right is-hidden-desktop is-hidden-widescreen is-hidden-fullhd" style={{position:`absolute`, right: `20px`, width: `14px`, height: `14px`}}>
+				<div className="close-filter has-text-right is-hidden-desktop is-hidden-widescreen is-hidden-fullhd" style={{position:`fixed`, right: `20px`, width: `14px`, height: `14px`, zIndex: `1`}}>
 					<a onClick={() => this.onClose()}>
 					<svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M12.524 0L7 5.524 1.476 0 0 1.476 5.524 7 0 12.524 1.476 14 7 8.476 12.524 14 14 12.524 8.476 7 14 1.476z" fill-rule="evenodd"></path></svg>
 					</a>
@@ -80,19 +80,20 @@ class WorkPage extends Component {
 				<div className="container is-fluid is-marginless">
 				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`}}>
 					<div className="column is-full-desktop is-full-mobile is-full-tablet hero latest-reel">
-						<div className="columns hero-body is-vcentered" style={{padding: `3rem 1rem`}}>
-							<div className="column is-full-mobile is-half-tablet is-5-desktop is-4-widescreen is-3-fullhd">
-							<div className="columns">
-								<div className="column" style={{position:`relative`}}>
+						<div className="columns hero-body is-vcentered" style={{padding: `3rem 0`}}>
+							<div className="column is-full-mobile is-half-tablet is-12-desktop is-12-widescreen is-12-fullhd">
+							<div className="columns is-vcentered">
+								<div className="column is-1" style={{position:`relative`}}>
 									<div className="hrline"></div>
 								</div>
-								<div classame="column">
-									<h2 className="has-text-right-desktop has-text-centered-mobile reelTxtSidebar">Our latest reel</h2>
+								<div classame="column is-5-tablet is-5-desktop is-4-widescreen is-3-fullhd">
+									<h2 className="has-text-left-desktop has-text-centered-mobile reelTxtSidebar">Our latest reel</h2>
 								</div>
+								<div className="column is-3-desktop is-full-mobile is-6-tablet"><ModalVideo /></div>
 							</div>
 								
 							</div>
-							<div className="column is-3-desktop is-full-mobile is-half-tablet"><ModalVideo /></div>
+							
 						</div>
 					</div>
 				</div>
@@ -114,18 +115,19 @@ class WorkPage extends Component {
 					</div>
 					<div className="column is-three-quarters-desktop is-full-mobile is-full-tablet hero latest-reel">
 						<div className="columns hero-body is-vcentered" style={{padding: `3rem 1rem`}}>
-							<div className="column is-full-mobile is-half-tablet is-6-desktop is-5-widescreen is-4-fullhd">
-							<div className="columns">
-								<div className="column" style={{position:`relative`}}>
+							<div className="column is-full-mobile is-half-tablet is-12-desktop is-12-widescreen is-12-fullhd">
+							<div className="columns is-vcentered">
+								<div className="column is-1" style={{position:`relative`}}>
 									<div className="hrline"></div>
 								</div>
-								<div classame="column">
-									<h2 className="has-text-right-desktop has-text-centered-mobile reelTxt">Our latest reel</h2>
+								<div className="column is-5-tablet is-5-desktop is-4-widescreen is-3-fullhd" style={{padding: `0`}}>
+									<h2 className="has-text-left-desktop has-text-centered-mobile reelTxt">Our latest reel</h2>
 								</div>
+								<div className="column is-3-desktop is-full-mobile is-6-tablet"><ModalVideo /></div>
 							</div>	
 								
 							</div>
-							<div className="column is-3-desktop is-full-mobile is-half-tablet"><ModalVideo /></div>
+							
 						</div>
 					</div>
 				</div>

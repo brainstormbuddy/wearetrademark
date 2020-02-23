@@ -98,8 +98,8 @@ const WorkStyle = styled.section`
 	
 	h2{
 		color: #141825;
-		font-size: 45px;
-		line-height: 71px;
+		font-size: 50px;
+		line-height: 40px;
 		font-weight: 700;
 	}
 	h3{
