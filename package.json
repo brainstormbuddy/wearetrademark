@@ -5,6 +5,7 @@
   "author": "Zakir Sajib",
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.17",
+    "@u-wave/react-vimeo": "^0.8.1",
     "babel-plugin-styled-components": "^1.10.6",
     "bulma": "^0.7.5",
     "gatsby": "^2.19.12",

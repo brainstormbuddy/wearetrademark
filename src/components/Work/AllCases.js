@@ -2,6 +2,8 @@ import React from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import Vimeo from '@u-wave/react-vimeo'
+
 import WorkStyle from './Wrapper'
 
 const AllCases = (props) => {
@@ -44,6 +46,7 @@ const AllCases = (props) => {
 			<div className="columns is-multiline">
 			{data.allWordpressWpCasestudy.nodes.map((casestudy, i) => (
 			  <div key={i} className={"filterDiv show column is-one-quarter-tablet is-full-mobile" + " " + props.sidebarClassName + " " + casestudy.acf.location + " " + casestudy.acf.client_category.map((categoryName, n) => (categoryName.value))}>
+			  <Link to={`/casestudy/${casestudy.slug}`}>
 			      <div className="titleHeading has-text-left">
 				  	<div className="columns">
 				  		<div className="column is-3-tablet is-3-desktop" style={{position:`relative`}}>
@@ -69,6 +72,20 @@ const AllCases = (props) => {
 				  </div>
 			      alt={casestudy.acf.client_name}/> */}
 			      <img style={{borderRadius: `290486px`}} src={casestudy.featured_media.source_url} alt={casestudy.acf.client_name}/>
+			      
+			      <div id="vimeoVideo">
+			      	<Vimeo 
+			      		video={casestudy.acf.video_url} 
+				  		autoplay={true}
+				  		autopause={true}
+				  		muted 
+				  		width={`100%`} 
+				  		height={`100%`} 
+				  		loop={true}
+				  		controls={false}
+			      	/>
+			      </div>
+			      
 			      </Link>
 			      </div>
 			      
@@ -88,7 +105,7 @@ const AllCases = (props) => {
 				  </div>
 				</div> 
 				  
-				  
+				</Link>  
 			  </div>
 			))} 
 			 

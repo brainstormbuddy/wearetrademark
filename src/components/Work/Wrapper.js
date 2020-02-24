@@ -10,7 +10,76 @@ const WorkStyle = styled.section`
 	.is-200{
 		max-width: 200px;
 		margin: auto;
+		height: 200px;
 	}
+	
+	
+	.allcases .filterDiv img{
+		opacity: 0;
+		transform: translate3d(0,0,0);
+	}
+	
+	.allcases .filterDiv:first-child img {
+		transition-delay: .5s;
+		opacity: 1;
+	}
+	.allcases .filterDiv:nth-child(2) img {
+		transition-delay: .6s;
+		opacity: 1;
+	}
+	.allcases .filterDiv:nth-child(3) img {
+		transition-delay: .7s;opacity: 1;
+	}
+	.allcases .filterDiv:nth-child(4) img {
+		transition-delay: .8s;opacity: 1;
+	}
+	.allcases .filterDiv:nth-child(5) img {
+		transition-delay: .9s;opacity: 1;
+	}
+	.allcases .filterDiv:nth-child(6) img {
+		transition-delay: .10s;opacity: 1;
+	}
+	.allcases .filterDiv:nth-child(7) img {
+		transition-delay: .11s;opacity: 1;
+	}
+	.allcases .filterDiv:nth-child(8) img {
+		transition-delay: .12s;opacity: 1;
+	}
+	.allcases .filterDiv:nth-child(9) img {
+		transition-delay: .13s;opacity: 1;
+	}
+	.allcases .filterDiv:nth-child(10) img {
+		transition-delay: .14s;opacity: 1;
+	}
+	.is-200:hover img,
+	.filterDiv:hover img {
+		//transition: all .2s ease-in-out;
+    	//transform: scale(1.1);
+    	display: none;
+	}	
+	.filterDiv:hover #vimeoVideo {
+		transform: scale(1.1);
+    	display: block;	
+    }
+	#vimeoVideo {
+		width: 200px;
+		height: 200px;
+		border-radius: 290486px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+		transition: all .2s ease-in-out;
+	}
+	#vimeoVideo iframe{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top:0;
+		left:0;
+		transition: all .2s ease-in-out;
+		transform: scale(1.8);	
+	}
+	
 	.caseMeta{
 		padding-right: 3rem;
 	}
@@ -155,7 +224,7 @@ const WorkStyle = styled.section`
 		background-color: rgba(0,0,0,0.2);
 	}
 	.allcases .caseMeta{
-		padding: 1rem 2rem 1rem;
+		padding: 0 2rem 1rem;
 	}
 	
 	.allcases .caseMeta,
@@ -165,11 +234,13 @@ const WorkStyle = styled.section`
 	}
 	.allcases .columns.caseMetaParent{
 		border-top:0;
+		padding-top: 1.5rem;
 	}
 	.allcases .columns.caseMetaParent:last-child{
 		margin-bottom:0;
 	}
 	
+	#vimeoVideo{display:none;}
 	
 	@media screen and (max-width: 768px){
 		.image{
