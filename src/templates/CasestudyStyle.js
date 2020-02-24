@@ -180,11 +180,19 @@ const CaseStudyStyle = styled.div`
 		border-top: 0;
 		margin-top: 0;
 	}
+	
 	.related-article .allcases .column{
 		background-color: rgba(255,255,255,0.9);
 		width: 30%;
 		border-bottom: 0;
 		padding: 2rem 1rem;
+	}
+	.related-article .allcases .column:hover img{
+		display: none;
+	}
+	.related-article .allcases .column:hover #vimeoVideo{
+		transform: scale(1.1);
+    	display: block;
 	}
 	
 	

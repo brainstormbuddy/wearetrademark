@@ -2,6 +2,8 @@ import React from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import Vimeo from '@u-wave/react-vimeo'
+
 import WorkStyle from './Wrapper'
 
 const RelativeCases = (props) => {
@@ -66,6 +68,17 @@ const RelativeCases = (props) => {
 			      fluid ={casestudy.featured_media.localFile.childImageSharp.fluid}
 			      alt={casestudy.acf.client_name}/> */}
 			      <img style={{borderRadius: `290486px`}} src={casestudy.featured_media.source_url} alt={casestudy.acf.client_name}/>
+			      <div id="vimeoVideo"><span style={{position:`absolute`,top:`50%`,left: `0`,right:`0`,textAlign:`center`}}>Video is loading.<br />Please wait...</span>
+			      	<Vimeo 
+			      		video={casestudy.acf.video_url} 
+				  		autoplay={true}
+				  		muted 
+				  		width={`100%`} 
+				  		height={`100%`} 
+				  		loop={true}
+				  		controls={false}
+			      	/>
+			      </div>
 			      </Link>
 				  </div>
 				  

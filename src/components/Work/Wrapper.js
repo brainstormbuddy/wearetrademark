@@ -56,7 +56,8 @@ const WorkStyle = styled.section`
 		//transition: all .2s ease-in-out;
     	//transform: scale(1.1);
     	display: none;
-	}	
+	}
+	.related-article .allcases .column:hover #vimeoVideo,	
 	.filterDiv:hover #vimeoVideo {
 		transform: scale(1.1);
     	display: block;	
