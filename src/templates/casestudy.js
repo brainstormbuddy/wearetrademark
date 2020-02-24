@@ -75,7 +75,7 @@ export default CaseStudy => {
 								<div id="vimeoVideo">
 						      	<Vimeo 
 						      		video={singleCaseStudy.acf.video_url} 
-							  		autoplay={false}
+							  		autoplay={true}
 							  		muted 
 							  		loop={true}
 							  		controls={false}
@@ -87,7 +87,7 @@ export default CaseStudy => {
 								<div id="vimeoVideo">
 									<Vimeo 
 							      		video={singleCaseStudy.acf.video_url} 
-								  		autoplay={false}
+								  		autoplay={true}
 								  		muted 
 								  		loop={true}
 								  		controls={false}
