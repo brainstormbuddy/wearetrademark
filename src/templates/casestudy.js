@@ -8,6 +8,7 @@ import { Carousel } from 'react-responsive-carousel'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import RelativeCase from '../components/Work/RelativeCases'
+import Vimeo from '@u-wave/react-vimeo'
 import ModalVideo from './CasestudyModalVideo'
 
 import Infographics from './Infographics'
@@ -54,10 +55,7 @@ export default CaseStudy => {
 	  backgroundPosition: `center`,
 	  backgroundRepeat: `no-repeat`,
 	  backgroundSize: `cover`
-  	}
-  	
-    	
-  	
+  	}  	
   		
 	return (
 		<Layout>
@@ -69,14 +67,33 @@ export default CaseStudy => {
 			<CaseStudyStyle>
 		      	<section className="hero is-fullheight">
 		      		<div className="columns is-vcentered is-marginless casestudyHeader">
-						<div className="column hero is-7 is-paddingless">
+						<div className="column hero is-7 is-paddingless" style={{position:`relative`}}>
 							<div className="has-text-centered">
 							{firstImage ? (
-								<img src={singleCaseStudy.acf.first_image.source_url} alt={singleCaseStudy.acf.client_name} />
-								
+								<div>
+								<img className="hideMe" src={singleCaseStudy.acf.first_image.source_url} alt={singleCaseStudy.acf.client_name} />
+								<div id="vimeoVideo">
+						      	<Vimeo 
+						      		video={singleCaseStudy.acf.video_url} 
+							  		autoplay={false}
+							  		muted 
+							  		loop={true}
+							  		controls={false}
+						      	/>
+						      </div></div>								
 							) :
-							<img src="https://via.placeholder.com/1193x1220.png?text=No+Image+Found" alt="No image" />	
-								
+							<div>
+							<img src="https://via.placeholder.com/1193x1220.png?text=No+Image+Found" alt="No image" className="hideMe" />	
+								<div id="vimeoVideo">
+									<Vimeo 
+							      		video={singleCaseStudy.acf.video_url} 
+								  		autoplay={false}
+								  		muted 
+								  		loop={true}
+								  		controls={false}
+							      	/>
+							      </div>
+						      </div>
 							}
 							</div>
 						</div>

@@ -211,7 +211,52 @@ const CaseStudyStyle = styled.div`
 	.related-article .allcases .columns:last-child{
 		margin-bottom: 0;
 	}
+	.casestudyHeader #vimeoVideo{
+		position: absolute;
+		top: -1px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: scale(1.005);
+	}
 	
+	.casestudyHeader #vimeoVideo iframe{
+		position: absolute;
+		left:0;
+		top:0;
+		width: 100%;
+		height: 100%;
+		transform: scaleY(1.83);
+	}
+	
+	
+	.hideMe {
+	  -webkit-animation: seconds 1.0s forwards;
+	  -webkit-animation-iteration-count: 1;
+	  -webkit-animation-delay: .5s;
+	  animation: seconds 1s forwards;
+	  animation-iteration-count: 1;
+	  animation-delay: .5s;
+	  position: relative;
+	}
+	@-webkit-keyframes seconds {
+	  0% {
+	    opacity: 1;
+	  }
+	  100% {
+	    opacity: 0;
+	    left: -9999px; 
+	  }
+	}
+	@keyframes seconds {
+	  0% {
+	    opacity: 1;
+	  }
+	  100% {
+	    opacity: 0;
+	    left: -9999px; 
+	  }
+	}
 	
 	@media screen and (min-width: 769px){
 		.hero.is-small .hero-body {
