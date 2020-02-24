@@ -161,8 +161,10 @@ export default CaseStudy => {
 						  		controls={true}
 					      	/>
 					  	 	</div>
+					  	 	<a onClick={closeModal}> <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{position:`absolute`, right:`10px`, bottom:`10px`, zIndex:`10`}}/></a>
+					  	 	
+					  	 	
 					  	 	</Modal>
-					  	 	{/*<ModalVideo videoID = {singleCaseStudy.acf.video_url} /> */}
 					  	 </div>									
 						
 						</div> {/*end column */}

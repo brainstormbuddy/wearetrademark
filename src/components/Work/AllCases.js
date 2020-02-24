@@ -63,15 +63,16 @@ const AllCases = (props) => {
 			      </div>
 			      <div className="is-200">
 			      <Link to={`/casestudy/${casestudy.slug}`}>
-			      {/*
-			      <Img 
+			      
+			      {/*<Img 
 			      className="is-200"
 			      imgStyle={{borderRadius: `290486px`}} 
 			      fluid ={casestudy.featured_media.localFile.childImageSharp.fluid}
-			      </Link>
-				  </div>
 			      alt={casestudy.acf.client_name}/> */}
-			      <img style={{borderRadius: `290486px`}} src={casestudy.featured_media.source_url} alt={casestudy.acf.client_name}/>
+			      {/*</Link>
+				  </div> */}
+			      
+			      <img style={{borderRadius: `290486px`}} src={casestudy.featured_media.source_url} alt={casestudy.acf.client_name}/> 
 			      
 			      <div id="vimeoVideo"><span style={{position:`absolute`,top:`50%`,left: `0`,right:`0`,textAlign:`center`}}>Video is loading.<br />Please wait...</span>
 			      	<Vimeo 
