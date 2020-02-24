@@ -258,6 +258,22 @@ const CaseStudyStyle = styled.div`
 	  }
 	}
 	
+	.casestudyHeader .modal-video{
+		//position: absolute;
+	}
+	.casestudyHeader .modal-video-body{
+		max-width: 100vw;
+	}
+	.casestudyHeader .modal-video-close-btn{
+		top: 50px;
+		right: 10px;
+	}
+	
+	
+	
+	
+	
+	
 	@media screen and (min-width: 769px){
 		.hero.is-small .hero-body {
 			padding-bottom: 4rem;

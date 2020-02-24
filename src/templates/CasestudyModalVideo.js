@@ -23,7 +23,11 @@ class CaseStudyModalVideo extends React.Component {
   render () {
     return (
       <div>
-        <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId={this.props.videoID} onClose={() => this.setState({isOpen: false})} />
+        <ModalVideo channel='vimeo' 
+        	vimeo={{
+	        	autoplay:`true`
+	        }}
+	        isOpen={this.state.isOpen} videoId={this.props.videoID} onClose={() => this.setState({isOpen: false})} />
         <div className="watch-video has-text-left-fullhd has-text-left-widescreen has-text-left-desktop has-text-left-tablet has-text-centered-mobile">
 			<a onClick={this.openModal}>Full Screen Video <img src={FullscreenIcon} 
 				alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `15px`}}/></a>
