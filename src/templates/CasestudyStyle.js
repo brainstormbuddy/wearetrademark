@@ -234,9 +234,9 @@ const CaseStudyStyle = styled.div`
 	  -webkit-animation: seconds 1.0s forwards;
 	  -webkit-animation-iteration-count: 1;
 	  -webkit-animation-delay: .5s;
-	  animation: seconds 1s forwards;
+	  animation: seconds 0.5 forwards;
 	  animation-iteration-count: 1;
-	  animation-delay: .5s;
+	  animation-delay: .25s;
 	  position: relative;
 	}
 	@-webkit-keyframes seconds {
