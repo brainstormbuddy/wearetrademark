@@ -273,7 +273,6 @@ const CaseStudyStyle = styled.div`
 	
 	
 	
-	
 	@media screen and (min-width: 769px){
 		.hero.is-small .hero-body {
 			padding-bottom: 4rem;

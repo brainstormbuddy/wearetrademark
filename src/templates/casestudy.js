@@ -9,7 +9,12 @@ import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import RelativeCase from '../components/Work/RelativeCases'
 import Vimeo from '@u-wave/react-vimeo'
-import ModalVideo from './CasestudyModalVideo'
+//import ModalVideo from './CasestudyModalVideo'
+
+import ReactDOM from 'react-dom'
+import Modal from 'react-modal'
+
+import FullscreenIcon from './fullscreen.svg'
 
 import Infographics from './Infographics'
 
@@ -56,6 +61,30 @@ export default CaseStudy => {
 	  backgroundRepeat: `no-repeat`,
 	  backgroundSize: `cover`
   	}  	
+  	
+  	const customStyles = {
+	  content : {
+	    top                   : '0',
+	    left                  : '0',
+	    right                 : 'auto',
+	    bottom                : 'auto',
+	    border: '0',
+	    background: 'transparent',
+	    overflow: 'hidden',
+	    borderRadius: '0',
+	    padding: '0',
+	    width: '100%',
+	    height: '100%'
+	  }
+	};
+	
+	const [modalIsOpen,setIsOpen] = React.useState(false);
+	function openModal() {
+    	setIsOpen(true);
+  	}
+	function closeModal(){
+    	setIsOpen(false);
+  	}	
   		
 	return (
 		<Layout>
@@ -75,7 +104,10 @@ export default CaseStudy => {
 								<div id="vimeoVideo">
 						      	<Vimeo 
 						      		video={singleCaseStudy.acf.video_url} 
-							  		autoplay={false}
+							  		autoplay={true}
+							  		autopause={true}
+							  		background={true}
+							  		paused={true}
 							  		muted 
 							  		loop={true}
 							  		controls={false}
@@ -112,7 +144,25 @@ export default CaseStudy => {
 						  	<div dangerouslySetInnerHTML={{ __html: singleCaseStudy.content }} />
 					      
 					  	 <div style={{paddingTop: `1.5rem`}}>
-					  	 	<ModalVideo videoID = {singleCaseStudy.acf.video_url} />
+					  	 	<div className="watch-video has-text-left-fullhd has-text-left-widescreen has-text-left-desktop has-text-left-tablet has-text-centered-mobile">
+					  	 	<a onClick={openModal}>Full Screen Video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `15px`}}/></a>
+					  	 	</div>
+					  	 	<Modal
+					          isOpen={modalIsOpen}
+					          onRequestClose={closeModal}
+					          style={customStyles}
+					        >
+					  	 	<div className="fullsizedVideo">
+					  	 	<Vimeo 
+					      		video={singleCaseStudy.acf.video_url} 
+						  		autoplay={true}
+						  		muted 
+						  		loop={true}
+						  		controls={true}
+					      	/>
+					  	 	</div>
+					  	 	</Modal>
+					  	 	{/*<ModalVideo videoID = {singleCaseStudy.acf.video_url} /> */}
 					  	 </div>									
 						
 						</div> {/*end column */}
