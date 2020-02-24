@@ -73,11 +73,10 @@ const AllCases = (props) => {
 			      alt={casestudy.acf.client_name}/> */}
 			      <img style={{borderRadius: `290486px`}} src={casestudy.featured_media.source_url} alt={casestudy.acf.client_name}/>
 			      
-			      <div id="vimeoVideo">
+			      <div id="vimeoVideo"><span style={{position:`absolute`,top:`50%`,left: `0`,right:`0`,textAlign:`center`}}>Video is loading.<br />Please wait...</span>
 			      	<Vimeo 
 			      		video={casestudy.acf.video_url} 
 				  		autoplay={true}
-				  		autopause={true}
 				  		muted 
 				  		width={`100%`} 
 				  		height={`100%`} 
