@@ -200,7 +200,7 @@ export default CaseStudy => {
 					style={{backgroundColor: `${singleCaseStudy.acf.background_color_info}`, position:`relative` }}>
 					<div className="hero-body">
 						<div className="container">
-							<div className="columns is-multiline infographics">
+							<div className="columns is-multiline infographics has-text-centered-mobile">
 								<div className="column is-2 has-border-left has-border-right">
 									<em>Client:</em>
 									<div>{singleCaseStudy.acf.client_name}</div>

@@ -295,6 +295,12 @@ const CaseStudyStyle = styled.div`
 	@media screen and (max-width: 1074px){
 		.scroller-section{display:none;}
 	}
+	@media screen and (max-width: 1024px){
+		.rightSideImage{
+			right: 0;
+			width: 10%;
+		}
+	}
 	@media screen and (max-width: 768px){
 		.client-details{
 			padding: 0.75rem;
@@ -326,6 +332,25 @@ const CaseStudyStyle = styled.div`
 			width: 100%;
 			border-bottom: 1px solid #DBDBDB;
 		}
+		.starShaped{
+			height: 350px!important;
+			margin-bottom: 5rem;
+		}
+		#infographics .captionInfo{
+			top: 100%;
+		}
+		.brandActivationImage{
+			position: relative!important;
+			right:0!important;
+			top:0!important;
+			max-width: 100%!important;
+			height: 100%!important;
+		}
+		#infographics .level .level-item.mid{
+			max-width: 100%!important;
+			font-size:45px!important;
+		}
+		.rightSideImage{display:none!important;}
 	}
 
 `;
