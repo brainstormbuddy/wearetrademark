@@ -13,17 +13,19 @@
 }
 
 #infographics h2{
-	font-size: 40px;
+	font-size: 50px;
 	color: #FFFFFF;
 	line-height: 60px;
+	font-weight: 700;
 }
 #infographics h3{
-	font-size: 30px;
+	font-size: 32px;
 	color: #FFFFFF;
+	font-weight: 700;
 }
 
 #infographics p{
-	font-size: 18px;
+	font-size: 14px;
 	color: #FFFFFF;
 	font-weight: 400;
 	line-height: 25px;
@@ -33,6 +35,61 @@
 	color: #FFFFFF;
 	font-weight: 400;
 	line-height: 25px;
+}
+
+
+#infographics .numberInfo{
+	position: absolute;
+    top: 1.2em;
+    left: 0;
+    right: 0;
+    color: #0D1B23;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Maven Pro';
+}
+
+#infographics .captionInfo{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 18em;
+	font-size:18px;
+	font-weight: 600;
+	line-height: 1.35;
+	text-align: center;
+	letter-spacing: 2.03px;
+	text-transform:uppercase;
+	color: #fff;
+}
+#infographics hr {
+    background-color: #66BFF2;
+    height: 1px;
+    margin: 1rem 0;
+}
+
+.bigText{
+	color: #FFFFFF;
+	font-family: "Maven Pro";
+	font-size: 40.79px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.smallText{
+	color: #FFFFFF;
+	font-family: "Maven Pro";
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 2.03px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+#colTwo,
+#colThree{
+	position: relative;
+	top:-200px;
 }
 
 .fullsizedVideo iframe{

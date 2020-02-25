@@ -8,6 +8,11 @@ body{
 
 h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
 
+hr{
+	background-color: #66BFF2;
+	height: 1px;
+    margin: 1rem 0;
+}
 .slide-down #navMenu {
 	padding-top: 30px;	
 }

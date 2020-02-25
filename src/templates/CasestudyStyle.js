@@ -113,6 +113,13 @@ const CaseStudyStyle = styled.div`
 		padding-right: 3rem;
 	}
 	
+	.rightSideImage{
+		position:absolute;
+		right:-100px;
+		bottom: 50px;
+		width: 21%;
+	}
+	
 	.has-border-right,
 	.has-border-left{
 		padding: 0 0.75rem;
@@ -202,7 +209,8 @@ const CaseStudyStyle = styled.div`
 		padding: 1rem 2rem;
 	}
 	
-	.related-article .allcases .column p{
+	.related-article .allcases .column p,
+	.related-article .allcases .column p a{
 		color: #96A8B3;
 	}
 	.related-article .allcases .column:last-child{

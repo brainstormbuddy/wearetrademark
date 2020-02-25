@@ -52,7 +52,7 @@ const RelativeCases = (props) => {
 				  			<p 
 				  			className="heading hast-text-left-desktop has-text-centered-mobile" style={{padding: `0 10px 0 0`}}>
 				  			<cite>Client</cite><br />
-				  			{casestudy.title}
+				  		<Link to={`/casestudy/${casestudy.slug}`}>{casestudy.title}</Link>
 				  			</p>
 				  		</div>
 				  	</div>	
@@ -73,8 +73,8 @@ const RelativeCases = (props) => {
 			      		video={casestudy.acf.video_url} 
 				  		autoplay={true}
 				  		muted 
-				  		width={`100%`} 
-				  		height={`100%`} 
+				  		width={100} 
+				  		height={100} 
 				  		loop={true}
 				  		controls={false}
 			      	/>

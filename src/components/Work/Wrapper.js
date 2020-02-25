@@ -191,6 +191,9 @@ const WorkStyle = styled.section`
     	text-transform: capitalize;
     	position: relative;
 	}
+	p.heading a{
+		color: #141825;
+	}
 /*
 	
 	p.heading::before{

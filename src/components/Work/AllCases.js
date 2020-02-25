@@ -46,7 +46,6 @@ const AllCases = (props) => {
 			<div className="columns is-multiline">
 			{data.allWordpressWpCasestudy.nodes.map((casestudy, i) => (
 			  <div key={i} className={"filterDiv show column is-one-quarter-tablet is-full-mobile" + " " + props.sidebarClassName + " " + casestudy.acf.location + " " + casestudy.acf.client_category.map((categoryName, n) => (categoryName.value))}>
-			  <Link to={`/casestudy/${casestudy.slug}`}>
 			      <div className="titleHeading has-text-left">
 				  	<div className="columns">
 				  		<div className="column is-3-tablet is-3-desktop" style={{position:`relative`}}>
@@ -56,7 +55,7 @@ const AllCases = (props) => {
 				  			<p 
 				  			className="heading hast-text-left-desktop has-text-centered-mobile" style={{padding: `0 10px 0 0`}}>
 				  			<cite>Client</cite><br />
-				  			{casestudy.title}
+				  		<Link to={`/casestudy/${casestudy.slug}`}>{casestudy.title}</Link>
 				  			</p>
 				  		</div>
 				  	</div>	
@@ -79,10 +78,11 @@ const AllCases = (props) => {
 			      		video={casestudy.acf.video_url} 
 				  		autoplay={true}
 				  		muted 
-				  		width={`100%`} 
-				  		height={`100%`} 
+				  		width={100} 
+				  		height={100} 
 				  		loop={true}
 				  		controls={false}
+				  		autopause={false}
 			      	/>
 			      </div>
 			      
@@ -105,7 +105,6 @@ const AllCases = (props) => {
 				  </div>
 				</div> 
 				  
-				</Link>  
 			  </div>
 			))} 
 			 
