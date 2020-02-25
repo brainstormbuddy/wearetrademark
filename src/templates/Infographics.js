@@ -51,7 +51,9 @@ const InfoGraphics = (props) => {
 				<div dangerouslySetInnerHTML={{ __html: props.info.acf.description_info }} />
 			</div>
 			<div className="column has-text-centered">
+			{props.info.acf.venue__logistics_label ? (
 				<p style={{fontFamily:`Maven Pro`, fontSize:`11px`, fontWeight: `400`, textTransform:`uppercase`, textAlign: `left`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpcing: `0.53px`}}>{props.info.acf.venue__logistics_label}</p>
+			): null }
 				<div className="starShaped" style={starShapedImage}>
 					<div className="numberInfo">{props.info.acf.venue_number_info}</div>
 					<div className="captionInfo">{props.info.acf.image_caption_info}</div>
@@ -71,8 +73,12 @@ const InfoGraphics = (props) => {
 					<img src={props.info.acf.image_three_portrait.source_url} alt={props.info.acf.portrait_image_heading} />
 				): null}
 				
+				{props.info.acf.portrait_image_heading ? (
+				<div>
 				<h3 style={{lineHeight: `1.1`}}>{props.info.acf.portrait_image_heading}</h3>
 				<hr />
+				</div>
+				):null }
 				<p>{props.info.acf.portrait_image_small_text}</p>
 				{props.info.acf.venue_or_anything_label ? (
 				<p style={{fontFamily:`Maven Pro`, fontSize:`11px`, fontWeight: `400`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.venue_or_anything_label}</p>
@@ -95,7 +101,9 @@ const InfoGraphics = (props) => {
 				</div>
 			</div>
 			<div className="column has-text-centered-mobile" id="colTwo">
+				{props.info.acf.logistics_label ? (
 				<p style={{fontFamily:`Maven Pro`, fontSize:`11px`, fontWeight: `400`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.logistics_label}</p>
+				): null }
 				<br />
 				
 				<div className="bigText">{props.info.acf.logistics_big_text}</div>
@@ -105,9 +113,14 @@ const InfoGraphics = (props) => {
 				{imageThreeInfo ? (
 				<img src={props.info.acf.image_three_info.source_url} alt={props.info.acf.image_title_one_info} />
 				): null }
-				<h3 style={{fontSize:`20px`, lineHeight: `1.1`, paddingTop: `1em`}}>{props.info.acf.image_title_one_info}</h3>
 				
+				{props.info.acf.image_title_one_info ? (
+				<div>
+				<h3 style={{fontSize:`20px`, lineHeight: `1.1`, paddingTop: `1em`}}>{props.info.acf.image_title_one_info}</h3>
 				<hr />
+				</div>
+				): null }
+				
 				<div className="smallText" style={{textTransform:`capitalize`, letterSpacing:`0.5px`, lineHeight:`1`}}>{props.info.acf.images_three_and_four_description}</div>
 				<br/ ><br />
 				{props.info.acf.another_brand_label ? (

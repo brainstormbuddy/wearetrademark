@@ -119,6 +119,7 @@ export default CaseStudy => {
 						      </div></div>								
 							) :
 							<div>
+							<img className="hideMe" src="https://via.placeholder.com/1193x1220.png?text=No+Video+Fallback+Image+Found" alt={singleCaseStudy.acf.client_name} />
 								<div id="vimeoVideo">
 									<Vimeo 
 							      		video={singleCaseStudy.acf.video_url} 
@@ -167,8 +168,6 @@ export default CaseStudy => {
 					      	/>
 					  	 	</div>
 					  	 	<a onClick={closeModal}> <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{position:`absolute`, right:`10px`, bottom:`10px`, zIndex:`10`}}/></a>
-					  	 	
-					  	 	
 					  	 	</Modal>
 					  	 </div>									
 						
@@ -247,7 +246,7 @@ export default CaseStudy => {
 							        </Carousel>
 							        <Carousel className="captionTxt" showThumbs={false} useKeyboardArrows={false} autoPlay={true} infiniteLoop={true} showArrows={false} showIndicators={false} showStatus={false}>
 							          {singleCaseStudy.acf.case_study_gallery.map((each, index)=> (
-							         <div className="columns is-vcentered has-text-left">
+							         <div key={index} className="columns is-vcentered has-text-left">
 							         	<div className="column is-3 has-text-right-desktop has-text-left-tablet has-text-left-mobile firstColumn">
 							         		<h6>Lorem ipsum dolor</h6>
 							         		<p>Lorem ipsum</p>
