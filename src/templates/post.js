@@ -1,4 +1,3 @@
-/*
 import React from 'react'
 //import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
@@ -41,7 +40,7 @@ import ShareWrapper from '../components/Share'
         <body className="single-case-study" />
       </Helmet>
       	<div className={postStyles.postImg}>
-      	<Img fluid={post.featured_media.localFile.childImageSharp.fluid} alt={post.title} /> 
+      	{/*<Img fluid={post.featured_media.localFile.childImageSharp.fluid} alt={post.title} /> */}
       	<img src={post.featured_media.source_url} alt="" />
       	</div>
         <section className="section">
@@ -168,4 +167,3 @@ export const query = graphql`
     }
   }
 `;
-*/
