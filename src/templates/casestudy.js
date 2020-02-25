@@ -28,7 +28,7 @@ export default CaseStudy => {
 	
 	const singleCaseStudy = CaseStudy.data.wordpressWpCasestudy
 	
-	let firstImage, secondLandscapeImage, caseStudyGallery = false
+	let firstImage, secondLandscapeImage, caseStudyGallery, rightImage = false
 	
 	if (singleCaseStudy.acf.first_image && singleCaseStudy.acf.first_image.source_url ) {
     	firstImage = singleCaseStudy.acf.first_image.source_url;
@@ -39,6 +39,10 @@ export default CaseStudy => {
   	}
   	if (singleCaseStudy.acf.case_study_gallery ) {
     	caseStudyGallery = singleCaseStudy.acf.case_study_gallery;
+  	}
+  	
+  	if (singleCaseStudy.acf.right_corner_image_info && singleCaseStudy.acf.right_corner_image_info.source_url ) {
+    	rightImage = singleCaseStudy.acf.right_corner_image_info.source_url;
   	}
   	
   	const parallaxStyle = {
@@ -93,7 +97,7 @@ export default CaseStudy => {
 	      	
 		  	<Helmet title={`${singleCaseStudy.title} | ${userConfig.title}`}>
 	        	<meta name="description" content={`${singleCaseStudy.content}`}/>
-				<body className="single casestudy xtrademark" />
+				<body className={"single casestudy xtrademark" + " "+ singleCaseStudy.acf.client_name} />
 			</Helmet>
 			<CaseStudyStyle>
 		      	<section className="hero is-fullheight">
@@ -106,7 +110,7 @@ export default CaseStudy => {
 								<div id="vimeoVideo">
 						      	<Vimeo 
 						      		video={singleCaseStudy.acf.video_url} 
-							  		autoplay={false}
+							  		autoplay={true}
 							  		autopause={true}
 							  		muted 
 							  		loop={true}
@@ -118,7 +122,7 @@ export default CaseStudy => {
 								<div id="vimeoVideo">
 									<Vimeo 
 							      		video={singleCaseStudy.acf.video_url} 
-								  		autoplay={false}
+								  		autoplay={true}
 								  		autopause={true}
 								  		muted 
 								  		loop={true}
@@ -221,7 +225,12 @@ export default CaseStudy => {
 							</div>
 						</div>
 					</div>
-					<div className="rightSideImage"><img src={singleCaseStudy.acf.right_corner_image_info.source_url} alt="" /></div>
+					<div className="rightSideImage">
+					{rightImage ? (
+						<img src={singleCaseStudy.acf.right_corner_image_info.source_url} alt="" />
+					): null }
+					
+				</div>
 				</section> {/*end section*/}
 				
 				<section className="has-background-white hero is-medium gallery">

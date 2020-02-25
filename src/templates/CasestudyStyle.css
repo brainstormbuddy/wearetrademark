@@ -53,7 +53,7 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 18em;
+	top: 70%;
 	font-size:18px;
 	font-weight: 600;
 	line-height: 1.35;
@@ -89,7 +89,67 @@
 #colTwo,
 #colThree{
 	position: relative;
-	top:-200px;
+}
+
+
+
+.single.casestudy.xtrademark.Slack #colTwo{
+	top:50px;
+}
+.single.casestudy.xtrademark.Slack #colThree{
+	top:20px;
+}
+
+.single.casestudy.xtrademark.Slack #infographics .numberInfo{
+	top:1.8em;
+	font-size: 50px;
+}
+.single.casestudy.xtrademark.Slack #infographics .captionInfo{
+	top: 15em;
+	padding: 0 3rem;
+}
+
+
+.single.casestudy.xtrademark.Xamarin #colTwo,
+.single.casestudy.xtrademark.Xamarin #colThree{
+	top:50px;
+}
+.single.casestudy.xtrademark.Xamarin #infographics .numberInfo{
+	top: 0.8em;
+}
+.single.casestudy.xtrademark.Xamarin #infographics .captionInfo{
+	top: 100%;
+	padding: 0 3rem;
+}
+
+.single.casestudy.xtrademark.Xamarin #infographics .thirdColImage{
+	margin-top: 113px;
+    position: relative;
+}
+
+
+.single.casestudy.xtrademark.Zimmer #colTwo,
+.single.casestudy.xtrademark.Zimmer #colThree{
+	top:50px;
+}
+
+.single.casestudy.xtrademark.Zimmer #infographics .numberInfo{
+	top: 0.8em;
+}
+.single.casestudy.xtrademark.Zimmer #infographics .captionInfo{
+	top: 100%;
+	padding: 0 3rem;
+}
+.single.casestudy.xtrademark.Zimmer #infographics .thirdColImage{
+	margin-top: 87px;
+    position: relative;
+}
+
+
+.single.casestudy.xtrademark.Zimmer .rightSideImage{
+    right: 0px;
+    bottom: 600px;
+    width: 20%;
 }
 
 .fullsizedVideo iframe{

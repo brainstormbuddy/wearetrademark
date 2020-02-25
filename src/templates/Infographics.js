@@ -6,11 +6,31 @@ import StrokeImg from './brush-stroke-infograph-header.png'
 
 const InfoGraphics = (props) => {
 	
-	let starShapedImageURL = false
+	let starShapedImageURL, threeImage, brandActivationImage, rightImage, imageTwoInfo, imageThreePortrait, imageThreeInfo, imageFourInfo = false
 	
 	if (props.info.acf.image_one_info && props.info.acf.image_one_info.source_url ) {
     	starShapedImageURL = props.info.acf.image_one_info.source_url;
   	}
+  	if (props.info.acf.info_three_image && props.info.acf.info_three_image.source_url ) {
+    	threeImage = props.info.acf.info_three_image.source_url;
+  	}
+  	if (props.info.acf.brand_activation_image && props.info.acf.brand_activation_image.source_url ) {
+    	brandActivationImage = props.info.acf.brand_activation_image.source_url;
+  	}
+  	
+  	if (props.info.acf.image_two_info && props.info.acf.image_two_info.source_url ) {
+    	imageTwoInfo = props.info.acf.image_two_info.source_url;
+  	}
+  	if (props.info.acf.image_three_portrait && props.info.acf.image_three_portrait.source_url ) {
+    	imageThreePortrait = props.info.acf.image_three_portrait.source_url;
+  	}
+  	if (props.info.acf.image_three_info && props.info.acf.image_three_info.source_url ) {
+    	imageThreeInfo = props.info.acf.image_three_info.source_url;
+  	}
+  	if (props.info.acf.image_four_info && props.info.acf.image_four_info.source_url ) {
+    	imageFourInfo = props.info.acf.image_four_info.source_url;
+  	}
+  	
 	
 	const starShapedImage = {
 	  backgroundImage: `url(${starShapedImageURL})`,
@@ -38,18 +58,25 @@ const InfoGraphics = (props) => {
 				</div>
 			</div>
 			<div className="column">
-				<img src={props.info.acf.image_two_info.source_url} alt="" />
+				{imageTwoInfo ? (
+					<img src={props.info.acf.image_two_info.source_url} alt="" />
+				): null }
+				
 			</div>
 		</div>
 		
 		<div className="columns">
 			<div className="column">
-				<img src={props.info.acf.image_three_portrait.source_url} alt={props.info.acf.portrait_image_heading} />
+				{imageThreePortrait ? (
+					<img src={props.info.acf.image_three_portrait.source_url} alt={props.info.acf.portrait_image_heading} />
+				): null}
+				
 				<h3 style={{lineHeight: `1.1`}}>{props.info.acf.portrait_image_heading}</h3>
 				<hr />
 				<p>{props.info.acf.portrait_image_small_text}</p>
-				
+				{props.info.acf.venue_or_anything_label ? (
 				<p style={{fontFamily:`Maven Pro`, fontSize:`11px`, fontWeight: `400`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpcing: `0.53px`}}>{props.info.acf.venue_or_anything_label}</p>
+				): null }
 				<h2>{props.info.acf.venue_or_anything_number_information}</h2>
 				<p style={{textTransform: `uppercase`, fontWeight:`600`, fontSize:`14px`, letterSpacing:`2.03px`, lineHeight:`1`, padding:`0`}}>{props.info.acf.venue_or_anything_number_information_small_text}</p>
 				<div className="level">
@@ -58,10 +85,12 @@ const InfoGraphics = (props) => {
 						style={{fontSize:`25px`, color: `#fff`, lineHeight:`1.15`, maxWidth:`50%`}}>{props.info.acf.info_two}
 					</div>
 					<div className="level-item">
+						{threeImage ? (
 						<img style={{maxWidth:`60%`}} 
 							src={props.info.acf.info_three_image.source_url} 
 							alt={props.info.acf.info_two} 
 						/>
+						): null }
 					</div>
 				</div>
 			</div>
@@ -73,24 +102,37 @@ const InfoGraphics = (props) => {
 				<div className="smallText">{props.info.acf.logistics_small_text}</div>
 				
 				<br /><br />
+				{imageThreeInfo ? (
 				<img src={props.info.acf.image_three_info.source_url} alt={props.info.acf.image_title_one_info} />
+				): null }
 				<h3 style={{fontSize:`20px`, lineHeight: `1.1`, paddingTop: `1em`}}>{props.info.acf.image_title_one_info}</h3>
 				
 				<hr />
 				<div className="smallText" style={{textTransform:`capitalize`, letterSpacing:`0.5px`, lineHeight:`1`}}>{props.info.acf.images_three_and_four_description}</div>
 				<br/ ><br />
+				{props.info.acf.another_brand_label ? (
 				<p style={{fontFamily:`Maven Pro`,fontSize:`11px`, fontWeight: `400`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpcing: `0.53px`}}>{props.info.acf.another_brand_label}</p>
+				):null}
 				<br />
-				<div className="bigText">{props.info.acf.another_brand_big_text}</div>
-				<div className="smallText">{props.info.acf.another_brand_small_text}</div>
 				
-				<hr />
+				{props.info.acf.another_brand_big_text ? (
+					<div>
+					<div className="bigText">{props.info.acf.another_brand_big_text}</div>
+					<div className="smallText">{props.info.acf.another_brand_small_text}</div>
+					<hr />
+					</div>
+				): null }
+				
 				
 			</div>
 			<div className="column" id="colThree">
 				<div className="brandActivation" style={{position: `relative`}}>
+					{props.info.acf.brand_activation_label ? (
 					<p style={{fontFamily:`Maven Pro`,fontSize:`11px`, fontWeight: `400`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`}}>{props.info.acf.brand_activation_label}</p>
+					): null}
+					{brandActivationImage ? (
 					<img style={{position:`absolute`, right: `9em`, top: `0.5em`, maxWidth: `50%`, height: `50%`}} src={props.info.acf.brand_activation_image.source_url} />
+					):null }
 				</div>
 				
 				<br />
@@ -98,9 +140,9 @@ const InfoGraphics = (props) => {
 				<div className="smallText">{props.info.acf.brand_activation_small_text}</div>
 				
 				<br /><br />
-				
-				<img src={props.info.acf.image_four_info.source_url} alt={props.info.acf.image_title_one_info} style={{maxWidth:`67%`}}/>
-				
+				{imageFourInfo ? (
+				<img className="thirdColImage" src={props.info.acf.image_four_info.source_url} alt={props.info.acf.image_title_one_info} style={{maxWidth:`67%`}}/>
+				): null}
 			</div>
 		</div>
 	</div>	
