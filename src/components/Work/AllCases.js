@@ -104,7 +104,6 @@ const AllCases = (props) => {
 				  	</div>
 				  </div>
 				</div> 
-				  
 			  </div>
 			))} 
 			 

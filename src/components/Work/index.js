@@ -98,7 +98,7 @@ class WorkPage extends Component {
 					</div>
 				</div>
 			</div>
-			<div className="container is-fluid is-marginless" style={{minHeight: `100vh`}}>
+			<div className="container is-fluid is-marginless" style={{minHeight: `900px`}}>
 				<AllCases sidebarClassName = {sidebarOpened}/>
 			</div>
 		</WorkStyle>

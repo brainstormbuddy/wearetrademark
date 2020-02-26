@@ -14,7 +14,6 @@
   top: 0;
   left: 0;
   color: #000;
-  overflow-x: hidden;
   transform: translateX(-10px);
   transition: all .8s ease-out;
   padding-top: 110px;

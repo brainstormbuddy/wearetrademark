@@ -239,13 +239,13 @@ const CaseStudyStyle = styled.div`
 	
 	
 	.hideMe {
-	  -webkit-animation: seconds 1.0s forwards;
-	  -webkit-animation-iteration-count: 1;
-	  -webkit-animation-delay: .5s;
-	  animation: seconds 0.5 forwards;
-	  animation-iteration-count: 1;
-	  animation-delay: .25s;
-	  position: relative;
+	  	-moz-animation: seconds 0s ease-in 5s forwards;
+	    -webkit-animation: seconds 0s ease-in 5s forwards;
+	    -o-animation: seconds 0s ease-in 5s forwards;
+	    animation: seconds 0s ease-in 5s forwards;
+	    -webkit-animation-fill-mode: forwards;
+	    animation-fill-mode: forwards;
+		position: relative;
 	}
 	@-webkit-keyframes seconds {
 	  0% {
