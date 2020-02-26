@@ -288,6 +288,15 @@ exports.createPages = ({ actions, graphql }) => {
 			        image_four_info {
 			          source_url
 			        }
+			        another_brand_right_image{
+				        source_url
+			        }
+			        extra_image_one{
+				        source_url
+			        }
+			        extra_image_two{
+				        source_url
+			        }
 		          video_url
 		          venue
 		          project_event_name

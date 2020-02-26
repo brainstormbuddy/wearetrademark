@@ -6,7 +6,7 @@ import StrokeImg from './brush-stroke-infograph-header.png'
 
 const InfoGraphics = (props) => {
 	
-	let starShapedImageURL, threeImage, brandActivationImage, rightImage, imageTwoInfo, imageThreePortrait, imageThreeInfo, imageFourInfo = false
+	let starShapedImageURL, threeImage, brandActivationImage, rightImage, imageTwoInfo, imageThreePortrait, imageThreeInfo, imageFourInfo, extraImageOne, extraImageTwo, anotherBrandRightImage = false
 	
 	if (props.info.acf.image_one_info && props.info.acf.image_one_info.source_url ) {
     	starShapedImageURL = props.info.acf.image_one_info.source_url;
@@ -30,6 +30,16 @@ const InfoGraphics = (props) => {
   	if (props.info.acf.image_four_info && props.info.acf.image_four_info.source_url ) {
     	imageFourInfo = props.info.acf.image_four_info.source_url;
   	}
+  	if (props.info.acf.extra_image_one && props.info.acf.extra_image_one.source_url ) {
+    	extraImageOne = props.info.acf.extra_image_one.source_url;
+  	}
+  	if (props.info.acf.extra_image_two && props.info.acf.extra_image_two.source_url ) {
+    	extraImageTwo = props.info.acf.extra_image_two.source_url;
+  	}
+  	if (props.info.acf.another_brand_right_image && props.info.acf.another_brand_right_image.source_url ) {
+    	anotherBrandRightImage = props.info.acf.another_brand_right_image.source_url;
+  	}
+  	
   	
 	
 	const starShapedImage = {
@@ -130,12 +140,10 @@ const InfoGraphics = (props) => {
 				
 				{props.info.acf.another_brand_big_text ? (
 					<div>
-					<div className="bigText">{props.info.acf.another_brand_big_text}</div>
-					<div className="smallText">{props.info.acf.another_brand_small_text}</div>
-					<hr />
+						<div className="bigText">{props.info.acf.another_brand_big_text}</div><hr />
+						<div id="lastSmallText" className="smallText" dangerouslySetInnerHTML={{ __html: props.info.acf.another_brand_small_text }} />
 					</div>
 				): null }
-				
 				
 			</div>
 			<div className="column has-text-centered-mobile" id="colThree">
@@ -144,7 +152,7 @@ const InfoGraphics = (props) => {
 					<p style={{fontFamily:`Maven Pro`,fontSize:`11px`, fontWeight: `400`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.brand_activation_label}</p>
 					): null}
 					{brandActivationImage ? (
-					<img className="brandActivationImage" style={{position:`absolute`, right: `9em`, top: `0.5em`, maxWidth: `50%`, height: `50%`}} src={props.info.acf.brand_activation_image.source_url} />
+					<img className="brandActivationImage" style={{position:`absolute`, right: `9em`, top: `0.5em`, maxWidth: `50%`, height: `50%`}} src={brandActivationImage} alt="shoe image" />
 					):null }
 				</div>
 				
@@ -156,8 +164,26 @@ const InfoGraphics = (props) => {
 				{imageFourInfo ? (
 				<img className="thirdColImage" src={props.info.acf.image_four_info.source_url} alt={props.info.acf.image_title_one_info} style={{maxWidth:`67%`}}/>
 				): null}
+				
+				
+				{anotherBrandRightImage ? (
+					<img src={anotherBrandRightImage} alt="" className="anotherBrandRightImage"/>
+				): null}
+				
 			</div>
 		</div>
+		
+		{extraImageOne ? (
+		<div className="columns bottomImages">
+			<div className="column is-5">
+				<img className="imgOne" src={extraImageOne} alt="" />
+			</div>
+			<div className="column is-5">
+				<img className="imgTwo" src={extraImageTwo} alt="" />
+			</div>
+		</div>
+		): null }
+		
 	</div>	
 	)
 }

@@ -35,6 +35,8 @@
 	color: #FFFFFF;
 	font-weight: 400;
 	line-height: 25px;
+	text-transform: none;
+	letter-spacing: normal;
 }
 
 
@@ -91,7 +93,7 @@
 	position: relative;
 }
 
-
+.single.casestudy.xtrademark.Slack #lastSmallText{padding-bottom: 2.5rem;}
 
 .single.casestudy.xtrademark.Slack #colTwo{
 	top:50px;
@@ -107,6 +109,18 @@
 .single.casestudy.xtrademark.Slack #infographics .captionInfo{
 	top: 15em;
 	padding: 0 3rem;
+}
+
+.single.casestudy.xtrademark.Slack #infographics .anotherBrandRightImage{
+	position: absolute;
+	left: 0;
+	bottom: 7%;
+	width: 80%;
+}
+.single.casestudy.xtrademark.Slack .rightSideImage{
+	bottom: 40%;
+	width:10%;
+	right: 0;
 }
 
 
@@ -148,9 +162,53 @@
 
 .single.casestudy.xtrademark.Zimmer .rightSideImage{
     right: 0px;
-    bottom: 315px;
-    width: 28%;
+    top:0;
+    bottom: 0;
+    width: 30%;
 }
+.single.casestudy.xtrademark.Stryker #colTwo, 
+.single.casestudy.xtrademark.Stryker #colThree{
+	top: 50px;
+}
+.single.casestudy.xtrademark.Stryker #infographics .numberInfo{
+	top: 1.1em;
+	font-size: 60px;
+}
+.single.casestudy.xtrademark.Stryker #infographics .captionInfo{
+	top: 100%;
+}
+
+.single.casestudy.xtrademark.Lyft #infographics .captionInfo{
+	top: 100%;
+}
+
+
+.single.casestudy.xtrademark.Lyft #infographics .brandActivationImage{
+	right:0!important;
+	width: 217px!important;
+	height: 57px!important;
+	max-width: 40%!important;
+}
+
+.single.casestudy.xtrademark.Lyft #infographics .smallText{
+	line-height: 1.25;
+}
+
+.single.casestudy.xtrademark.Charity #infographics .captionInfo{
+	top: 85%;	
+}
+.single.casestudy.xtrademark.Lucasfilm #infographics .numberInfo{
+	top:0.8em;	
+}
+.single.casestudy.xtrademark.Lucasfilm #infographics .captionInfo{
+	top: 100%;	
+}
+
+.single.casestudy.xtrademark.Lucasfilm #infographics #colTwo,
+.single.casestudy.xtrademark.Lucasfilm #infographics #colThree{
+	top:50px;
+}
+
 
 .fullsizedVideo iframe{
 	position: absolute;
@@ -160,4 +218,11 @@
     width: 100%;
     height: 100%;
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px){
+	.single.casestudy.xtrademark.Slack #infographics .anotherBrandRightImage{
+		position: relative!important;
+		width:auto!important;
+	}
 }

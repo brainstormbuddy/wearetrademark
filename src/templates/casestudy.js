@@ -97,7 +97,7 @@ export default CaseStudy => {
 	      	
 		  	<Helmet title={`${singleCaseStudy.title} | ${userConfig.title}`}>
 	        	<meta name="description" content={`${singleCaseStudy.content}`}/>
-				<body className={"single casestudy xtrademark" + " "+ singleCaseStudy.acf.client_name} />
+				<body className={"single casestudy xtrademark" + " "+ singleCaseStudy.title} />
 			</Helmet>
 			<CaseStudyStyle>
 		      	<section className="hero is-fullheight">
@@ -352,6 +352,15 @@ export const query = graphql`
 	        }
 	        image_four_info {
 	          source_url
+	        }
+	        another_brand_right_image{
+		        source_url
+	        }
+	        extra_image_one{
+		        source_url
+	        }
+	        extra_image_two{
+		        source_url
 	        }
 	      first_image{
 		    alt_text

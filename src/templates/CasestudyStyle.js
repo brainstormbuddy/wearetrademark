@@ -115,9 +115,9 @@ const CaseStudyStyle = styled.div`
 	
 	.rightSideImage{
 		position:absolute;
-		right:-100px;
+		right:0;
 		bottom: 50px;
-		width: 21%;
+		width: 10%;
 	}
 	
 	.has-border-right,
@@ -351,6 +351,11 @@ const CaseStudyStyle = styled.div`
 			font-size:45px!important;
 		}
 		.rightSideImage{display:none!important;}
+		.thirdColImage{
+			max-width:100%!important;
+		}
+		
+		
 	}
 
 `;
