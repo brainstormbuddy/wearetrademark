@@ -32,7 +32,7 @@ export const PageTemplate = ({ title, content, slug }) => {
 		
 		{slug == 'contact' ? (
 		<section className="section has-bg-black">
-	    	<div className="hero-body">
+	    	<div className="hero-bodyxx">
 		    	<div className="container">
 		    		<div className="columns is-centered">
 		    			<div className="column is-three-quarters-desktop is-full-tablet is-full-mobile">
@@ -40,12 +40,12 @@ export const PageTemplate = ({ title, content, slug }) => {
 								<h2 className="has-text-white is-size-0">
 									<span>Want to</span>
 									<div className="rw-words rw-words-1">
-										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;chat&nbsp;</span>
-										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;plan&nbsp;</span>
-										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;create&nbsp;</span>
-										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;make&nbsp;</span>
+										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;chat</span>
+										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;plan</span>
+										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;create</span>
+										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;make</span>
 									</div>
-									<span>with us?</span>
+									<span>&nbsp;with us?</span>
 								</h2>
 		    				</div>
 							<Contact />

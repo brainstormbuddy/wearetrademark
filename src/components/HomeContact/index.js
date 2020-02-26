@@ -9,7 +9,7 @@ class Form extends Component {
 
   render() {
     return (
-        <ContactForm>
+        <ContactForm className="hero-body">
         <form 
             name="contact" 
             method="POST" 
