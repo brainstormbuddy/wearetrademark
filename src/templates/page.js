@@ -32,7 +32,6 @@ export const PageTemplate = ({ title, content, slug }) => {
 		
 		{slug == 'contact' ? (
 		<section className="section has-bg-black">
-	    	<div className="hero-bodyxx">
 		    	<div className="container">
 		    		<div className="columns is-centered">
 		    			<div className="column is-three-quarters-desktop is-full-tablet is-full-mobile">
@@ -52,7 +51,6 @@ export const PageTemplate = ({ title, content, slug }) => {
 						</div>
 					</div>
 		    	</div>
-		    </div>
 	    </section>
 	    ): null }
 	    

@@ -228,6 +228,7 @@ hr{
 	}
 	@media screen and (max-width: 768px){
 		.blackLogo img.WhiteLogo,
+		.blackLogo img.BlackLogo,
 		.yelloLogo img{max-width: 60%;}
 		
 		.page.Contact nav.has-text-centered.padding-top-2.slide-up .BlackLogo{
