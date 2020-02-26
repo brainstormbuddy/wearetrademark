@@ -108,81 +108,71 @@ hr{
 	position: relative;
 }
 
+/*
 .pulled-last{
 	position: absolute;
-	right: calc(100vw - 90vw);
+	right: calc(100vw - 88.5vw);
 }
+*/
 
 .is-size-0{
 	font-size: 74.2px;	
 }
 
 .rw-words{
-	display: inline;
-	text-indent: 10px;
+	display:inline-block;
 }
 .rw-words-1 span{
-	position: absolute;
+	max-width:0;
+	display: inline-block;
 	opacity: 0;
 	overflow: hidden;
-	-webkit-animation: rotateWord 12s linear infinite 0s;
-	-ms-animation: rotateWord 12s linear infinite 0s;
-	animation: rotateWord 12s linear infinite 0s;
+	-webkit-animation: rotateWord 15s linear infinite 0s;
+	-ms-animation: rotateWord 15s linear infinite 0s;
+	animation: rotateWord 15s linear infinite 0s;
 }
 .rw-words-1 span:nth-child(2) { 
-    -webkit-animation-delay: 3s; 
-	-ms-animation-delay: 3s; 
-	animation-delay: 3s; 
+    -webkit-animation-delay: 5s; 
+	-ms-animation-delay: 5s; 
+	animation-delay: 5s; 
 }
 .rw-words-1 span:nth-child(3) { 
-    -webkit-animation-delay: 6s; 
-	-ms-animation-delay: 6s; 
-	animation-delay: 6s; 
+    -webkit-animation-delay: 8s; 
+	-ms-animation-delay: 8s; 
+	animation-delay: 8s; 
 }
 .rw-words-1 span:nth-child(4) { 
-    -webkit-animation-delay: 9s; 
-	-ms-animation-delay: 9s; 
-	animation-delay: 9s; 
+    -webkit-animation-delay: 12s; 
+	-ms-animation-delay: 12s; 
+	animation-delay: 12s; 
 }
 
 @-webkit-keyframes rotateWord {
-    0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); }
-	5% { opacity: 1; -webkit-transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); }
-	20% { opacity: 0; -webkit-transform: translateY(30px); }
-	80% { opacity: 0; }
+    2% { opacity: 0; max-width: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; max-width: 230px; -webkit-transform: translateY(28px);}
+    17% { opacity: 1; max-width: 230px; -webkit-transform: translateY(28px); }
+	20% { opacity: 0; max-width: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; max-width: 0;}
     100% { opacity: 0; }
 }
 @-ms-keyframes rotateWord {
-    0% { opacity: 0; }
-    2% { opacity: 0; -ms-transform: translateY(-30px); }
-	5% { opacity: 1; -ms-transform: translateY(0px);}
-    17% { opacity: 1; -ms-transform: translateY(0px); }
-	20% { opacity: 0; -ms-transform: translateY(30px); }
-	80% { opacity: 0; }
+    2% { opacity: 0; max-width: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; max-width: 230px; -ms-transform: translateY(28px);}
+    17% { opacity: 1; max-width: 230px; -ms-transform: translateY(28px); }
+	20% { opacity: 0; max-width: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; max-width: 0; }
     100% { opacity: 0; }
 }
 @keyframes rotateWord {
-    0% { opacity: 0; }
-    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
-	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
-    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
-	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
-	80% { opacity: 0; }
-    100% { opacity: 0; }
+    2% { opacity: 0; max-width: 0; transform: translateY(-30px); }
+	5% { opacity: 1; max-width: 230px; transform: translateY(28px);}
+    17% { opacity: 1; max-width: 230px; transform: translateY(28px); }
+	20% { opacity: 0; max-width: 0; transform: translateY(30px); }
+	80% { opacity: 0; max-width: 0;}
+	100% { opacity: 0; }
 }
 	
-	@media screen and (min-width: 1024px) and (max-width: 1250px){
-		.contactTitle .is-size-0{
-			font-size: 54.2px;
-		}
-	}
-	@media screen and (min-width: 768px) and (max-width: 1023px){
-		.contactTitle .is-size-0{
-			font-size: 54.2px;
-		}
-	}
+	
 	
 	@media screen and (max-width: 1023px){
 		#navMenu{
@@ -256,51 +246,21 @@ hr{
 		}
 	}
 	@media screen and (max-width: 767px){
-		.pulled-last {
-		    position: relative;
-		    right: 0;
-		    display: block;
-		    top:27px;
-		}
 		.rw-words{
 			display:block;
 		}
-		.rw-words-1 span{
-			left:-5px;
-			line-height:1;
-		}
 	}
 	@media screen and (max-width: 540px){
-		.contactTitle{
-			min-height: 285px;
-		}
-		.contactTitle .is-size-0{
-			font-size: 30.2px;
-			position: absolute;
-			left:40px;
-			top:40px;
-		}
+
 	}
 	@media screen and (max-width: 414px){
-		.contactTitle .is-size-0{
-			top: 75px;
-		}
+
 	}
 	@media screen and (max-width: 375px){
-		.contactTitle .is-size-0{
-			top: 80px;
-			left: 35px;
-		}
+
 		
 	}
 	
 	@media screen and (max-width: 320px){
-		.contactTitle .is-size-0{
-			font-size: 24.2px;
-			left: 25px;
-			top: 95px;
-		}
-		.pulled-last {
-			top:25px;	
-		}
+
 	}

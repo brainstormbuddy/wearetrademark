@@ -40,12 +40,12 @@ export const PageTemplate = ({ title, content, slug }) => {
 								<h2 className="has-text-white is-size-0">
 									<span>Want to</span>
 									<div className="rw-words rw-words-1">
-										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>chat</span>
-										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>plan</span>
-										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>create</span>
-										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>make</span>
+										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;chat&nbsp;</span>
+										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;plan&nbsp;</span>
+										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;create&nbsp;</span>
+										<span style={{color: `#F2ED66`, letterSpacing: `-0.06px`}}>&nbsp;make&nbsp;</span>
 									</div>
-									<span className="pulled-last">with us?</span>
+									<span>with us?</span>
 								</h2>
 		    				</div>
 							<Contact />
