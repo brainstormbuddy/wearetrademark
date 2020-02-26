@@ -14,14 +14,14 @@ const FooterWrapper = () => {
 	      <div className="container">
 	      	<div className="columns">
 	      		<div className="column">
-	      			<div className="columns" style={{alignItems:`flex-end`, color: `#000`, fontWeight: `700`, lineHeight: `1.5`}}>
-	      				<div className="column has-text-centered is-one-third" id="footer-logo">
+	      			<div id="footerColumns" className="columns is-mobile" style={{alignItems:`flex-end`, color: `#000`, fontWeight: `700`, lineHeight: `1.5`}}>
+	      				<div className="column has-text-centered-desktop has-text-right-mobile is-one-third-desktop is-4-mobile" id="footer-logo">
 	      					<Link to="/" 
 	      						className="logo">
 		  						<img src={FooterLogo} alt="X Trademark logo" style={{ width: '100px', height: '137px'}}/>
 	      					</Link>
 		  				</div>
-		  				<div className="column mobile" style={{lineHeight:`2.4`}}>What mark will you leave?</div>
+		  				<div className="column mobile is-8-mobile" style={{lineHeight:`2.4`}}>What mark will you leave?</div>
 	      			</div>
 	      		</div>
 	      		<div className="column">

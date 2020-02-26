@@ -27,6 +27,7 @@ export const PageTemplate = ({ title, content, slug }) => {
     <div>
     	<Helmet title={`${title} | ${userConfig.title}`}>
 			<meta name="description" content={`${content}`} />
+			<body className={"page" + " "+ title} />
 		</Helmet>
 		
 		{slug == 'contact' ? (

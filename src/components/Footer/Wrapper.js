@@ -7,18 +7,19 @@ const Footer = styled.section`
 	background-color: #0D1B23;
 	background-position: left center;
 	background-repeat: no-repeat;
-	background-size: 70%;
+	background-size: 63%;
 	
 	@media screen and (max-width: 768px){
 		background-size: 100%;
 		background-position: 0% 20%;
 	}
 	@media screen and (max-width: 450px){
-		background-size: auto;
-		background-position: 0% -50%;
+		background-size: 150%;
+		background-position: 50% 15%;
 	}
 	
 	
+
 	
 	
 	.footer-menu a{
@@ -82,7 +83,7 @@ const Footer = styled.section`
 	@media screen and (max-width: 768px){
 		
 		.mobile{
-			text-align: center;
+			text-align: left;
 		}
 		.has-text-right{
 			text-align: center!important;
@@ -94,12 +95,30 @@ const Footer = styled.section`
 			height: 15px;
 		}
 		#footer-logo:after{
-			border-right: 0;	
+			right:0;
 		}
 		
 		p{
 			text-align: center;
 		}
+	}
+	@media screen and (max-width: 450px){
+		.mobile{
+			line-height:3!important;
+		}
+		#footer-logo:after{
+			right:0;
+			bottom: 27px;	
+		}
+	}
+	@media screen and (max-width: 375px){
+		#footerColumns{
+			align-items: center!important;
+		}
+		.mobile{
+			line-height:1.25!important;
+		}
+		#footer-logo:after{display:none;}
 	}
 
 `;

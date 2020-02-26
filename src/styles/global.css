@@ -17,7 +17,9 @@ hr{
 	padding-top: 30px;	
 }
 
-.blackLogo img,
+.blackLogo img{
+	max-width: 78%;
+}
 .yellowLogo img
 {max-width: 60%;}
 
@@ -235,12 +237,37 @@ hr{
 		.contactTitle{
 			background-size: 100%;
 		}
+		.page.Contact nav.has-text-centered.padding-top-2.slide-up .BlackLogo{
+			display: none;
+		}
+		.page.Contact nav.has-text-centered.padding-top-2.slide-down,
+		.page.Contact nav.has-text-centered.padding-top-2.slide-up{
+			position: fixed;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+		.page.Contact nav.has-text-centered.padding-top-2.slide-down{
+			width: 100%;	
+		}
+		
+		.page.Contact nav.has-text-centered.padding-top-2.slide-up .WhiteLogo{
+			max-width: 60%;
+		}
 	}
 	@media screen and (max-width: 767px){
 		.pulled-last {
 		    position: relative;
 		    right: 0;
 		    display: block;
+		    top:27px;
+		}
+		.rw-words{
+			display:block;
+		}
+		.rw-words-1 span{
+			left:-5px;
+			line-height:1;
 		}
 	}
 	@media screen and (max-width: 540px){
@@ -248,12 +275,32 @@ hr{
 			min-height: 285px;
 		}
 		.contactTitle .is-size-0{
-			font-size: 40.2px;
+			font-size: 30.2px;
+			position: absolute;
+			left:40px;
+			top:40px;
 		}
+	}
+	@media screen and (max-width: 414px){
+		.contactTitle .is-size-0{
+			top: 75px;
+		}
+	}
+	@media screen and (max-width: 375px){
+		.contactTitle .is-size-0{
+			top: 80px;
+			left: 35px;
+		}
+		
 	}
 	
 	@media screen and (max-width: 320px){
 		.contactTitle .is-size-0{
-			font-size: 30.2px;
+			font-size: 24.2px;
+			left: 25px;
+			top: 95px;
+		}
+		.pulled-last {
+			top:25px;	
 		}
 	}

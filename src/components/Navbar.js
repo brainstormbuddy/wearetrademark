@@ -24,11 +24,15 @@ class Navbar extends Component {
   
   render() { 
 	  
-	let url, lastUrl
+	let url, lastUrl, contactUrl, contactLastUrl
     if (typeof window !== `undefined`) {
       url = window.location.href;
       lastUrl= url.includes("casestudy");
-    }  
+    } 
+    if (typeof window !== `undefined`) {
+      contactUrl = window.location.href;
+      contactLastUrl= url.includes("contact");
+    } 
 	       
           return (
 	        <div>  
@@ -142,6 +146,10 @@ class Navbar extends Component {
 	                  {lastUrl ? 
 			            <img src={LogoWhite} alt="X Trademark White logo" className="WhiteLogo"/>
 			           : null }	                  
+	                  
+	                  {contactLastUrl ?(
+		                 <img src={LogoWhite} alt="X Trademark White logo" className="WhiteLogo is-hidden-tablet"/> 
+		              ): null}
 	                  
 	                  </a>
 	                </div>
