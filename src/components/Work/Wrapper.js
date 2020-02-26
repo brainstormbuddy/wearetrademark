@@ -14,43 +14,43 @@ const WorkStyle = styled.section`
 	}
 	
 	
+/*
 	.allcases .filterDiv img{
-		opacity: 0;
+		opacity: 1;
 		transform: translate3d(0,0,0);
 	}
 	
 	.allcases .filterDiv:first-child img {
 		transition-delay: .5s;
-		opacity: 1;
 	}
 	.allcases .filterDiv:nth-child(2) img {
-		transition-delay: .6s;
-		opacity: 1;
+		transition-delay: .10s;
 	}
 	.allcases .filterDiv:nth-child(3) img {
-		transition-delay: .7s;opacity: 1;
+		transition-delay: .15s;
 	}
 	.allcases .filterDiv:nth-child(4) img {
-		transition-delay: .8s;opacity: 1;
+		transition-delay: .20s;
 	}
 	.allcases .filterDiv:nth-child(5) img {
-		transition-delay: .9s;opacity: 1;
+		transition-delay: .25s;
 	}
 	.allcases .filterDiv:nth-child(6) img {
-		transition-delay: .10s;opacity: 1;
+		transition-delay: .30s;
 	}
 	.allcases .filterDiv:nth-child(7) img {
-		transition-delay: .11s;opacity: 1;
+		transition-delay: .35s;
 	}
 	.allcases .filterDiv:nth-child(8) img {
-		transition-delay: .12s;opacity: 1;
+		transition-delay: .40s;
 	}
 	.allcases .filterDiv:nth-child(9) img {
-		transition-delay: .13s;opacity: 1;
+		transition-delay: .45s;
 	}
 	.allcases .filterDiv:nth-child(10) img {
-		transition-delay: .14s;opacity: 1;
+		transition-delay: .50s;
 	}
+*/
 	.is-200:hover img,
 	.filterDiv:hover img {
 		//transition: all .2s ease-in-out;
