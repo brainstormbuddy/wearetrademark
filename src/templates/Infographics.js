@@ -6,7 +6,7 @@ import StrokeImg from './brush-stroke-infograph-header.png'
 
 const InfoGraphics = (props) => {
 	
-	let starShapedImageURL, threeImage, brandActivationImage, rightImage, imageTwoInfo, imageThreePortrait, imageThreeInfo, imageFourInfo, extraImageOne, extraImageTwo, anotherBrandRightImage = false
+	let starShapedImageURL, threeImage, brandActivationImage, rightImage, imageTwoInfo, imageThreePortrait, imageThreeInfo, imageFourInfo, extraImageOne, extraImageTwo, anotherBrandRightImage, logisticsImage, extraTextBoxTestimonial = false
 	
 	if (props.info.acf.image_one_info && props.info.acf.image_one_info.source_url ) {
     	starShapedImageURL = props.info.acf.image_one_info.source_url;
@@ -39,8 +39,13 @@ const InfoGraphics = (props) => {
   	if (props.info.acf.another_brand_right_image && props.info.acf.another_brand_right_image.source_url ) {
     	anotherBrandRightImage = props.info.acf.another_brand_right_image.source_url;
   	}
+  	if (props.info.acf.logistics_image && props.info.acf.logistics_image.source_url ) {
+    	logisticsImage = props.info.acf.logistics_image.source_url;
+  	}
   	
-  	
+  	if(props.info.acf.extra_text_box_testimonial){
+	  	extraTextBoxTestimonial = props.info.acf.extra_text_box_testimonial;
+  	}
 	
 	const starShapedImage = {
 	  backgroundImage: `url(${starShapedImageURL})`,
@@ -62,7 +67,7 @@ const InfoGraphics = (props) => {
 			</div>
 			<div className="column has-text-centered">
 			{props.info.acf.venue__logistics_label ? (
-				<p style={{fontFamily:`Maven Pro`, fontSize:`11px`, fontWeight: `400`, textTransform:`uppercase`, textAlign: `left`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpcing: `0.53px`}}>{props.info.acf.venue__logistics_label}</p>
+				<p style={{fontFamily:`Maven Pro`, fontSize:`12px`, fontWeight: `700`, textTransform:`uppercase`, textAlign: `left`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpcing: `0.53px`}}>{props.info.acf.venue__logistics_label}</p>
 			): null }
 				<div className="starShaped" style={starShapedImage}>
 					<div className="numberInfo">{props.info.acf.venue_number_info}</div>
@@ -91,7 +96,7 @@ const InfoGraphics = (props) => {
 				):null }
 				<p>{props.info.acf.portrait_image_small_text}</p>
 				{props.info.acf.venue_or_anything_label ? (
-				<p style={{fontFamily:`Maven Pro`, fontSize:`11px`, fontWeight: `400`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.venue_or_anything_label}</p>
+				<p style={{fontFamily:`Maven Pro`, fontSize:`12px`, fontWeight: `700`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.venue_or_anything_label}</p>
 				): null }
 				<h2>{props.info.acf.venue_or_anything_number_information}</h2>
 				<p style={{textTransform: `uppercase`, fontWeight:`600`, fontSize:`14px`, letterSpacing:`2.03px`, lineHeight:`1`, padding:`0`}}>{props.info.acf.venue_or_anything_number_information_small_text}</p>
@@ -112,14 +117,23 @@ const InfoGraphics = (props) => {
 			</div>
 			<div className="column has-text-centered-mobile" id="colTwo">
 				{props.info.acf.logistics_label ? (
-				<p style={{fontFamily:`Maven Pro`, fontSize:`11px`, fontWeight: `400`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.logistics_label}</p>
+				<p style={{fontFamily:`Maven Pro`, fontSize:`12px`, fontWeight: `700`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.logistics_label}</p>
 				): null }
 				<br />
 				
-				<div className="bigText">{props.info.acf.logistics_big_text}</div>
-				<div className="smallText">{props.info.acf.logistics_small_text}</div>
+				<div className="columns">
+					{logisticsImage ? (
+					<div className="column is-3">
+						<img src={props.info.acf.logistics_image.source_url} alt={props.info.acf.image_title_one_info} width="auto" height="auto"/>
+					</div>
+					): null }
+					<div className="column">
+						<div className="bigText">{props.info.acf.logistics_big_text}</div>
+						<div className="smallText">{props.info.acf.logistics_small_text}</div>
+					</div>
+				</div>
 				
-				<br /><br />
+				<br />
 				{imageThreeInfo ? (
 				<img src={props.info.acf.image_three_info.source_url} alt={props.info.acf.image_title_one_info} />
 				): null }
@@ -134,7 +148,7 @@ const InfoGraphics = (props) => {
 				<div className="smallText" style={{textTransform:`capitalize`, letterSpacing:`0.5px`, lineHeight:`1`}}>{props.info.acf.images_three_and_four_description}</div>
 				<br/ ><br />
 				{props.info.acf.another_brand_label ? (
-				<p style={{fontFamily:`Maven Pro`,fontSize:`11px`, fontWeight: `400`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.another_brand_label}</p>
+				<p style={{fontFamily:`Maven Pro`,fontSize:`12px`, fontWeight: `700`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.another_brand_label}</p>
 				):null}
 				<br />
 				
@@ -149,7 +163,7 @@ const InfoGraphics = (props) => {
 			<div className="column has-text-centered-mobile" id="colThree">
 				<div className="brandActivation" style={{position: `relative`}}>
 					{props.info.acf.brand_activation_label ? (
-					<p style={{fontFamily:`Maven Pro`,fontSize:`11px`, fontWeight: `400`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.brand_activation_label}</p>
+					<p style={{fontFamily:`Maven Pro`,fontSize:`12px`, fontWeight: `700`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.brand_activation_label}</p>
 					): null}
 					{brandActivationImage ? (
 					<img className="brandActivationImage" style={{position:`absolute`, right: `9em`, top: `0.5em`, maxWidth: `50%`, height: `50%`}} src={brandActivationImage} alt="shoe image" />
@@ -183,6 +197,15 @@ const InfoGraphics = (props) => {
 			</div>
 		</div>
 		): null }
+		
+		{props.info.acf.extra_text_box_testimonial ? (
+			<div className="columns is-mobile is-centered">
+			  <div className="column is-half" style={{border: `1px solid #66BFF2`}}>
+			    <div dangerouslySetInnerHTML={{ __html: props.info.acf.extra_text_box_testimonial }} />
+			  </div>
+			</div>
+		): null }
+		
 		
 	</div>	
 	)

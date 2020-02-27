@@ -197,11 +197,34 @@
 .single.casestudy.xtrademark.Charity #infographics .captionInfo{
 	top: 85%;	
 }
+.single.casestudy.xtrademark.Charity #infographics #lastSmallText .columns{
+	margin: 0;
+	border-top: 1px solid #66BFF2;
+	border-bottom: 1px solid #66BFF2;
+	border-left: 1px solid #66BFF2;
+}
+.single.casestudy.xtrademark.Charity #infographics #lastSmallText .column{
+	border-bottom: 1px solid #66BFF2;
+	border-right: 1px solid #66BFF2;
+	padding: 1rem 0.5rem;
+	text-transform: none;
+	line-height: 1.25;
+}
+.single.casestudy.xtrademark.Charity #infographics #lastSmallText .column strong{
+	color: #fff;
+	font-weight: 700;
+}
+
 .single.casestudy.xtrademark.Lucasfilm #infographics .numberInfo{
 	top:0.8em;	
 }
 .single.casestudy.xtrademark.Lucasfilm #infographics .captionInfo{
 	top: 100%;	
+}
+.single.casestudy.xtrademark.Lucasfilm #infographics .rightSideImages{
+	right:0;
+	bottom: 0;
+	width: 21%;
 }
 
 .single.casestudy.xtrademark.Lucasfilm #infographics #colTwo,

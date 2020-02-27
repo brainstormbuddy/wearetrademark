@@ -297,6 +297,10 @@ exports.createPages = ({ actions, graphql }) => {
 			        extra_image_two{
 				        source_url
 			        }
+			        logistics_image{
+						source_url
+	        		}
+	        		extra_text_box_testimonial
 		          video_url
 		          venue
 		          project_event_name

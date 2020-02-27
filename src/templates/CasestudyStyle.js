@@ -242,7 +242,9 @@ const CaseStudyStyle = styled.div`
 	  	-moz-animation: seconds 0s ease-in 5s forwards;
 	    -webkit-animation: seconds 0s ease-in 5s forwards;
 	    -o-animation: seconds 0s ease-in 5s forwards;
+	    
 	    animation: seconds 0s ease-in 5s forwards;
+	    
 	    -webkit-animation-fill-mode: forwards;
 	    animation-fill-mode: forwards;
 		position: relative;

@@ -278,7 +278,7 @@ export default CaseStudy => {
 									<RelativeCase />
 								</div>
 								<div className="is-hidden-tablet">
-									
+									<RelativeCase />
 								</div>
 								<div className="relatedTxt">Related</div>
 							</div>
@@ -305,6 +305,7 @@ export const query = graphql`
 	      venue
 	      project_event_name
 	      video_url
+	      extra_text_box_testimonial
 	      another_brand_big_text
 	        another_brand_label
 	        another_brand_small_text
@@ -333,6 +334,9 @@ export const query = graphql`
 	        portrait_image_heading
 	        logistics_small_text
 	        logistics_label
+	        logistics_image{
+		        source_url
+	        }
 	        logistics_big_text
 	        image_title_one_info
 	        image_two_info {
