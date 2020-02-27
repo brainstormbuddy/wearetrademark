@@ -168,7 +168,6 @@ const WorkStyle = styled.section`
 	
 	h2{
 		color: #141825;
-		font-size: 50px;
 		line-height: 40px;
 		font-weight: 700;
 	}
@@ -194,18 +193,6 @@ const WorkStyle = styled.section`
 	p.heading a{
 		color: #141825;
 	}
-/*
-	
-	p.heading::before{
-		content: "";
-		background: #66BFF2;
-	    height: 1px;
-	    position: absolute;
-	    left: 0;
-	    top: 60%;
-	    width: 33%;
-	}
-*/
 	
 	p{
 		color: #96A8B3;
@@ -245,6 +232,114 @@ const WorkStyle = styled.section`
 	}
 	
 	#vimeoVideo{display:none;}
+	@media screen and (min-width: 2021px){
+		h2.reelTxt{
+			font-size: 58px;
+		}
+	}
+	@media screen and (min-width: 1920px) and (max-width: 2020px){
+		h2.reelTxt{
+			font-size: 54px;
+		}
+		h2.reelTxtSidebar{
+			font-size: 74px;
+		}
+	}
+	@media screen and (min-width: 1851px) and (max-width: 1919px){
+		h2.reelTxt{
+			font-size: 53px;
+		}
+		h2.reelTxtSidebar{
+			font-size: 70px;
+		}
+	}
+	@media screen and (min-width: 1751px) and (max-width: 1850px){
+		h2.reelTxt{
+			font-size: 50px;
+		}
+		h2.reelTxtSidebar{
+			font-size: 65px;
+		}
+	}
+	
+	@media screen and (min-width: 1609px) and (max-width: 1750px){
+		h2.reelTxt{
+			font-size: 45px;
+		}
+		h2.reelTxtSidebar{
+			font-size: 60px;
+		}
+	}
+	@media screen and (min-width: 1509px) and (max-width: 1608px){
+		h2.reelTxt{
+			font-size: 43px;
+		}
+		h2.reelTxtSidebar{
+			font-size: 55px;
+		}
+	}
+	@media screen and (min-width: 1408px) and (max-width: 1508px){
+		h2.reelTxt{
+			font-size: 40px;
+		}
+		h2.reelTxtSidebar{
+			font-size: 50px;
+		}
+	}
+	
+	@media screen and (min-width: 1316px) and (max-width: 1407px){
+		
+		h2.reelTxtSidebar{
+			font-size: 40px;
+		}
+		h2.reelTxt{
+			font-size: 37px;
+		}
+		.modalVdo{
+			position: relative;
+			margin-left: -75px;
+		}
+	}
+	@media screen and (min-width: 1216px) and (max-width: 1315px){
+		h2.reelTxt{
+			font-size: 34px;
+		}
+		h2.reelTxtSidebar{
+			font-size: 40px;
+		}
+	}
+	@media screen and (min-width: 1117px) and (max-width: 1215px){
+		h2.reelTxt{
+			font-size: 31px;
+		}
+		h2.reelTxtSidebar{
+			font-size: 25px;
+		}
+	}
+	
+	@media screen and (min-width: 899px) and (max-width: 1116px){
+		h2.reelTxt{
+			font-size: 28px;
+		}
+		h2.reelTxtSidebar{
+			font-size: 24px;
+		}
+	}
+	@media screen and (min-width: 769px) and (max-width: 898px){
+		h2.reelTxt{
+			font-size: 23px;
+		}
+	}
+	
+	@media screen and (min-width: 1024px) and (max-width: 1215px){
+		h2.reelTxtSidebar{
+			font-size: 20px;
+		}
+		.modalVdo{
+			position: relative;
+			margin-left: -110px;
+		}
+	}
 	
 	@media screen and (max-width: 768px){
 		.image{
