@@ -8,6 +8,7 @@ import { Carousel } from 'react-responsive-carousel'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import RelativeCase from '../components/Work/RelativeCases'
+import RelativeCaseMobile from '../components/Work/RelativeCasesMobile'
 import Vimeo from '@u-wave/react-vimeo'
 //import ModalVideo from './CasestudyModalVideo'
 
@@ -278,7 +279,7 @@ export default CaseStudy => {
 									<RelativeCase />
 								</div>
 								<div className="is-hidden-tablet">
-									<RelativeCase />
+									<RelativeCaseMobile />
 								</div>
 								<div className="relatedTxt">Related</div>
 							</div>

@@ -357,7 +357,41 @@ const CaseStudyStyle = styled.div`
 			max-width:100%!important;
 		}
 		
-		
+		.related-article .allcases.threeCasesMobile .column{
+			border-bottom:0;	
+		}
+		#threeCases::after{
+			display:none;
+		}
+		.relatedTxt{
+			font-size:10px;
+		}
+		.related-article .allcases.threeCasesMobile .column{
+			background-color: #fff;
+		}
+		.related-article .allcases.threeCasesMobile .column{
+			width:auto;
+		}
+		.related-article .allcases.threeCasesMobile .caseMetaParent .column{
+			width: 100%;
+		}
+		.rel-article .hero-body{
+			padding: 5rem 1.5rem;
+		}
+		.carousel .slide{
+			background: transparent;
+		}
+		.rel-article .carousel .control-dots .dot{
+			background: green;
+		}
+		.allcases.threeCasesMobile .circle-casestudy-parent{
+			position: relative;
+			right:0;
+			top:0;
+		}
+		.allcases.threeCasesMobile h3{
+			min-height: 100%;
+		}
 	}
 
 `;

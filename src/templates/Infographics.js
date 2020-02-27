@@ -197,9 +197,9 @@ const InfoGraphics = (props) => {
 			</div>
 		</div>
 		): null }
-		
+		<br />
 		{props.info.acf.extra_text_box_testimonial ? (
-			<div className="columns is-mobile is-centered">
+			<div className="columns is-mobile is-centered" style={{marginTop:`1rem`}}>
 			  <div className="column is-half" style={{border: `1px solid #66BFF2`}}>
 			    <div dangerouslySetInnerHTML={{ __html: props.info.acf.extra_text_box_testimonial }} />
 			  </div>
