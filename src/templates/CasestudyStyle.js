@@ -120,6 +120,7 @@ const CaseStudyStyle = styled.div`
 		width: 10%;
 	}
 	
+	
 	.has-border-right,
 	.has-border-left{
 		padding: 0 0.75rem;
@@ -336,7 +337,7 @@ const CaseStudyStyle = styled.div`
 		}
 		.starShaped{
 			height: 350px!important;
-			margin-bottom: 5rem;
+			margin: 0 auto 5rem;
 		}
 		#infographics .captionInfo{
 			top: 100%;

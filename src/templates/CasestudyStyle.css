@@ -23,6 +23,11 @@
 	color: #FFFFFF;
 	font-weight: 700;
 }
+#infographics h4{
+	font-size: 22.5px;
+	color: #FFFFFF;
+	font-weight: 700;
+}
 
 #infographics p{
 	font-size: 14px;
@@ -42,20 +47,22 @@
 
 #infographics .numberInfo{
 	position: absolute;
-    top: 1.2em;
     left: 0;
     right: 0;
     color: #0D1B23;
     font-size: 80px;
     font-weight: 700;
     font-family: 'Maven Pro';
+    display: inline-grid;
+    height: 100%;
+    align-items: center;
 }
 
 #infographics .captionInfo{
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 70%;
+	top: 100%;
 	font-size:18px;
 	font-weight: 600;
 	line-height: 1.35;
@@ -103,11 +110,9 @@
 }
 
 .single.casestudy.xtrademark.Slack #infographics .numberInfo{
-	top:1.8em;
 	font-size: 50px;
 }
 .single.casestudy.xtrademark.Slack #infographics .captionInfo{
-	top: 15em;
 	padding: 0 3rem;
 }
 
@@ -128,11 +133,8 @@
 .single.casestudy.xtrademark.Xamarin #colThree{
 	top:50px;
 }
-.single.casestudy.xtrademark.Xamarin #infographics .numberInfo{
-	top: 0.8em;
-}
+
 .single.casestudy.xtrademark.Xamarin #infographics .captionInfo{
-	top: 100%;
 	padding: 0 3rem;
 }
 
@@ -147,11 +149,7 @@
 	top:50px;
 }
 
-.single.casestudy.xtrademark.Zimmer #infographics .numberInfo{
-	top: 0.8em;
-}
 .single.casestudy.xtrademark.Zimmer #infographics .captionInfo{
-	top: 100%;
 	padding: 0 3rem;
 }
 .single.casestudy.xtrademark.Zimmer #infographics .thirdColImage{
@@ -171,17 +169,50 @@
 	top: 50px;
 }
 .single.casestudy.xtrademark.Stryker #infographics .numberInfo{
-	top: 1.1em;
 	font-size: 60px;
 }
-.single.casestudy.xtrademark.Stryker #infographics .captionInfo{
-	top: 100%;
+.single.casestudy.xtrademark.Okta #colThree{
+	margin-top:-530px;
+}
+.single.casestudy.xtrademark.Okta #infographics .brandActivationImage{
+	position: relative!important;
+	right: 0!important;
+	top: 0!important;
+	width: 100px!important;
+	height: 100px!important;
+	max-width: 100%!important;
 }
 
-.single.casestudy.xtrademark.Lyft #infographics .captionInfo{
-	top: 100%;
+.single.casestudy.xtrademark.Okta #infographics .columns.bottomImages{
+	position: relative;
+	margin-top:-650px;
+	margin-bottom: 200px;
 }
 
+.single.casestudy.xtrademark.Okta #infographics .oktaStyleOnly{
+	position: relative;
+}
+
+.single.casestudy.xtrademark.Okta #infographics .oktaPosition{position: relative;}
+.single.casestudy.xtrademark.Okta #infographics .level .level-item.oktaStyle img{
+	max-width: 20%!important;
+    position: absolute;
+    left: 33%;
+    bottom: 70%;
+    z-index: 1;
+}
+
+
+.single.casestudy.xtrademark.Okta #infographics #oktaImgStyle{
+	width: 58%;
+}
+.single.casestudy.xtrademark.Okta .rightSideImage{
+	position: absolute;
+	right: 0;
+	bottom: 30%;
+	width: 15%;
+	max-width: 15%;
+}
 
 .single.casestudy.xtrademark.Lyft #infographics .brandActivationImage{
 	right:0!important;
@@ -194,9 +225,7 @@
 	line-height: 1.25;
 }
 
-.single.casestudy.xtrademark.Charity #infographics .captionInfo{
-	top: 85%;	
-}
+
 .single.casestudy.xtrademark.Charity #infographics #lastSmallText .columns{
 	margin: 0;
 	border-top: 1px solid #66BFF2;
@@ -215,12 +244,6 @@
 	font-weight: 700;
 }
 
-.single.casestudy.xtrademark.Lucasfilm #infographics .numberInfo{
-	top:0.8em;	
-}
-.single.casestudy.xtrademark.Lucasfilm #infographics .captionInfo{
-	top: 100%;	
-}
 .single.casestudy.xtrademark.Lucasfilm #infographics .rightSideImages{
 	right:0;
 	bottom: 0;
@@ -247,5 +270,32 @@
 	.single.casestudy.xtrademark.Slack #infographics .anotherBrandRightImage{
 		position: relative!important;
 		width:auto!important;
+	}
+	div#infographics img {
+ 	   max-width: 80%;
+	}
+	.single.casestudy.xtrademark.Okta #colThree{
+		margin-top: 0;
+	}
+	.single.casestudy.xtrademark.Okta #infographics .columns.bottomImages{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.single.casestudy.xtrademark.Okta #infographics #oktaImgStyle{
+		width: 100%;
+		text-align: center;
+	}
+	.single.casestudy.xtrademark.Okta #infographics .level .level-item.oktaStyle img{
+		max-width: 50%!important;
+		position: relative;
+		left: 0;
+		bottom: 0;
+		z-index: auto;
+	}
+	.single.casestudy.xtrademark.Okta .rightSideImage{
+		bottom: 5%;
+		max-width: 20%;
+		width: auto;
+		display: block!important;
 	}
 }

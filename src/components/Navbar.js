@@ -11,8 +11,8 @@ import userConfig from '../../config'
 
 class Navbar extends Component {
   
-  constructor(prps) {
-    super(prps);
+  constructor(props) {
+    super(props);
     this.state = {
       childVisible: false
     }

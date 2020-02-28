@@ -49,8 +49,8 @@ const InfoGraphics = (props) => {
 	
 	const starShapedImage = {
 	  backgroundImage: `url(${starShapedImageURL})`,
-	  width: `90%`,
-	  height: `90%`,
+	  width: `318px`,
+	  height: `325px`,
 	  position: `relative`,
 	  backgroundPosition: `top center`,
 	  backgroundRepeat: `no-repeat`,
@@ -74,7 +74,7 @@ const InfoGraphics = (props) => {
 					<div className="captionInfo">{props.info.acf.image_caption_info}</div>
 				</div>
 			</div>
-			<div className="column has-text-centered-mobile">
+			<div className="column has-text-centered-mobile oktaStyleOnly">
 				{imageTwoInfo ? (
 					<img src={props.info.acf.image_two_info.source_url} alt="" />
 				): null }
@@ -82,7 +82,7 @@ const InfoGraphics = (props) => {
 			</div>
 		</div>
 		
-		<div className="columns">
+		<div className="columns oktaPosition">
 			<div className="column has-text-centered-mobile">
 				{imageThreePortrait ? (
 					<img src={props.info.acf.image_three_portrait.source_url} alt={props.info.acf.portrait_image_heading} />
@@ -105,7 +105,7 @@ const InfoGraphics = (props) => {
 					<div className="level-item mid" 
 						style={{fontSize:`25px`, color: `#fff`, lineHeight:`1.15`, maxWidth:`50%`}}>{props.info.acf.info_two}
 					</div>
-					<div className="level-item">
+					<div className="level-item oktaStyle">
 						{threeImage ? (
 						<img style={{maxWidth:`60%`}} 
 							src={props.info.acf.info_three_image.source_url} 
@@ -187,12 +187,12 @@ const InfoGraphics = (props) => {
 			</div>
 		</div>
 		
-		{extraImageOne ? (
+		{extraImageOne || extraImageTwo? (
 		<div className="columns bottomImages">
 			<div className="column is-5">
 				<img className="imgOne" src={extraImageOne} alt="" />
 			</div>
-			<div className="column is-5">
+			<div className="column is-5" id="oktaImgStyle">
 				<img className="imgTwo" src={extraImageTwo} alt="" />
 			</div>
 		</div>
