@@ -304,6 +304,8 @@ const CaseStudyStyle = styled.div`
 			width: 10%;
 		}
 	}
+		
+	
 	@media screen and (max-width: 768px){
 		.client-details{
 			padding: 0.75rem;
@@ -336,7 +338,6 @@ const CaseStudyStyle = styled.div`
 			border-bottom: 1px solid #DBDBDB;
 		}
 		.starShaped{
-			height: 350px!important;
 			margin: 0 auto 5rem;
 		}
 		#infographics .captionInfo{

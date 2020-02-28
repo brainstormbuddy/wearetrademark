@@ -15,7 +15,7 @@
 #infographics h2{
 	font-size: 40px;
 	color: #FFFFFF;
-	line-height: 60px;
+	line-height: 47px;
 	font-weight: 700;
 }
 #infographics h3{
@@ -255,6 +255,25 @@
 	top:50px;
 }
 
+.single.casestudy.xtrademark.AppDirect .rightSideImage{
+	bottom: 60%;
+	width: 15%;
+}
+.single.casestudy.xtrademark.AppDirect .smallText{
+	line-height: 25px!important;
+	text-transform: none!important;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.single.casestudy.xtrademark.AppDirect img.imgOne {
+    max-width: 70%;
+}
+.single.casestudy.xtrademark.AppDirect .column.is-half{
+	width: 35%;
+	margin-top: -280px;
+}
 
 .fullsizedVideo iframe{
 	position: absolute;
@@ -264,6 +283,18 @@
     width: 100%;
     height: 100%;
     transform: scale(1.2);
+}
+@media screen and (max-width: 1440px){
+	.single.casestudy.xtrademark.AppDirect .rightSideImage{
+		bottom: 25%;
+		width: 30%;
+	}
+}
+@media screen and (max-width: 999px){
+	.single.casestudy.xtrademark.AppDirect .column.is-half{
+		width:fit-content;
+		margin-top:0;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -297,5 +328,13 @@
 		max-width: 20%;
 		width: auto;
 		display: block!important;
+	}
+	.single.casestudy.xtrademark.AppDirect .column.is-half{
+		width: 100%;
+		margin-top: 0;
+	}
+	.single.casestudy.xtrademark.AppDirect img.imgOne{
+		display: table;
+		margin: 0 auto;
 	}
 }
