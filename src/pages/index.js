@@ -13,6 +13,7 @@ import SectionWhatMarkWillYouLeave from '../components/HomeTopSection'
 import SectionAbout from '../components/HomeAbout'
 import SectionCasestudy from '../components/HomeCasestudy'
 import SectionClientLogo from '../components/HomeClientLogo'
+import SectionClientLogoMobile from '../components/HomeClientLogo/ClientLogoMobile'
 import Contact from '../components/HomeContact'
 import FooterWrapper from '../components/Footer'
 
@@ -54,14 +55,17 @@ const FullPage = () => (
 					    <section className="section" id="caseStudy">
 							<SectionCasestudy />
 					    </section>
-					    <section className="section bg-green" id="logos">
-					    	<div className="hero-body">
-						    	<div className="container">
-						    		<div className="is-hidden-mobile">
-						    			<SectionClientLogo />
-						    		</div>
-						    	</div>
-						    </div>
+					    <section className="section hero bg-green is-hidden-mobile" id="logos">
+				    		<div className="hero-body">
+					    		<div className="container">
+					    			<SectionClientLogo />
+					    		</div>
+					    	</div>
+					    </section>
+				    	<section className="bg-green is-hidden-tablet">
+					    	<div className="container">
+					    		<SectionClientLogoMobile />
+					    	</div>
 					    </section>
 					    <section className="section has-bg-black" id="homeContactForm">
 						    	<div className="container">

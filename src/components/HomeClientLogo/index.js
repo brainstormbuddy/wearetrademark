@@ -9,41 +9,36 @@ const ClientLogo = () => {
 	'logo-bausch', 
 	'logo-biocare', 
 	'logo-charitywater', 
-	'logo-deloitte']
+	'logo-deloitte',
 	
-	let imgAray02 = [
 	'logo-exploratorium',
 	'logo-genentech',
 	'logo-google',
 	'logo-guardian',
 	'logo-impossible',
-	'logo-jaunt']
+	'logo-jaunt',
 	
-	let imgAray03 = [
 	'logo-lacoste',
 	'logo-levis21',
 	'logo-lilly',
 	'logo-linkedin',
 	'logo-lucasfilm',
-	'logo-lyft']
+	'logo-lyft',
 	
-	let imgAray04 = [
 	'logo-marketlive',
 	'logo-medtronic',
 	'logo-optimizely',
 	'logo-safeway',
 	'logo-slack',
-	'logo-stryker']
+	'logo-stryker',
 	
-	let imgAray05 = [
 	'logo-vmware',
 	'logo-xamarin',
 	'logo-yahoo',
 	'logo-zimmer',
 	'okta',
-	'xero']
+	'xero',
 	
-	let imgAray06 = [
 	'zeiss',
 	'zendesk'
 	];
@@ -55,6 +50,7 @@ const ClientLogo = () => {
          src={require(`./img/${image01}-reverse.png`)} 
          alt={`${image01}`} />  
     });
+{/*
     let images02 = imgAray02.map(image02 => {
          return	<img key={image02} 
          src={require(`./img/${image02}-reverse.png`)} 
@@ -80,17 +76,19 @@ const ClientLogo = () => {
          src={require(`./img/${image06}-reverse.png`)} 
          alt={`${image06}`} />  
     });
-	
+*/}	
 		
 	return (
 		<div>
-		<NavClient className="columns">
+		<NavClient className="columns is-multiline is-mobile">
 			{imgAray01.map((element, i)=> (
-				<div key={i} className="column">
+				<div key={i} className="column is-one-fifth">
 					{images01[i]}
 				</div>
 			))}
 		</NavClient>
+		
+		{/*
 		<NavClient className="columns">
 			{imgAray02.map((element, i)=> (
 				<div key={i} className="column">
@@ -126,6 +124,8 @@ const ClientLogo = () => {
 				</div>
 			))}
 		</NavClient>
+		
+		*/}
 		</div>
 	)
 }
