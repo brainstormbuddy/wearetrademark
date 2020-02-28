@@ -62,7 +62,7 @@ const InfoGraphics = (props) => {
 		<h2>{props.info.acf.heading_info}</h2>
 		
 		<div className="columns" style={{paddingTop: `1rem`}}>
-			<div className="column">
+			<div className="column" style={{borderLeft:`1px solid #66BFF2`, height:`100%`}}>
 				<div dangerouslySetInnerHTML={{ __html: props.info.acf.description_info }} />
 			</div>
 			<div className="column has-text-centered">

@@ -25,6 +25,7 @@ import userConfig from '../../config'
 import CaseStudyStyle from './CasestudyStyle'
 import './CasestudyStyle.css'
 
+
 export default CaseStudy => {
 	
 	const singleCaseStudy = CaseStudy.data.wordpressWpCasestudy
@@ -92,7 +93,6 @@ export default CaseStudy => {
   	}
   	
   		
-  		
 	return (
 		<Layout>
 	      	
@@ -110,6 +110,7 @@ export default CaseStudy => {
 								<img className="hideMe" src={singleCaseStudy.acf.first_image.source_url} alt={singleCaseStudy.acf.client_name} />
 								<div id="vimeoVideo">
 						      	<Vimeo 
+						      		id="Vmo"
 						      		video={singleCaseStudy.acf.video_url} 
 							  		autoplay={true}
 							  		autopause={true}
@@ -200,24 +201,23 @@ export default CaseStudy => {
 					style={{backgroundColor: `${singleCaseStudy.acf.background_color_info}`, position:`relative` }}>
 					<div className="hero-body">
 						<div className="container">
-							<div className="columns is-multiline infographics has-text-centered-mobile">
-								<div className="column is-2 has-border-left has-border-right">
+							<div className="columns infographics has-text-centered-mobile">
+								<div className="column is-narrow has-border-left has-border-right">
 									<em>Client:</em>
 									<div>{singleCaseStudy.acf.client_name}</div>
 								</div>
-								<div className="column is-3 has-border-right">
+								<div className="column is-narrow has-border-right">
 									<em>Event:</em>
 									<div>{singleCaseStudy.acf.project_event_name}</div>
 								</div>
-								<div className="column is-2 has-border-right">
+								<div className="column is-narrow has-border-right">
 									<em>Location:</em>
 									<div>{singleCaseStudy.acf.location}</div>
 								</div>
-								<div className="column is-2 has-border-right">
+								<div className="column is-narrow has-border-right">
 									<em>Venue:</em>
 									<div>{singleCaseStudy.acf.venue}</div>
 								</div>
-								<div className="column is-2"></div>
 							</div>
 								
 							<div className="infographics-info">
