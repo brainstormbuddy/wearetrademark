@@ -307,6 +307,9 @@ const CaseStudyStyle = styled.div`
 		
 	
 	@media screen and (max-width: 768px){
+		.watch-video{
+			padding-bottom:3rem;
+		}
 		.client-details{
 			padding: 0.75rem;
 		}

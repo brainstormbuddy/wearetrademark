@@ -298,12 +298,24 @@
 }
 
 @media screen and (max-width: 768px){
+	#infographics h2{
+		font-size: 35px;
+		line-height: 41px;
+	}
+	#infographics h3{
+		font-size: 25px;
+	}
 	.single.casestudy.xtrademark.Slack #infographics .anotherBrandRightImage{
 		position: relative!important;
 		width:auto!important;
 	}
+	#infographics h3,	
+	.single.casestudy.xtrademark.Xamarin #infographics h3{
+		line-height: 2!important;
+	}
 	div#infographics img {
- 	   max-width: 80%;
+ 	   display: table;
+ 	   margin: 0 auto;
 	}
 	.single.casestudy.xtrademark.Okta #colThree{
 		margin-top: 0;
@@ -329,6 +341,7 @@
 		width: auto;
 		display: block!important;
 	}
+	.single.casestudy.xtrademark.Lucasfilm .column.is-half,
 	.single.casestudy.xtrademark.AppDirect .column.is-half{
 		width: 100%;
 		margin-top: 0;
@@ -336,5 +349,20 @@
 	.single.casestudy.xtrademark.AppDirect img.imgOne{
 		display: table;
 		margin: 0 auto;
+	}
+	.single.casestudy.xtrademark.Stryker #colTwo, 
+	.single.casestudy.xtrademark.Stryker #colThree,
+	.single.casestudy.xtrademark.Xamarin #colTwo, 
+	.single.casestudy.xtrademark.Xamarin #colThree,
+	.single.casestudy.xtrademark.Zimmer #colTwo, 
+	.single.casestudy.xtrademark.Zimmer #colThree{
+		top:0;
+	}
+	.single.casestudy.xtrademark.Xamarin #infographics .thirdColImage,
+	.single.casestudy.xtrademark.Zimmer #infographics .thirdColImage{
+		margin-top: 0;
+	}
+	.single.casestudy.xtrademark.AppDirect img.imgOne{
+		max-width: 100%;
 	}
 }
