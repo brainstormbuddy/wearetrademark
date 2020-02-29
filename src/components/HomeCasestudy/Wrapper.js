@@ -9,6 +9,10 @@ const CasestudyStyle = styled.div`
 	}
 	.video-container{
 	  	margin: 0 auto;
+	  	width: 100%;
+	  	transform: scale(2);
+	  	position: relative;
+	  	top:-100px;
 	}
 	.video-container video {
 	  	width: 100%;
@@ -77,10 +81,11 @@ p{
 	line-height: 20px;
 	transform: rotate(90deg);
     position: absolute;
-    bottom: 135px;
+    bottom: 0;
     right: -119px;
 }
 
+/*
 .x-icon::after{
 	content: "";
     position: absolute;
@@ -90,6 +95,7 @@ p{
     height: 50%;
     background-color: #fff;
 }
+*/
 .case-meta{
 	position: absolute;
 	top: 25%;
