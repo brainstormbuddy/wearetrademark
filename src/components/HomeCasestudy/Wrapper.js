@@ -8,7 +8,7 @@ const CasestudyStyle = styled.div`
 		position: absolute;
 	}
 	.video-container{
-	  	margin: 40px auto 0;
+	  	margin: 0 auto;
 	}
 	.video-container video {
 	  	width: 100%;
@@ -28,19 +28,19 @@ const CasestudyStyle = styled.div`
 }
 
 h2.title{
-	font-size: 60px;
-	line-height: 72px;
+	font-size: 40px;
+	line-height: 42px;
 }
 h3.subtitle{
-	font-size: 24px;
+	font-size: 16px;
 	font-weight: 600;
 	letter-spacing: 2px;
-	line-height: 30px;
+	line-height: 16px;
 	text-transform: uppercase;
 }
 p{
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 20px;
 	color: #FFFFFF;
 }
 
@@ -71,14 +71,14 @@ p{
 
 .x-icon-txt{
 	color: #fff;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 2px;
 	line-height: 20px;
 	transform: rotate(90deg);
     position: absolute;
-    bottom: 80px;
-    right: -142px;
+    bottom: 135px;
+    right: -119px;
 }
 
 .x-icon::after{
@@ -86,8 +86,8 @@ p{
     position: absolute;
     right: -35px;
     top: 0;
-    width: 2px;
-    height: 280px;
+    width: 1px;
+    height: 50%;
     background-color: #fff;
 }
 .case-meta{
@@ -115,7 +115,7 @@ p{
 	color: rgba(255,255,255,0.8);
 	letter-spacing: 2.8px;
 	text-transform: uppercase;
-	font-size: 15.6px;
+	font-size: 12.6px;
 	font-weight: 400;
 	line-height: 20px;
 	z-index: 1;

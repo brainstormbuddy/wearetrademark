@@ -1,18 +1,39 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import Section from './Wrapper'
 
 const HomeAbout = () => {
+	
+	const data = useStaticQuery(graphql`
+		query HomeAboutQuery {
+		  wordpressPage {
+		      acf {
+		        descriptions_section_two
+		        heading_section_two
+		        text_in_right_side
+		      }
+		    }
+		}	
+	`)
+	
 	return (
+		
 		<Section className="section" id="goBoldly">
 	    	<div className="hero-body">
 		    	<div className="container">
 		    		<div className="columns is-mobile is-centered">
 						<div className="column is-half-desktop is-full-mobile is-full-tablet home-about">
-							<h2 className="title has-text-white has-text-left">Go boldly forth and leave your mark.</h2>
-								<p className="has-text-white">It’s what we do every day. But leaving your mark—truly indelible marks—takes imagination, vision and hard work. Not to mention a complete disregard for following the status quo. There’s also the technical expertise and logistical wizardry. Plus a few (hundred) established partners who share your vision.
-								</p>
-								<p className="has-text-white">All of this is what makes up our DNA. And for over 20 years, we’ve stayed true to who we are: creating, producing and orchestrating unique, memorable marks for clients all over the globe. Are you ready to leave your mark? If so, we’re ready to go forth with you. </p>
-						<div className="who-we-are">who we are</div>
+						{data.wordpressPage.acf.heading_section_two ? (
+							<h2 className="title has-text-white has-text-left">
+								{data.wordpressPage.acf.heading_section_two}
+							</h2>
+						): null }
+						{data.wordpressPage.acf.descriptions_section_two ? (
+						<div dangerouslySetInnerHTML={{ __html: data.wordpressPage.acf.descriptions_section_two }}/>
+						): null }
+						{data.wordpressPage.acf.text_in_right_side ? (
+						<div className="who-we-are">{data.wordpressPage.acf.text_in_right_side}</div>
+						): null }
 						</div>
 					</div>
 		    	</div>

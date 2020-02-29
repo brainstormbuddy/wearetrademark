@@ -35,7 +35,7 @@ const FullPage = () => (
 			scrollHorizontallyKey = {'YOUR KEY HERE'}
 			scrollBar = {true}
 			css3 = {true}
-			fitToSection ={true}
+			fitToSection ={false}
 			responsiveWidth = {769}
 	
 			render={({ state, fullpageApi }) => {

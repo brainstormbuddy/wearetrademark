@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ModalVideo from 'react-modal-video'
+import { useStaticQuery, graphql } from 'gatsby'
+
+import CaseStudyModal from './CaseStudyModal'
 
 import { Slide } from 'react-slideshow-image'
 
@@ -9,116 +11,111 @@ import adobe from './img/MaskAdobe.svg'
 import charity from './img/MaskCharity.svg'
 
 import XIcon from './img/Path.svg'
-import FullscreenIcon from './img/fullscreen.svg'
 
 import CasestudyStyle from './Wrapper'
 
 
-class Slideshow extends React.Component {
+const Slideshow = () => {
     
-    constructor () {
-	    super()
-	    this.state = {
-	      isOpen: false
-	    }
-	    this.openModal = this.openModal.bind(this)
-	}
+    const data = useStaticQuery(graphql`
+		query HomeCaseStudyQuery {
+		  allWordpressWpCasestudy(limit: 3, sort: {order: ASC, fields: title}) {
+		      nodes {
+		        content
+		        slug
+		        path
+		        title
+		        acf {
+		          project_event_name
+		          icon_color
+		          video_url
+				  background_color_info
+		        }
+		    }
+		  }
+		}	
+	`)
+    
+    // lyft, stryker '#1F1E0D', '#ED7D31'
+    
+    let slideImages = [slack, adobe, charity];
+    let slidebgcolor = ['#FF4274', '#95A84C', '#66BFF2'];
 
-	openModal () {
-	  this.setState({isOpen: true})
+	let properties = {
+	  autoplay: false,
+	  duration: 5000,
+	  transitionDuration: 500,
+	  infinite: true,
+	  indicators: false,
+	  arrows: true,
+	  onChange: (oldIndex, newIndex) => {
+	    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+	  }
 	}
 	
-    
-    
-    
-    
-    render () {
-	    
-	    let slideImages = [slack, adobe, charity];
-
-		let properties = {
-		  autoplay: false,
-		  duration: 5000,
-		  transitionDuration: 500,
-		  infinite: true,
-		  indicators: false,
-		  arrows: true,
-		  onChange: (oldIndex, newIndex) => {
-		    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-		  }
-		}
+	{/*backgroundColor: `${casestudy.acf.background_color_info}`*/}
 	    
     return (
       <CasestudyStyle>
       <div className="slide-container">
         <Slide {...properties}>
-          <div className="each-slide" style={{backgroundImage: `url(${slideImages[0]})`, backgroundColor: `#FF4274`}}>
+          {data.allWordpressWpCasestudy.nodes.map((casestudy, i) => (
+          <div key={i} className="each-slide" style={{backgroundImage: `url(${slideImages[i]})`, backgroundColor: `${slidebgcolor[i]}`}}>
             <div className="container">
-            <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='128729855' onClose={() => this.setState({isOpen: false})} />
           	  <div className="columns is-mobile is-centered">
 				  <div className="column is-half-desktop is-two-thirds-tablet is-two-thirds-mobile x-icon" style={{position: `relative`}}>
-				  		<img className="xImage" src={XIcon} alt="x icon" />
+				  		{/*<img className="xImage" src={XIcon} alt="x icon" /> */}
 				  		
-				  		<div className="case-meta">
-				  			<a onClick={this.openModal} className="play-video">Play video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
-				  			<a href="#">Case study</a>
-				  		</div>
+
+{/*
+<svg>
+    <defs>
+    <clipPath id="clip-01" clipPathUnits="objectBoundingBox" transform="scale(0.00059999 0.00099999)">
+        <path d="M1076.42652,940.677286 C1049.27954,967.796939 1005.25972,967.796939 978.109323,940.677286 L810.967357,773.724593 L643.82881,940.677286 C616.678412,967.796939 572.658594,967.796939 545.508196,940.677286 C518.361217,913.554219 518.361217,869.587664 545.508196,842.471427 L712.650162,675.515318 L545.508196,508.562625 C518.361217,481.446388 518.361217,437.476418 545.508196,410.356765 C572.658594,383.237113 616.678412,383.237113 643.82881,410.356765 L810.967357,577.309459 L978.109323,410.356765 C1005.25972,383.237113 1049.27954,383.237113 1076.42652,410.356765 C1103.58033,437.476418 1103.58033,481.446388 1076.42652,508.562625 L909.28797,675.515318 L1076.42652,842.471427 C1103.58033,869.587664 1103.58033,913.554219 1076.42652,940.677286 L1076.42652,940.677286 Z" id="path-1"></path>
+    </clipPath>
+    </defs>
+</svg>
+*/}
+
+
+
+<svg>
+<defs>
+<clipPath id="clip-01" clipPathUnits="objectBoundingBox" transform="scale(0.00099 0.00090)">
+<path d="M500,623.8L159.9,963.9c-34.6,34.6-90.1,34.7-124.3,0.5c-34.4-34.4-34-89.8,0.5-124.3L376.2,500L36.1,159.9C1.5,125.3,1.4,69.8,35.6,35.6c34.4-34.4,89.8-34,124.3,0.5L500,376.2L840.1,36.1c34.6-34.6,90.1-34.7,124.3-0.5c34.4,34.4,34,89.8-0.5,124.3L623.8,500l340.1,340.1c34.6,34.6,34.7,90.1,0.5,124.3c-34.4,34.4-89.8,34-124.3-0.5L500,623.8z"/>
+</clipPath>
+</defs>
+</svg>
+
+				  		
+
+		<div className="video-container">
+			<video loop autoPlay muted playsInline>
+				<source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
+			</video>  
+		</div>
+					  		
 				  		
 				  		
-	              		<h2 className="title has-text-white">Slack</h2>
-	              		<h3 className="subtitle has-text-white">Slack Frontiers Conference 2019</h3>
-	              		<p>With over 10 million active users in over 150 countries, Slack is changing how the world works on a global scale. After producing their inaugural Frontiers conference in 2017, Slack asked us to join forces again. Our challenge? To create an inspiring experience that would bring together and celebrate the unique and varied worlds Slack connects on a daily basis.</p>
+				  		<CaseStudyModal 
+				  			idVideo={casestudy.acf.video_url}
+				  			caseURL={`/casestudy/${casestudy.slug}`}
+				  		/>
+				  		
+	              		<h2 className="title has-text-white">{casestudy.title}</h2>
+	              		<h3 className="subtitle has-text-white">{casestudy.acf.project_event_name}</h3>
+	              		<div dangerouslySetInnerHTML={{ __html: casestudy.content }}/>
 	              		<div className="x-icon-txt">whatmarkwillyouleave</div>
 	              </div>
 	            </div>				  
             </div> 
           </div>
-          
-          
-          <div className="each-slide" style={{backgroundImage: `url(${slideImages[1]})`, backgroundColor: `rgba(149,168,76,0.58)`}}>
-            <div className="container">
-            <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='128729855' onClose={() => this.setState({isOpen: false})} />
-          	  <div className="columns is-mobile is-centered">
-				  <div className="column is-half-desktop is-two-thirds-tablet is-two-thirds-mobile x-icon" style={{position: `relative`}}>
-				  		<img className="xImage" src={XIcon} alt="x icon" />
-				  		<div className="case-meta">
-				  			<a onClick={this.openModal} className="play-video">Play video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
-				  			<a href="#">Case study</a>
-				  		</div>
-	              		<h2 className="title has-text-white">Adobe</h2>
-	              		<h3 className="subtitle has-text-white">Adobe Max Executive Reception</h3>
-	              		<p>How do you inspire some of the world’s most inspirational creative VIPs? That was our challenge for The Adobe Max Executive Reception–an invite-only event for the world’s most cutting edge and innovative leaders, designers and Chief Creative Officers. With color as our inspiration, we delivered FILTER–a full sensory experience that embraced the concept of how filters alter and enhance our perception of the world around us and celebrated the wide and creative influence of this exclusive group.</p>
-	              		<div className="x-icon-txt">whatmarkwillyouleave</div>
-	              </div>
-	            </div>				  
-            </div>
-          </div>
-          
-          <div className="each-slide" style={{backgroundImage: `url(${slideImages[2]})`, backgroundColor: `#66BFF2`}}>
-            <div className="container">
-            <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId='128729855' onClose={() => this.setState({isOpen: false})} />
-          	  <div className="columns is-mobile is-centered">
-				  <div className="column is-half-desktop is-two-thirds-tablet is-two-thirds-mobile x-icon" style={{position: `relative`}}>
-				  		<img className="xImage" src={XIcon} alt="x icon" />
-				  		<div className="case-meta">
-				  			<a onClick={this.openModal} className="play-video">Play video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
-				  			<a href="#">Case study</a>
-				  		</div>
-	              		<h2 className="title has-text-white">charity: water</h2>
-	              		<h3 className="subtitle has-text-white">charity: ball</h3>
-	              		<p>One in ten people lack access to clean water. charity: water is on a mission to change that. And when CEO Scott Harrison decided to bring their charity: ball to the Bay area–home turf for their biggest donors–we were on a mission to help. See how our unique immersive, 360° experience helped bring clean water to Ethiopian communities and raised close to $7 in one night.</p>
-	              		<div className="x-icon-txt">whatmarkwillyouleave</div>
-	              </div>
-	            </div>				  
-            </div>
-          </div>
+         ))} 
         </Slide>
         <div className="has-text-centered xx">Some of our clients</div>
       </div>
-      </CasestudyStyle>
+    </CasestudyStyle>
     )
-    
-    }
 }
 
 export default Slideshow

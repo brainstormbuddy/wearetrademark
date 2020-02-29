@@ -7,9 +7,6 @@ const WhatMarkWillYouLeave = styled.div`
 		height: 0;
 		position: absolute;
 	}
-	.video-container{
-	  	//margin: 40px auto;
-	}
 	
 	.watch-video{
 		box-sizing: border-box;
