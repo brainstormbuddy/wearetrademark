@@ -328,10 +328,7 @@ const CaseStudyStyle = styled.div`
 			margin-left: -0.75rem;
 			margin-right: -0.75rem;
 		}
-		.has-border-right,
-		.has-border-left{
-			border: 0;	
-		}
+		
 		.hero.is-small .hero-body{
 			padding-bottom: 3rem;
 			padding-top: 3rem;
@@ -355,7 +352,7 @@ const CaseStudyStyle = styled.div`
 		}
 		#infographics .level .level-item.mid{
 			max-width: 100%!important;
-			font-size:45px!important;
+			font-size:35px!important;
 		}
 		.rightSideImage{display:none!important;}
 		.thirdColImage{

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const PrivacyStyle = styled.div`
-	//padding-top: 25%;
 	
 	.column.col-left{
 		border-right: 1px solid #4E6F7B;
@@ -28,6 +27,9 @@ const PrivacyStyle = styled.div`
 	@media screen and (max-width: 768px){
 		.column.col-left{
 			border-right: 0;
+		}
+		h2{
+			font-size: 50.6px;
 		}
 	}
 

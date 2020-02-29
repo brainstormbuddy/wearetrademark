@@ -311,7 +311,7 @@
 	}
 	#infographics h3,	
 	.single.casestudy.xtrademark.Xamarin #infographics h3{
-		line-height: 2!important;
+		padding-top: 1rem;
 	}
 	div#infographics img {
  	   display: table;
