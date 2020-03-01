@@ -124,7 +124,7 @@ const Slideshow = () => {
           ))} 
         </Slide>
         <div className="has-text-centered xx">Some of our clients</div>
-    </div> // end slide-container
+    </div>
     
     
     </CasestudyStyle>
