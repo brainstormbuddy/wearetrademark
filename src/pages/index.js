@@ -35,13 +35,23 @@ const FullPage = () => (
 			scrollHorizontallyKey = {'YOUR KEY HERE'}
 			scrollBar = {true}
 			css3 = {true}
-			fitToSection ={false}
-			responsiveWidth = {769}
+			fitToSection ={true}
+			responsiveWidth = {768}
 	
 			render={({ state, fullpageApi }) => {
 		    
 				return(
 				    	<ReactFullpage.Wrapper>
+				    	
+				    	<div className="arrowTopBottom">
+				    		<div className="arrowBG">
+				    		<a onClick={() => fullpageApi.moveSectionUp()}>
+				    		<i className="up"></i></a>
+				    		<a onClick={() => fullpageApi.moveSectionDown()}>
+				    		<i className="down"></i>
+				    		</a>
+				    		</div>
+				    	</div>
 				    	
 					    <section className="section" id="watchVideo" style={{padding: `0`}}>
 					    	<Navbar />
