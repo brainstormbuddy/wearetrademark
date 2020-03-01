@@ -41,7 +41,7 @@ module.exports = {
       	resolve: `gatsby-plugin-google-fonts`,
       	options: {
 	        fonts: [
-	           `Maven+Pro`,
+	           `Maven+Pro\:400, 500, 600, 700`,
 	           `Open+Sans\:300, 400, 500, 700`
 	        ],
 	        display: 'swap'
@@ -129,7 +129,10 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/img/`,
+	      name: 'image',
+		  path: `${__dirname}/src/img/`,
+		  name: "fonts",
+		  path: `${__dirname}/src/fonts/`
       },
     },
     {
@@ -139,7 +142,7 @@ module.exports = {
         // Activates purging in gatsby develop
         develop: false,
         // Ignore
-        ignore: ['styles/page.css', 'react-slideshow-image', 'react-responsive-carousel'],
+        ignore: ['react-slideshow-image', 'react-responsive-carousel'],
         // Purge only the main css file
         purgeOnly: ['/all.sass','styles/'],
       },

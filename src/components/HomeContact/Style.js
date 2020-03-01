@@ -40,7 +40,7 @@ const ContactForm = styled.div`
 		color: #fff;
 		padding: 0 3em;
 		text-transform: uppercase;
-		font-weight:700;
+		font-weight:500;
 		letter-spacing:1px;
 	}
 	.button.upload-btn{

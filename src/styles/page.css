@@ -1,9 +1,4 @@
 /*
-.section .container .content,
-.section .container.content{
-	padding: 3rem 1.5rem;
-}
-*/
 .content p, 
 ul li, 
 ol li{
@@ -94,3 +89,4 @@ th {
 @media screen and (max-width: 768px){
     #mobileSection{padding: 0 0.5rem;}
 }
+*/

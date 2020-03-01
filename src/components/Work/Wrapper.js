@@ -12,7 +12,12 @@ const WorkStyle = styled.section`
 		margin: auto;
 		height: 200px;
 	}
-	
+	h2.reelTxtSidebar,
+	h2.reelTxt{
+		font-family: 'Mort Modern 09';
+    	font-weight: 500;
+    	font-style: normal;
+	}
 	
 /*
 	.allcases .filterDiv img{
@@ -160,7 +165,9 @@ const WorkStyle = styled.section`
 	}
 	cite {
 		color: #8F91A3;
+		font-family: 'Mort Modern 24 Text';
 		font-size: 12px;
+		font-weight: normal;
 		font-style: italic;
 		letter-spacing: 0.7px;
 		line-height: 17px;
@@ -169,9 +176,9 @@ const WorkStyle = styled.section`
 	h2{
 		color: #141825;
 		line-height: 40px;
-		font-weight: 700;
 	}
 	h3{
+		font-family: 'Open Sans', sans-serif;
 		font-size: 16px;
 		font-weight: 500;
 		letter-spacing: 1.05px;
@@ -184,6 +191,9 @@ const WorkStyle = styled.section`
 	
 	p.heading {
     	padding: 0 10px 20px;
+    	font-family: 'Mort Modern 09';
+    	font-weight: 500;
+    	font-style: normal;
     	font-size: 25px;
     	line-height: 29px;
     	color: #141825;
@@ -203,6 +213,7 @@ const WorkStyle = styled.section`
 		line-height: 16px;
 	}
 	em{
+		font-family: 'Mort Modern 24 Text';
 		font-size: 12px;
 		letter-spacing: 0.7px;
 		line-height: 17px;

@@ -16,8 +16,10 @@ const HomeAbout = styled.section`
 	}
 
 	h2{
+		font-family: 'Mort Modern 09';
 		font-size: 60px;
 		line-height: 61px;
+		font-weight: 500;
 	}
 	
 	p{

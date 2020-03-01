@@ -15,8 +15,8 @@ const Callus = () => {
 			    <div className="content">
 			        <em style={{color:`white`}}>- or -</em>
 			        <br />
-			        <h4 style={{color:`#F2ED66`, marginBottom:`0`}}>call us</h4>
-			        <h6><span style={{color: `#F2ED66`}}>415.621.8000</span></h6>
+			        <h4 style={{fontFamily: `Maven Pro`, color:`#F2ED66`, marginBottom:`0`}}>call us</h4>
+			        <h6><span style={{fontFamily: `Maven Pro`, color: `#F2ED66`}}>415.621.8000</span></h6>
 			    </div>
 			  </div>
 			</article>

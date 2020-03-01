@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Mort Modern 09';
+    src: url('MortModern-09Medium.eot');
+    src: url('MortModern-09Medium.eot?#iefix') format('embedded-opentype'),
+        url('MortModern-09Medium.woff2') format('woff2'),
+        url('MortModern-09Medium.woff') format('woff'),
+        url('MortModern-09Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Mort Modern 03 Large';
+    src: url('MortModern-03LargeMedium.eot');
+    src: url('MortModern-03LargeMedium.eot?#iefix') format('embedded-opentype'),
+        url('MortModern-03LargeMedium.woff2') format('woff2'),
+        url('MortModern-03LargeMedium.woff') format('woff'),
+        url('MortModern-03LargeMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mort Modern 03 Large';
+    src: url('MortModern-03LargeMediumItalic.eot');
+    src: url('MortModern-03LargeMediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('MortModern-03LargeMediumItalic.woff2') format('woff2'),
+        url('MortModern-03LargeMediumItalic.woff') format('woff'),
+        url('MortModern-03LargeMediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mort Modern 24 Text';
+    src: url('MortModern-24TextRegular.eot');
+    src: url('MortModern-24TextRegular.eot?#iefix') format('embedded-opentype'),
+        url('MortModern-24TextRegular.woff2') format('woff2'),
+        url('MortModern-24TextRegular.woff') format('woff'),
+        url('MortModern-24TextRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mort Modern 24 Text';
+    src: url('MortModern-24TextRegularItalic.eot');
+    src: url('MortModern-24TextRegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('MortModern-24TextRegularItalic.woff2') format('woff2'),
+        url('MortModern-24TextRegularItalic.woff') format('woff'),
+        url('MortModern-24TextRegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}

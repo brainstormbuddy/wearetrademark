@@ -137,7 +137,7 @@ export default CaseStudy => {
 							</div>
 						</div>
 						<div className="column is-4 has-text-left client-details">
-							<h2 className="is-size-2 has-text-weight-bold" dangerouslySetInnerHTML={{ __html: singleCaseStudy.title}}/>
+							<h2 className="casestudyTitle" dangerouslySetInnerHTML={{ __html: singleCaseStudy.title}}/>
 						  	
 						  	<em>Project</em>
 						  	<h3 className="event-name">{singleCaseStudy.acf.project_event_name}</h3>

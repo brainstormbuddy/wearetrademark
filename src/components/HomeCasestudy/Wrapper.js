@@ -36,8 +36,12 @@ const CasestudyStyle = styled.div`
 h2.title{
 	font-size: 40px;
 	line-height: 42px;
+	font-family: 'Mort Modern 03 Large';
+	font-weight: 500;
+	font-style: normal;
 }
 h3.subtitle{
+	font-family: 'Maven Pro';
 	font-size: 16px;
 	font-weight: 600;
 	letter-spacing: 2px;

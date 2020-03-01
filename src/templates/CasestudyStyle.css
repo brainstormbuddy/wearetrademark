@@ -16,17 +16,14 @@
 	font-size: 40px;
 	color: #FFFFFF;
 	line-height: 47px;
-	font-weight: 700;
 }
 #infographics h3{
 	font-size: 30px;
 	color: #FFFFFF;
-	font-weight: 700;
 }
 #infographics h4{
 	font-size: 22.5px;
 	color: #FFFFFF;
-	font-weight: 700;
 }
 
 #infographics p{
@@ -79,9 +76,10 @@
 
 .bigText{
 	color: #FFFFFF;
-	font-family: "Maven Pro";
+	font-family: 'Mort Modern 09';
 	font-size: 40.79px;
-	font-weight: 700;
+	font-weight: 500;
+	font-style: normal;
 	line-height: 1;
 	text-transform: uppercase;
 }

@@ -6,7 +6,11 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1,h2,h3,h4,h5,h6{font-family: 'Maven Pro', sans-serif}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Mort Modern 09', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
 
 hr{
 	background-color: #66BFF2;
@@ -108,15 +112,12 @@ hr{
 	position: relative;
 }
 
-/*
-.pulled-last{
-	position: absolute;
-	right: calc(100vw - 88.5vw);
-}
-*/
 
 .is-size-0{
-	font-size: 74.2px;	
+	font-family: 'Mort Modern 03 Large';
+	font-size: 74.2px;
+	font-weight: 500;
+	font-style: normal;
 }
 
 .rw-words{
@@ -149,25 +150,25 @@ hr{
 
 @-webkit-keyframes rotateWord {
     2% { opacity: 0; max-width: 0; -webkit-transform: translateY(-30px); }
-	5% { opacity: 1; max-width: 230px; -webkit-transform: translateY(28px);}
-    17% { opacity: 1; max-width: 230px; -webkit-transform: translateY(28px); }
-	20% { opacity: 0; max-width: 0; -webkit-transform: translateY(30px); }
+	5% { opacity: 1; max-width: 230px; -webkit-transform: translateY(38px);}
+    17% { opacity: 1; max-width: 230px; -webkit-transform: translateY(38px); }
+	20% { opacity: 0; max-width: 0; -webkit-transform: translateY(40px); }
 	80% { opacity: 0; max-width: 0;}
     100% { opacity: 0; }
 }
 @-ms-keyframes rotateWord {
     2% { opacity: 0; max-width: 0; -ms-transform: translateY(-30px); }
-	5% { opacity: 1; max-width: 230px; -ms-transform: translateY(28px);}
-    17% { opacity: 1; max-width: 230px; -ms-transform: translateY(28px); }
-	20% { opacity: 0; max-width: 0; -ms-transform: translateY(30px); }
+	5% { opacity: 1; max-width: 230px; -ms-transform: translateY(38px);}
+    17% { opacity: 1; max-width: 230px; -ms-transform: translateY(38px); }
+	20% { opacity: 0; max-width: 0; -ms-transform: translateY(40px); }
 	80% { opacity: 0; max-width: 0; }
     100% { opacity: 0; }
 }
 @keyframes rotateWord {
     2% { opacity: 0; max-width: 0; transform: translateY(-30px); }
-	5% { opacity: 1; max-width: 230px; transform: translateY(28px);}
-    17% { opacity: 1; max-width: 230px; transform: translateY(28px); }
-	20% { opacity: 0; max-width: 0; transform: translateY(30px); }
+	5% { opacity: 1; max-width: 230px; transform: translateY(38px);}
+    17% { opacity: 1; max-width: 230px; transform: translateY(38px); }
+	20% { opacity: 0; max-width: 0; transform: translateY(40px); }
 	80% { opacity: 0; max-width: 0;}
 	100% { opacity: 0; }
 }

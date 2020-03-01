@@ -4,7 +4,10 @@ const CaseStudyStyle = styled.div`
 	
 	h2 {
 		color: #FFFFFF;
-		font-size: 60.6px;
+		font-family: 'Mort Modern 09';
+		font-weight: 500;
+		font-style: normal;
+		font-size:60px;
 		line-height: 55.2px;
 	}
 	p{
