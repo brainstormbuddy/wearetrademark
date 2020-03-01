@@ -13,6 +13,8 @@ const CasestudyStyle = styled.div`
 	  	transform: scale(2);
 	  	position: relative;
 	  	top:-100px;
+	  	max-width: 536px;
+	  	max-height: 300px;
 	}
 	.video-container video {
 	  	width: 100%;
@@ -85,21 +87,22 @@ p{
     right: -119px;
 }
 
-/*
-.x-icon::after{
-	content: "";
+.vertical-line{
     position: absolute;
     right: -35px;
     top: 0;
     width: 1px;
-    height: 50%;
+    height: 60%;
     background-color: #fff;
 }
-*/
 .case-meta{
 	position: absolute;
-	top: 25%;
+	top: 50%;
+	bottom: 50%;
+	height: 0;
 	right: 0;
+	line-height:1;
+	margin: -4rem 0;
 }
 
 .case-meta a{
@@ -166,19 +169,12 @@ p{
 }
 
 @media screen and (max-width: 768px){
-	.x-icon-txt,
-	.x-icon::after{
-		display: none;
-		height: 0;
-	}
+	
 	h2.title{
 		font-size: 40px;
 	}
 	h3.subtitle{
 		font-size: 16px;
-	}
-	.case-meta{
-		top:20%;
 	}
 	.react-slideshow-container .nav:first-of-type{
 		right: calc(100vw - 45vw);
@@ -202,17 +198,21 @@ p{
 	.xx::before{
 		border-left: calc(100vw - 80vw) solid rgba(255,255,255,0.5);
 	}
+	.x-icon-txt,
+	.vertical-line{
+		display: none;
+		height:0;
+	}
+	.case-meta{
+		margin: -5rem 0;
+		right: -70px;	
+	}
 }
 @media screen and (max-width: 550px){
-	.case-meta{
-		top:15%;
-	}	
+		
 }
 @media screen and (max-width: 414px){
-	.case-meta{
-		top:10%;
-		right: -10%;
-	}
+	
 	.react-slideshow-container .nav:first-of-type{
 		right: calc(100vw - 40vw);
 	}
@@ -225,13 +225,24 @@ p{
 	}
 }
 @media screen and (max-width: 375px){
-	
+	.video-container{
+		top:-50px;
+	}
+	.case-meta{
+		margin: -3rem 0;
+		right: -50px;
+	}
+	.case-meta a{
+		font-size: 10px;
+		line-height: 20px;
+	}
 }
 @media screen and (max-width: 320px){
 	.react-slideshow-container .nav:first-of-type,
 	.react-slideshow-container .nav:last-of-type{
 		bottom: 74%;
 	}
+	
 }
 
 @media screen and (min-width: 1024px){
