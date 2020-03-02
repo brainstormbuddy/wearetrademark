@@ -58,15 +58,15 @@ const WorkStyle = styled.section`
 */
 	.is-200:hover .gatsby-image-wrapper,
 	.filterDiv:hover .gatsby-image-wrapper {
-		//transition: all .2s ease-in-out;
-    	//transform: scale(1.1);
     	display: none;
 	}
-	.related-article .allcases .column:hover #vimeoVideo,	
+	
 	.filterDiv:hover #vimeoVideo {
 		transform: scale(1.1);
     	display: block;	
     }
+    
+    
 	#vimeoVideo {
 		width: 200px;
 		height: 200px;

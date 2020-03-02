@@ -108,7 +108,13 @@ export default CaseStudy => {
 							
 							{firstImage ? (
 								<div>
-								<img className="hideMe" src={singleCaseStudy.acf.first_image.source_url} alt={singleCaseStudy.acf.client_name} />
+								{/*<img className="hideMe" src={singleCaseStudy.acf.first_image.source_url} alt={singleCaseStudy.acf.client_name} /> */}
+								<Img className="hideMe" 
+								fluid ={singleCaseStudy.acf.first_image.localFile.childImageSharp.fluid}
+								alt={singleCaseStudy.acf.client_name}
+								/>
+								
+								
 								<div id="vimeoVideo">
 						      	<Vimeo 
 						      		id="Vmo"
@@ -240,9 +246,11 @@ export default CaseStudy => {
 								<div className="slide-container">
 							        <Carousel showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true}>
 							          {singleCaseStudy.acf.case_study_gallery.map((each, index)=> (
-
-							            <img key={index} src={each.source_url} alt={singleCaseStudy.acf.client_name}/>
-							            
+							            <Img 
+							            	key={index}
+											fluid ={each.localFile.childImageSharp.fluid}
+											alt={each.client_name}
+							            />
 							          ))}
 							        </Carousel>
 							        <Carousel className="captionTxt" showThumbs={false} useKeyboardArrows={false} autoPlay={true} infiniteLoop={true} showArrows={false} showIndicators={false} showStatus={false}>
@@ -370,7 +378,14 @@ export const query = graphql`
 	      first_image{
 		    alt_text
 		    id
-		    source_url  
+		    source_url
+		    localFile {
+	            childImageSharp {
+	              fluid(maxWidth: 1193, quality: 100) {
+	                ...GatsbyImageSharpFluid
+	              }
+	            }
+	          }  
 	      }
 	      second_landscape_image{
 		    alt_text
@@ -378,7 +393,14 @@ export const query = graphql`
 		    source_url
 	      }
 	      case_study_gallery{
-		    source_url  
+		    source_url
+		    localFile {
+	            childImageSharp {
+	              fluid(maxWidth: 1416, quality: 100) {
+	                ...GatsbyImageSharpFluid
+	              }
+	            }
+	        }  
 	      }
 	      client_category {
 	        label

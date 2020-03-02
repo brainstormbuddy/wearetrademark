@@ -205,7 +205,7 @@ const CaseStudyStyle = styled.div`
 		border-bottom: 0;
 		padding: 2rem 1rem;
 	}
-	.related-article .allcases .column:hover img{
+	.related-article .allcases .column:hover .gatsby-image-wrapper{
 		display: none;
 	}
 	.related-article .allcases .column:hover #vimeoVideo{
