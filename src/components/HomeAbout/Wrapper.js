@@ -8,8 +8,8 @@ const HomeAbout = styled.section`
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: auto;
-	@media screen and (max-width: 1023px){
-		background-size: auto;
+	@media screen and (max-width: 767px){
+		background-position: 15% 100%;
 	}
 	@media screen and (min-height: 666px) and (max-height: 900px){
 		height: 100vh;
@@ -18,7 +18,7 @@ const HomeAbout = styled.section`
 	h2{
 		font-family: 'Mort Modern 09';
 		font-size: 60px;
-		line-height: 61px;
+		line-height: 41px;
 		font-weight: 500;
 	}
 	

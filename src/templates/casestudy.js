@@ -216,7 +216,7 @@ export default CaseStudy => {
 									<em>Event:</em>
 									<div>{singleCaseStudy.acf.project_event_name}</div>
 								</div>
-								<div className="column is-narrow has-border-right">
+								<div className="info-location column is-narrow has-border-right">
 									<em>Location:</em>
 									<div>{singleCaseStudy.acf.location}</div>
 								</div>

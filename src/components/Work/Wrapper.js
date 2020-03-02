@@ -382,6 +382,14 @@ const WorkStyle = styled.section`
 		.allhrline{
 			display: none;	
 		}
+		p.heading{
+			font-size: 40px;
+			line-height: 40px;
+		}
+		h2.reelTxtSidebar,
+		h2.reelTxt{
+			font-size: 50px;
+		}
 	}
 
 `;

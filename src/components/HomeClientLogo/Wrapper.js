@@ -16,6 +16,11 @@ const LogoClient = styled.div`
 	.carousel .control-prev.control-arrow{
 		left: 10px;
 	}
+	@media screen and (max-width: 768px){
+		.carousel .slide img{
+			width: auto;
+		}
+	}
 `;
 
 export default LogoClient

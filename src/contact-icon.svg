@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>contact-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
+        <g id="nav" transform="translate(-297.000000, -325.000000)">
+            <g id="contact-icon" transform="translate(297.000000, 325.000000)">
+                <circle id="Oval" fill="#F2ED66" cx="14" cy="14" r="14"></circle>
+                <text id="email---material" font-family="material" font-size="20" font-weight="normal" fill="#000000">
+                    <tspan x="4" y="21"></tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

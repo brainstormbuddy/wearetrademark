@@ -6,6 +6,7 @@ import LogoBlack from '../img/logoBlack.svg'
 import LogoYellow from '../img/LogoYellow.svg'
 
 import TelIcon from '../img/click-to-call-icon.svg'
+import EmailIcon from '../contact-icon.svg'
 
 import userConfig from '../../config'
 
@@ -88,7 +89,7 @@ class Navbar extends Component {
 	                  : <img src={LogoBlack} alt="X Trademark Black logo" /> }
 	                  </a>
 	                  
-	                  <a className="is-hidden-desktop" style={{alignItems: `center`, display: `flex`}} href="mailto:info@trademarkevents.com"><img src={TelIcon} alt="email icon" /></a>
+	                  <a className="is-hidden-desktop" style={{alignItems: `center`, display: `flex`}} href="mailto:info@trademarkevents.com"><img src={EmailIcon} alt="email icon" /></a>
 	                  
 	                </div>
 	                <div id="navMenu" className="level-item">
