@@ -73,19 +73,26 @@ const CaseStudyStyle = styled.div`
 		letter-spacing: 2px;
 		transform: rotate(-90deg);
 	    position: absolute;
-	    bottom: 120px;
-	    left: -60px;
+	    bottom: 250px;
+	    left: -88px;
 	}	
 	.scroller-wrapper{position: relative;}
 	.scroller-wrapper::after{
 		content: "";
 	    position: absolute;
 	    left: 20px;
-	    bottom: 0;
 	    width: 2px;
-	    height: 50px;
-	    bottom: 220px;
+	    height: 100px;
+	    bottom: 390px;
 	    background-color: #66BFF2;
+	}
+	.scrollArrow{
+		transform: rotate(90deg);
+		position: relative;
+		top: 15px;
+		right: 15px;
+		width: 32px;
+		height: 32px;
 	}
 	#threeCases,
 	.rel-article{
@@ -238,7 +245,7 @@ const CaseStudyStyle = styled.div`
 		top:0;
 		width: 100%;
 		height: 100%;
-		transform: scaleY(1.83);
+		transform: scaleY(1.82);
 	}
 	
 	

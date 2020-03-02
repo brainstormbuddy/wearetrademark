@@ -16,6 +16,7 @@ import ReactDOM from 'react-dom'
 import Modal from 'react-modal'
 
 import FullscreenIcon from './fullscreen.svg'
+import ScrollArrow from './scroll-arrow.svg'
 
 import Infographics from './Infographics'
 
@@ -101,10 +102,10 @@ export default CaseStudy => {
 				<body className={"single casestudy xtrademark" + " "+ singleCaseStudy.title} />
 			</Helmet>
 			<CaseStudyStyle>
-		      	<section className="hero is-fullheight">
+		      	<section className="hero">
 		      		<div className="columns is-vcentered is-marginless casestudyHeader">
-						<div className="column hero is-7 is-paddingless" style={{position:`relative`}}>
-							<div className="has-text-centered">
+						<div className="column is-7 is-paddingless" style={{position:`relative`}}>
+							
 							{firstImage ? (
 								<div>
 								<img className="hideMe" src={singleCaseStudy.acf.first_image.source_url} alt={singleCaseStudy.acf.client_name} />
@@ -134,7 +135,6 @@ export default CaseStudy => {
 							      </div>
 						      </div>
 							}
-							</div>
 						</div>
 						<div className="column is-4 has-text-left client-details">
 							<h2 className="casestudyTitle" dangerouslySetInnerHTML={{ __html: singleCaseStudy.title}}/>
@@ -182,13 +182,13 @@ export default CaseStudy => {
 					<div className="columns">
 						<div className="column is-7"></div>
 						<div className="column is-4 scroller-wrapper">
-							<div className="scroller">Scroll for full case study</div>
+							<div className="scroller"><a href="#nextSection"><img className="scrollArrow" src={ScrollArrow} /></a> Scroll for full case study</div>
 						</div>
 					</div>
 				</section>
 				
 				
-				<section className="has-background-none">	
+				<section className="has-background-none" id="nextSection">	
 					
 						{secondLandscapeImage ? (
 							<div className="parallax" style={parallaxStyle}></div>
