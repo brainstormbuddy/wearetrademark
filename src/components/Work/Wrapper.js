@@ -107,6 +107,12 @@ const WorkStyle = styled.section`
 		line-height: 24px;
 		padding: 0.5rem 1rem; 
 	}
+	.filter-box a{
+		padding: 0.25rem 1rem;
+	}
+	.watch-video a{
+		font-size: 11px;	
+	}
 	.latest-reel{
 		background: #FAF8C0 url(${Reel});
 		background-repeat: no-repeat;

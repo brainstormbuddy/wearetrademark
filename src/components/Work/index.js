@@ -9,6 +9,8 @@ import AllCases from './AllCases'
 
 import ModalVideo from './XModalVideo'
 
+import FilterList from './Filter-list.svg'
+
 import WorkStyle from './Wrapper'
 import './CustomStyle.css'
 
@@ -110,7 +112,7 @@ class WorkPage extends Component {
 				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`, marginTop: `0`}}>
 					<div className="column hero is-one-quarter-tablet">
 						<div className="hero-body filter-box has-text-centered">
-							<a onClick={() => this.onClick()}>Filter</a>
+							<a onClick={() => this.onClick()}>Filter <img src={FilterList} alt=""/></a>
 						</div>
 					</div>
 					<div className="column is-three-quarters-desktop is-full-mobile is-full-tablet hero latest-reel">
