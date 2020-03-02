@@ -56,8 +56,8 @@ const WorkStyle = styled.section`
 		transition-delay: .50s;
 	}
 */
-	.is-200:hover img,
-	.filterDiv:hover img {
+	.is-200:hover .gatsby-image-wrapper,
+	.filterDiv:hover .gatsby-image-wrapper {
 		//transition: all .2s ease-in-out;
     	//transform: scale(1.1);
     	display: none;

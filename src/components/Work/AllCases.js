@@ -18,6 +18,13 @@ const AllCases = (props) => {
 		        title
 		        featured_media{
 			        source_url
+			        localFile {
+			          childImageSharp {
+			            fluid(quality: 100, maxWidth: 200) {
+			              ...GatsbyImageSharpFluid
+			            }
+			          }
+			        }
 			    }
 		        acf {
 		          video_url
@@ -61,17 +68,14 @@ const AllCases = (props) => {
 				  	</div>	
 			      </div>
 			      <div className="is-200">
-			      <Link to={`/casestudy/${casestudy.slug}`}>
+			      {/* <Link to={`/casestudy/${casestudy.slug}`}> */}
 			      
-			      {/*<Img 
-			      className="is-200"
+			      <Img 
 			      imgStyle={{borderRadius: `290486px`}} 
 			      fluid ={casestudy.featured_media.localFile.childImageSharp.fluid}
-			      alt={casestudy.acf.client_name}/> */}
-			      {/*</Link>
-				  </div> */}
-			      
-			      <img style={{borderRadius: `290486px`}} src={casestudy.featured_media.source_url} alt={casestudy.acf.client_name}/> 
+			      alt={casestudy.acf.client_name}/>
+				  
+			      {/*<img style={{borderRadius: `290486px`}} src={casestudy.featured_media.source_url} alt={casestudy.acf.client_name}/> */}
 			      
 			      <div id="vimeoVideo"><span style={{position:`absolute`,top:`50%`,left: `0`,right:`0`,textAlign:`center`}}>Video is loading.<br />Please wait...</span>
 			      	<Vimeo 
@@ -85,9 +89,7 @@ const AllCases = (props) => {
 				  		autopause={false}
 			      	/>
 			      </div>
-			      
-			      </Link>
-			      </div>
+			    </div>  
 			      
 				 <div className="columns caseMetaParent"> 
 				  <div className="column caseMeta has-text-right-desktop has-text-centered-mobile is-four-fifths">
