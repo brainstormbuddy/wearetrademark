@@ -10,11 +10,11 @@ module.exports = {
   googleAnalyticsID: 'UA-152596464-1',
   googleSiteVerification: 'MGH2iJ6T5_R_hxmCHeikDehPlc7Ttn6eL_v-Owv071X',
   social: {
-    twitter: 'https://twitter.com/sajibzakir',
-    linkedin: 'https://www.linkedin.com/in/zakirsajib',
-    instagram: 'https://www.instagram.com/wp.guru',
-    facebook: 'https://www.facebook.com/facebookpage'
+    twitter: 'https://twitter.com/trademarkevents',
+    linkedin: 'https://www.linkedin.com/company/96735/',
+    instagram: 'https://www.instagram.com/trademarkevents/',
+    facebook: 'https://www.facebook.com/TrademarkEventProductions/'
   },
   pathPrefix: '/',
-  siteUrl: 'https://x.netlify.com',
+  siteUrl: 'https://xtrademark.netlify.com/',
 };

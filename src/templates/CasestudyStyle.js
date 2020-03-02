@@ -12,12 +12,14 @@ const CaseStudyStyle = styled.div`
 	}
 	p{
 		color: #FFFFFF;
+		font-family: 'FFMark';
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 20px;
 		padding: 0.5rem 0;
 	}
 	em{
+		font-family: 'FFMark';
 		font-size: 12px;
 		letter-spacing: 0.7px;
 		line-height: 17px;
@@ -27,6 +29,7 @@ const CaseStudyStyle = styled.div`
 	}
 	h3.event-name{
 		color: #FFFFFF;	
+		font-family: 'FFMark';
 		font-size: 17.88px;	
 		font-weight: 400;	
 		letter-spacing: 1.2px;	
@@ -35,6 +38,7 @@ const CaseStudyStyle = styled.div`
 	}
 	p.case-study-category{
 		color: #96A8B3;	
+		font-family: 'FFMark';
 		font-size: 12px;	
 		font-weight: 400;	
 		letter-spacing: 0.7px;	
@@ -51,9 +55,9 @@ const CaseStudyStyle = styled.div`
 		align-items: center;
 		border: 3px solid #fff;
 		color: #fff;
+		font-family: 'FFMark';
 		font-size: 12px;
 		text-transform: uppercase;
-		font-family: 'Maven Pro';
 		font-weight: 700;
 		letter-spacing: 0.8px;
 		line-height: 24px;
@@ -68,20 +72,21 @@ const CaseStudyStyle = styled.div`
 	}
 	.scroller{
 		color: #fff;
+		font-family: 'FFMark';
 		font-size: 10px;
 		font-weight: 400;
 		letter-spacing: 2px;
 		transform: rotate(-90deg);
 	    position: absolute;
 	    bottom: 250px;
-	    left: -88px;
+	    left: -91px;
 	}	
 	.scroller-wrapper{position: relative;}
 	.scroller-wrapper::after{
 		content: "";
 	    position: absolute;
 	    left: 20px;
-	    width: 2px;
+	    width: 1px;
 	    height: 100px;
 	    bottom: 390px;
 	    background-color: #66BFF2;
@@ -150,6 +155,7 @@ const CaseStudyStyle = styled.div`
 	
 	.infographics .column > div{
 		color: #FFFFFF;	
+		font-family: 'FFMark';
 		font-size: 11px;	
 		font-weight: 400;	
 		letter-spacing: 1.2px;	

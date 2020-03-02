@@ -6,11 +6,11 @@ import CaseStudyModal from './CaseStudyModal'
 
 import { Slide } from 'react-slideshow-image'
 
-import slack from './img/slack/art-bg.svg'
-import adobe from './img/MaskAdobe.svg'
-import charity from './img/MaskCharity.svg'
+//import slack from './img/slack/art-bg.svg'
+//import adobe from './img/MaskAdobe.svg'
+//import charity from './img/MaskCharity.svg'
 
-import XIcon from './img/Path.svg'
+//import XIcon from './img/Path.svg'
 
 import CasestudyStyle from './Wrapper'
 

@@ -101,8 +101,8 @@ const WorkStyle = styled.section`
 		color: #0D1B23;
 		font-size: 12px;
 		text-transform: uppercase;
-		font-family: 'Maven Pro';
-		font-weight: 700;
+		font-family: 'FFMark';
+		font-weight: bold;
 		letter-spacing: 0.8px;
 		line-height: 24px;
 		padding: 0.5rem 1rem; 
@@ -178,11 +178,11 @@ const WorkStyle = styled.section`
 		line-height: 40px;
 	}
 	h3{
-		font-family: 'Open Sans', sans-serif;
-		font-size: 16px;
-		font-weight: 500;
+		font-family: 'FFMark', sans-serif;
+		font-size: 14px;
+		font-weight: normal;
 		letter-spacing: 1.05px;
-		line-height: 20px;
+		line-height: 15px;
 		color: #141825;
 		text-transform: uppercase;
 		min-height: 36px;
@@ -205,10 +205,11 @@ const WorkStyle = styled.section`
 	}
 	
 	p{
+		font-family: 'FFMark';
 		color: #96A8B3;
 		text-transform: uppercase;
 		font-size: 12px;
-		font-weight: 500;
+		font-weight: 400;
 		letter-spacing: 0.7px;
 		line-height: 16px;
 	}

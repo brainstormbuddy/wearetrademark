@@ -17,7 +17,7 @@ function Dropzone(props) {
   return (
     <div {...getRootProps({className: 'dropzone'})}>
         <input {...getInputProps()} />
-        <h3 style={{color:`#F2ED66`,fontSize:`1.2rem`, fontFamily: `Maven Pro`}}>Upload your RFP</h3>
+        <h3 style={{color:`#F2ED66`,fontSize:`1.2rem`, fontFamily: `FFMark`}}>Upload your RFP</h3>
         <div className="has-text-centered">
         	<p>Drag and drop files here or</p>
 			<button className="upload-btn button is-default" type="button" onClick={open}>UPLOAD</button>

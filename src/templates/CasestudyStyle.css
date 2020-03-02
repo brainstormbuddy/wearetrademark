@@ -20,6 +20,7 @@
 #infographics h3{
 	font-size: 30px;
 	color: #FFFFFF;
+	line-height: 30px;
 }
 #infographics h4{
 	font-size: 22.5px;
@@ -27,10 +28,12 @@
 }
 
 #infographics p{
+	font-family: 'FFMark';
 	font-size: 14px;
 	color: #FFFFFF;
 	font-weight: 400;
-	line-height: 25px;
+	line-height: 20px;
+	padding: 0.5rem 0 1rem;
 }
 #infographics li{
 	font-size: 14px;
@@ -48,8 +51,8 @@
     right: 0;
     color: #0D1B23;
     font-size: 80px;
-    font-weight: 700;
-    font-family: 'Maven Pro';
+    font-weight: bold;
+    font-family: 'FFMark';
     display: inline-grid;
     height: 100%;
     align-items: center;
@@ -60,8 +63,9 @@
 	left: 0;
 	right: 0;
 	top: 100%;
+	font-family: 'FFMark';
 	font-size:18px;
-	font-weight: 600;
+	font-weight: bold;
 	line-height: 1.35;
 	text-align: center;
 	letter-spacing: 2.03px;
@@ -76,19 +80,19 @@
 
 .bigText{
 	color: #FFFFFF;
-	font-family: 'Mort Modern 09';
+	font-family: 'FFMark';
 	font-size: 40.79px;
-	font-weight: 500;
+	font-weight: bold;
 	font-style: normal;
 	line-height: 1;
 	text-transform: uppercase;
 }
 .smallText{
 	color: #FFFFFF;
-	font-family: "Maven Pro";
+	font-family: 'FFMark';
 	font-size: 13px;
 	font-weight: 400;
-	letter-spacing: 2.03px;
+/* 	letter-spacing: 2.03px; */
 	line-height: 30px;
 	text-transform: uppercase;
 }
@@ -258,10 +262,9 @@
 	width: 15%;
 }
 .single.casestudy.xtrademark.AppDirect .smallText{
-	line-height: 25px!important;
+	line-height: 20px!important;
 	text-transform: none!important;
 	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
 }
 
 

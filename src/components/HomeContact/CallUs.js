@@ -13,10 +13,10 @@ const Callus = () => {
 			  </figure>
 			  <div className="media-content">
 			    <div className="content">
-			        <em style={{color:`white`}}>- or -</em>
+			        <em style={{fontFamily: `Mort Modern 09`,color:`#E0E3FF`, letterSpacing:`0.7px`,}}>- or -</em>
 			        <br />
-			        <h4 style={{fontFamily: `Maven Pro`, color:`#F2ED66`, marginBottom:`0`}}>call us</h4>
-			        <h6><span style={{fontFamily: `Maven Pro`, color: `#F2ED66`}}>415.621.8000</span></h6>
+			        <h4 style={{fontFamily: `Mort Modern 09`,fontWeight:`400`, fontSize:`29px`, color:`#F2ED66`, marginBottom:`0`}}>call us</h4>
+			        <h6><span style={{fontFamily:`FFMark`,fontWeight:`400`, letterSpacing:`1px`,fontSize:`13px`,color: `#F2ED66`}}>415.621.8000</span></h6>
 			    </div>
 			  </div>
 			</article>

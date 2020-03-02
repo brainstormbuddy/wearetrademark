@@ -11,6 +11,7 @@ const ContactForm = styled.div`
 		border-bottom: 1px solid #4E6F7B;
 		color: #95CCC3;
 		height: 3.25em;
+		font-family: 'FFMark';
 		font-size: 20.2px;
 		font-weight: 400;
 		letter-spacing: -0.02px;
@@ -40,8 +41,9 @@ const ContactForm = styled.div`
 		color: #fff;
 		padding: 0 3em;
 		text-transform: uppercase;
-		font-weight:500;
 		letter-spacing:1px;
+		font-family: 'FFMarkW1GMedium';
+		font-size:16px;
 	}
 	.button.upload-btn{
 		border: 2px solid #fff;

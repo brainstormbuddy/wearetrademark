@@ -41,6 +41,7 @@ const HomeAbout = styled.section`
 	
 	.who-we-are{
 		color: #FFFFFF;
+		font-family: 'FFMark';
 		font-size: 16px;
 		font-weight: 400;
 		letter-spacing: 2px;

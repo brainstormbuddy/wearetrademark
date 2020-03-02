@@ -41,9 +41,8 @@ h2.title{
 	font-style: normal;
 }
 h3.subtitle{
-	font-family: 'Maven Pro';
+	font-family: 'FFMarkW1GMedium';
 	font-size: 16px;
-	font-weight: 600;
 	letter-spacing: 2px;
 	line-height: 16px;
 	text-transform: uppercase;

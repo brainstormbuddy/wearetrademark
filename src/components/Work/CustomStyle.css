@@ -35,10 +35,9 @@
     padding-left: 5rem;
     color: #141825;
     font-size: 14px;	
-	font-weight: 600;	
 	letter-spacing: 0.54px;	
 	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'FFMarkW1GMedium', sans-serif;
 }
 .filter-categories em,
 .filter-location em{
@@ -189,9 +188,10 @@
     top: 15%;
     background-color: #FFC709;
     color: #fff;
-    font-family: 'Maven Pro';
+    font-family: 'FFMark';
     font-size: 15px;
-    font-weight: 700;
+    font-weight: bold;
+    line-height: 1.6;
 }
 .circle-casestudy-span{
 	content: '';

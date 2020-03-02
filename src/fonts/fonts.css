@@ -51,3 +51,79 @@
     font-weight: normal;
     font-style: italic;
 }
+
+@font-face {
+	font-family: 'FFMarkW1GLight';
+	src: url('webfonts/3B0992_0_0.eot');
+	src: url('webfonts/3B0992_0_0.eot?#iefix') format('embedded-opentype'),
+	url('webfonts/3B0992_0_0.woff2') format('woff2'),
+	url('webfonts/3B0992_0_0.woff') format('woff'),
+	url('webfonts/3B0992_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {
+	font-family: 'FFMark';
+	font-weight: normal;
+	font-style: normal;
+	src: url('webfonts/3B0992_1_0.eot');
+	src: url('webfonts/3B0992_1_0.eot?#iefix') format('embedded-opentype'),
+	url('webfonts/3B0992_1_0.woff2') format('woff2'),
+	url('webfonts/3B0992_1_0.woff') format('woff'),
+	url('webfonts/3B0992_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {
+	font-family: 'FFMarkW1GBook';
+	src: url('webfonts/3B0992_2_0.eot');
+	src: url('webfonts/3B0992_2_0.eot?#iefix') format('embedded-opentype'),
+	url('webfonts/3B0992_2_0.woff2') format('woff2'),
+	url('webfonts/3B0992_2_0.woff') format('woff'),
+	url('webfonts/3B0992_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {
+	font-family: 'FFMarkW1GMedium';
+	src: url('webfonts/3B0992_3_0.eot');
+	src: url('webfonts/3B0992_3_0.eot?#iefix') format('embedded-opentype'),
+	url('webfonts/3B0992_3_0.woff2') format('woff2'),
+	url('webfonts/3B0992_3_0.woff') format('woff'),
+	url('webfonts/3B0992_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {
+	font-family: 'FFMark';
+	font-weight: bold;
+	font-style: normal;
+	src: url('webfonts/3B0992_4_0.eot');
+	src: url('webfonts/3B0992_4_0.eot?#iefix') format('embedded-opentype'),
+	url('webfonts/3B0992_4_0.woff2') format('woff2'),
+	url('webfonts/3B0992_4_0.woff') format('woff'),
+	url('webfonts/3B0992_4_0.ttf') format('truetype');}
+ 
+  
+@font-face {
+	font-family: 'FFMarkW1GHeavy';
+	src: url('webfonts/3B0992_5_0.eot');
+	src: url('webfonts/3B0992_5_0.eot?#iefix') format('embedded-opentype'),
+	url('webfonts/3B0992_5_0.woff2') format('woff2'),
+	url('webfonts/3B0992_5_0.woff') format('woff'),
+	url('webfonts/3B0992_5_0.ttf') format('truetype');}
+ 
+  
+@font-face {
+	font-family: 'FFMarkW1GBlack';
+	src: url('webfonts/3B0992_6_0.eot');
+	src: url('webfonts/3B0992_6_0.eot?#iefix') format('embedded-opentype'),
+	url('webfonts/3B0992_6_0.woff2') format('woff2'),
+	url('webfonts/3B0992_6_0.woff') format('woff'),
+	url('webfonts/3B0992_6_0.ttf') format('truetype');}
+ 
+  
+@font-face {
+	font-family: 'FFMarkW1GUltra';
+	src: url('webfonts/3B0992_7_0.eot');
+	src: url('webfonts/3B0992_7_0.eot?#iefix') format('embedded-opentype'),
+	url('webfonts/3B0992_7_0.woff2') format('woff2'),
+	url('webfonts/3B0992_7_0.woff') format('woff'),
+	url('webfonts/3B0992_7_0.ttf') format('truetype');}
+ 
