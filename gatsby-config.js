@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://x.netlify.com`,
+        siteUrl: userConfig.siteUrl
       },
     },
     `gatsby-plugin-sass`,
@@ -27,25 +27,15 @@ module.exports = {
             GitHub: `zakirsajib`
           }
         ],
-        thanks: [`Gatsby`, `Node`],
+        thanks: [`Gatsby`, `Node`, `React`],
         site: {
-          'Last update': `2020/02/15`,
+          'Last update': `2020/03/03`,
           Standards: `JavaScript`,
           Components: `humans-generator`,
           Softwares: `Visual Studio Code`
         },
         note: `Made in Cyprus.`
       }
-    },
-    {
-      	resolve: `gatsby-plugin-google-fonts`,
-      	options: {
-	        fonts: [
-	           `Maven+Pro\:400, 500, 600, 700`,
-	           `Open+Sans\:300, 400, 500, 700`
-	        ],
-	        display: 'swap'
-	    },
     },
     {
       resolve: `gatsby-plugin-nprogress`,
@@ -87,9 +77,7 @@ module.exports = {
       resolve: "gatsby-plugin-preconnect",
       options: {
         domains: [
-          "https://www.google-analytics.com",
-          "https://fonts.googleapis.com",
-          "https://fonts.gstatic.com"
+          "https://www.google-analytics.com"
         ]
       }
     },

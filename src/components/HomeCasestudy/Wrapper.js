@@ -56,6 +56,15 @@ p{
 .react-slideshow-container{
 	position: relative;
 }
+
+
+.react-slideshow-container .nav{
+	height: 0;
+	width: 0;
+	border-radius:0;
+	display:block;
+}
+
 .react-slideshow-container .nav,
 .react-slideshow-container .nav:hover{
 	background: none;
@@ -70,12 +79,20 @@ p{
 }
 
 .react-slideshow-container .nav:first-of-type{
-	right: calc(100vw - 48vw);
-    bottom: 41%;
+	right: 52%;
+    bottom: 50vh;
+    margin-right:0;
 }
 .react-slideshow-container .nav:last-of-type{
-	left: calc(100vw - 48vw);
-    bottom: 41%;
+	left: 53%;
+    bottom: 50vh;
+    margin-left: 0;
+}
+.react-slideshow-container .nav:first-of-type span{
+	margin-left:0;
+}
+.react-slideshow-container .nav:last-of-type span{
+	margin-right:0;
 }
 
 .x-icon-txt{
@@ -179,19 +196,11 @@ p{
 	h3.subtitle{
 		font-size: 16px;
 	}
-	.react-slideshow-container .nav:first-of-type{
-		right: calc(100vw - 45vw);
-		bottom: 48%;
-	}
-	.react-slideshow-container .nav:last-of-type{
-		left: calc(100vw - 45vw);
-		bottom: 48%;
-	}
 }
 @media screen and (max-width: 700px){
 	.react-slideshow-container .nav:first-of-type,
 	.react-slideshow-container .nav:last-of-type{
-		bottom: 50%;
+		bottom: 70vh;
 	}
 }
 @media screen and (max-width: 655px){
@@ -211,22 +220,8 @@ p{
 		right: -70px;	
 	}
 }
-@media screen and (max-width: 550px){
-		
-}
-@media screen and (max-width: 414px){
-	
-	.react-slideshow-container .nav:first-of-type{
-		right: calc(100vw - 40vw);
-	}
-	.react-slideshow-container .nav:last-of-type{
-		left: calc(100vw - 40vw);
-	}
-	.react-slideshow-container .nav:first-of-type,
-	.react-slideshow-container .nav:last-of-type{
-		bottom: 62%;
-	}
-}
+
+
 @media screen and (max-width: 375px){
 	.video-container{
 		top:-50px;
@@ -241,43 +236,11 @@ p{
 	}
 }
 @media screen and (max-width: 320px){
-	.react-slideshow-container .nav:first-of-type,
-	.react-slideshow-container .nav:last-of-type{
-		bottom: 74%;
-	}
+
 	
 }
 
-@media screen and (min-width: 1024px){
-	.react-slideshow-container .nav:last-of-type,
-	.react-slideshow-container .nav:first-of-type{
-		bottom: 50%;
-	}
-	.react-slideshow-container .nav:last-of-type{
-		left: calc(100vw - 45vw);
-	}
-	.react-slideshow-container .nav:first-of-type{
-		right: calc(100vw - 45vw);
-	}
-}
 
-
-@media screen and (min-width: 1200px){
-	.react-slideshow-container .nav:last-of-type,
-	.react-slideshow-container .nav:first-of-type{
-		bottom: 50%;
-	}
-}
-@media screen and (min-width: 1408px){
-	.react-slideshow-container .nav:last-of-type{
-		left: calc(100vw - 47vw);
-		bottom: 45%;
-	}
-	.react-slideshow-container .nav:first-of-type{
-		right: calc(100vw - 47vw);
-		bottom: 45%;
-	}
-}
 
 
 `;

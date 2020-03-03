@@ -6,7 +6,7 @@ import LogoBlack from '../img/logoBlack.svg'
 import LogoYellow from '../img/LogoYellow.svg'
 
 import TelIcon from '../img/click-to-call-icon.svg'
-import EmailIcon from '../contact-icon.svg'
+import EmailIcon from '../img/contact-icon.svg'
 
 import userConfig from '../../config'
 

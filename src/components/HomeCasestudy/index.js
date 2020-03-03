@@ -6,12 +6,6 @@ import CaseStudyModal from './CaseStudyModal'
 
 import { Slide } from 'react-slideshow-image'
 
-//import slack from './img/slack/art-bg.svg'
-//import adobe from './img/MaskAdobe.svg'
-//import charity from './img/MaskCharity.svg'
-
-//import XIcon from './img/Path.svg'
-
 import CasestudyStyle from './Wrapper'
 
 
@@ -31,6 +25,15 @@ const Slideshow = () => {
 				  background_color_home_case_study
 				  background_image_home_case_study{
 					  source_url
+					  localFile {
+			            childImageSharp {
+			              fluid(maxWidth: 1920, quality: 100, jpegProgressive: true) {
+				              srcWebp
+				              src
+			                ...GatsbyImageSharpFluid
+			              }
+			            }
+			        }
 				  }
 		        }
 		    }
@@ -54,10 +57,8 @@ const Slideshow = () => {
 	  transitionDuration: 500,
 	  infinite: true,
 	  indicators: false,
-	  arrows: true,
-	  onChange: (oldIndex, newIndex) => {
-	    console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-	  }
+	  arrows: true
+	  
 	}
 	
 	    
@@ -72,7 +73,7 @@ const Slideshow = () => {
           
           
           
-          <div key={i} className="each-slide" style={{backgroundImage: `url(${casestudy.acf.background_image_home_case_study.source_url})`, backgroundColor: `${casestudy.acf.background_color_home_case_study}`}} >
+          <div key={i} className="each-slide" style={{width:`100vw`,backgroundImage: `url(${casestudy.acf.background_image_home_case_study.source_url})`, backgroundColor: `${casestudy.acf.background_color_home_case_study}`, backgroundPosition:`center center`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`}} >
           	<div className="hero is-fullheight">
             	<div className="hero-body">
             	<div className="container">
@@ -94,7 +95,8 @@ const Slideshow = () => {
 									<source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
 								</video>  
 							</div>
-	
+							
+								
 					
 					  		<CaseStudyModal 
 					  			idVideo={casestudy.acf.video_url}
