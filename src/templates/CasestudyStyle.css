@@ -28,10 +28,10 @@
 }
 
 #infographics p{
-	font-family: 'FFMark';
+	font-family: 'FFMark', sans-serif;
 	font-size: 14px;
 	color: #FFFFFF;
-	font-weight: 400;
+	font-weight: bold;
 	line-height: 20px;
 	padding: 0.5rem 0 1rem;
 }
@@ -52,7 +52,7 @@
     color: #0D1B23;
     font-size: 80px;
     font-weight: bold;
-    font-family: 'FFMark';
+    font-family: 'FFMark', sans-serif;
     display: inline-grid;
     height: 100%;
     align-items: center;
@@ -63,7 +63,7 @@
 	left: 0;
 	right: 0;
 	top: 100%;
-	font-family: 'FFMark';
+	font-family: 'FFMark', sans-serif;
 	font-size:18px;
 	font-weight: bold;
 	line-height: 1.35;
@@ -80,7 +80,7 @@
 
 .bigText{
 	color: #FFFFFF;
-	font-family: 'FFMark';
+	font-family: 'FFMark', sans-serif;
 	font-size: 40.79px;
 	font-weight: bold;
 	font-style: normal;
@@ -89,11 +89,9 @@
 }
 .smallText{
 	color: #FFFFFF;
-	font-family: 'FFMark';
+	font-family: 'FFMark', sans-serif;
 	font-size: 13px;
-	font-weight: 400;
-/* 	letter-spacing: 2.03px; */
-	line-height: 30px;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 
@@ -108,7 +106,7 @@
 	top:50px;
 }
 .single.casestudy.xtrademark.Slack #colThree{
-	top:20px;
+	top:80px;
 }
 
 .single.casestudy.xtrademark.Slack #infographics .numberInfo{
@@ -118,10 +116,15 @@
 	padding: 0 3rem;
 }
 
+.single.casestudy.xtrademark.Slack #infographics .bigText.slackStyle{
+	padding-top: 1rem;
+	font-size: 30.79px;
+}
+
 .single.casestudy.xtrademark.Slack #infographics .anotherBrandRightImage{
 	position: absolute;
 	left: 0;
-	bottom: 7%;
+	bottom: 10%;
 	width: 80%;
 }
 .single.casestudy.xtrademark.Slack .rightSideImage{
@@ -141,7 +144,7 @@
 }
 
 .single.casestudy.xtrademark.Xamarin #infographics .thirdColImage{
-	margin-top: 113px;
+	margin-top: 125px;
     position: relative;
 }
 
@@ -155,7 +158,7 @@
 	padding: 0 3rem;
 }
 .single.casestudy.xtrademark.Zimmer #infographics .thirdColImage{
-	margin-top: 69px;
+	margin-top: 125px;
     position: relative;
 }
 
@@ -166,15 +169,17 @@
     bottom: 0;
     width: 30%;
 }
-.single.casestudy.xtrademark.Stryker #colTwo, 
-.single.casestudy.xtrademark.Stryker #colThree{
+.single.casestudy.xtrademark.Stryker #colTwo{
 	top: 50px;
+}
+.single.casestudy.xtrademark.Stryker #colThree{
+	top: 100px;
 }
 .single.casestudy.xtrademark.Stryker #infographics .numberInfo{
 	font-size: 60px;
 }
 .single.casestudy.xtrademark.Okta #colThree{
-	margin-top:-530px;
+	margin-top:-400px;
 }
 .single.casestudy.xtrademark.Okta #infographics .brandActivationImage{
 	position: relative!important;
@@ -187,7 +192,7 @@
 
 .single.casestudy.xtrademark.Okta #infographics .columns.bottomImages{
 	position: relative;
-	margin-top:-650px;
+	margin-top:-750px;
 	margin-bottom: 200px;
 }
 
@@ -245,28 +250,41 @@
 	color: #fff;
 	font-weight: 700;
 }
-
-.single.casestudy.xtrademark.Lucasfilm #infographics .rightSideImages{
-	right:0;
-	bottom: 0;
-	width: 21%;
+.single.casestudy.xtrademark.Charity .rightSideImage{
+	width: calc(100% - 84%);	
+}
+.single.casestudy.xtrademark.Charity .bigText.charityStyle {
+    padding: 1rem 0 0;
 }
 
-.single.casestudy.xtrademark.Lucasfilm #infographics #colTwo,
-.single.casestudy.xtrademark.Lucasfilm #infographics #colThree{
+.single.casestudy.xtrademark.Lucasfilm .rightSideImage{
+	right:0;
+	bottom: 0;
+	width: 18%;
+}
+
+.single.casestudy.xtrademark.Lucasfilm #infographics #colTwo{
 	top:50px;
+}
+.single.casestudy.xtrademark.Lucasfilm #infographics #colThree{
+	top:100px;
+}
+.single.casestudy.xtrademark.Lucasfilm #infographics hr{
+	margin: 1rem 0 3rem;
 }
 
 .single.casestudy.xtrademark.AppDirect .rightSideImage{
 	bottom: 60%;
-	width: 15%;
+	width: 20%;
 }
 .single.casestudy.xtrademark.AppDirect .smallText{
 	line-height: 20px!important;
 	text-transform: none!important;
 	font-size: 14px;
 }
-
+.single.casestudy.xtrademark.AppDirect .smallText.appDirect{
+	padding-bottom: 3rem;
+}
 
 .single.casestudy.xtrademark.AppDirect img.imgOne {
     max-width: 70%;
@@ -274,7 +292,14 @@
 .single.casestudy.xtrademark.AppDirect .column.is-half{
 	width: 35%;
 	margin-top: -280px;
+	border:0!important;
 }
+
+.single.casestudy.xtrademark.AppDirect #infographics #colThree{
+	top:50px;
+}
+
+
 
 .fullsizedVideo iframe{
 	position: absolute;

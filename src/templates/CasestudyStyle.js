@@ -4,7 +4,7 @@ const CaseStudyStyle = styled.div`
 	
 	h2 {
 		color: #FFFFFF;
-		font-family: 'Mort Modern 09';
+		font-family: 'Mort Modern 09', sans-serif;
 		font-weight: 500;
 		font-style: normal;
 		font-size:60px;
@@ -12,14 +12,14 @@ const CaseStudyStyle = styled.div`
 	}
 	p{
 		color: #FFFFFF;
-		font-family: 'FFMark';
+		font-family: 'FFMark', sans-serif;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 20px;
 		padding: 0.5rem 0;
 	}
 	em{
-		font-family: 'FFMark';
+		font-family: 'FFMark', sans-serif;
 		font-size: 12px;
 		letter-spacing: 0.7px;
 		line-height: 17px;
@@ -29,7 +29,7 @@ const CaseStudyStyle = styled.div`
 	}
 	h3.event-name{
 		color: #FFFFFF;	
-		font-family: 'FFMark';
+		font-family: 'FFMark', sans-serif;
 		font-size: 17.88px;	
 		font-weight: 400;	
 		letter-spacing: 1.2px;	
@@ -38,7 +38,7 @@ const CaseStudyStyle = styled.div`
 	}
 	p.case-study-category{
 		color: #96A8B3;	
-		font-family: 'FFMark';
+		font-family: 'FFMark', sans-serif;
 		font-size: 12px;	
 		font-weight: 400;	
 		letter-spacing: 0.7px;	
@@ -55,7 +55,7 @@ const CaseStudyStyle = styled.div`
 		align-items: center;
 		border: 3px solid #fff;
 		color: #fff;
-		font-family: 'FFMark';
+		font-family: 'FFMark', sans-serif;
 		font-size: 12px;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -72,7 +72,7 @@ const CaseStudyStyle = styled.div`
 	}
 	.scroller{
 		color: #fff;
-		font-family: 'FFMark';
+		font-family: 'FFMark', sans-serif;
 		font-size: 10px;
 		font-weight: 400;
 		letter-spacing: 2px;
@@ -134,8 +134,7 @@ const CaseStudyStyle = styled.div`
 		bottom: 50px;
 		width: 10%;
 	}
-	
-	
+		
 	.has-border-right,
 	.has-border-left{
 		padding: 0 0.75rem;
@@ -155,9 +154,9 @@ const CaseStudyStyle = styled.div`
 	
 	.infographics .column > div{
 		color: #FFFFFF;	
-		font-family: 'FFMark';
+		font-family: 'FFMark', sans-serif;
 		font-size: 11px;	
-		font-weight: 400;	
+		font-weight: bold;	
 		letter-spacing: 1.2px;	
 		line-height: 14px;
 		text-transform: uppercase;
@@ -285,9 +284,7 @@ const CaseStudyStyle = styled.div`
 	  }
 	}
 	
-	.casestudyHeader .modal-video{
-		//position: absolute;
-	}
+	
 	.casestudyHeader .modal-video-body{
 		max-width: 100vw;
 	}
@@ -295,9 +292,6 @@ const CaseStudyStyle = styled.div`
 		top: 50px;
 		right: 10px;
 	}
-	
-	
-	
 	
 	
 	@media screen and (min-width: 769px){

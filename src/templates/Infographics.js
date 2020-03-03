@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import StrokeImg from './brush-stroke-infograph-header.png'
@@ -67,7 +67,7 @@ const InfoGraphics = (props) => {
 			</div>
 			<div className="column has-text-centered">
 			{props.info.acf.venue__logistics_label ? (
-				<p style={{fontFamily: `FFMark`, fontSize:`12px`, fontWeight: `bold`, textTransform:`uppercase`, textAlign: `left`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpcing: `0.53px`}}>{props.info.acf.venue__logistics_label}</p>
+				<p style={{fontFamily: `FFMark`, fontSize:`11px`, fontWeight: `bold`, textTransform:`uppercase`, textAlign: `left`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, paddingLeft:`20px`, letterSpcing: `0.53px`, backgroundSize:`auto`, backgroundPosition:`0 0`}}>{props.info.acf.venue__logistics_label}</p>
 			): null }
 				<div className="starShaped" style={starShapedImage}>
 					<div className="numberInfo">{props.info.acf.venue_number_info}</div>
@@ -76,7 +76,7 @@ const InfoGraphics = (props) => {
 			</div>
 			<div className="column has-text-centered-mobile oktaStyleOnly">
 				{imageTwoInfo ? (
-					<img src={props.info.acf.image_two_info.source_url} alt="" />
+					<Img fluid={props.info.acf.image_two_info.localFile.childImageSharp.fluid} alt="" />
 				): null }
 				
 			</div>
@@ -85,7 +85,7 @@ const InfoGraphics = (props) => {
 		<div className="columns oktaPosition">
 			<div className="column has-text-centered-mobile">
 				{imageThreePortrait ? (
-					<img src={props.info.acf.image_three_portrait.source_url} alt={props.info.acf.portrait_image_heading} />
+					<Img fluid={props.info.acf.image_three_portrait.localFile.childImageSharp.fluid} alt={props.info.acf.portrait_image_heading} />
 				): null}
 				
 				{props.info.acf.portrait_image_heading ? (
@@ -96,14 +96,14 @@ const InfoGraphics = (props) => {
 				):null }
 				<p>{props.info.acf.portrait_image_small_text}</p>
 				{props.info.acf.venue_or_anything_label ? (
-				<p style={{fontFamily: `FFMark`, fontSize:`12px`, fontWeight: `bold`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.venue_or_anything_label}</p>
+				<p style={{fontFamily: `FFMark`, fontSize:`11px`, fontWeight: `bold`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, paddingLeft:`20px`, letterSpacing: `0.53px`, textAlign:`left`, backgroundSize:`auto`, backgroundPosition:`0 0`, textTransform:`uppercase`}}>{props.info.acf.venue_or_anything_label}</p>
 				): null }
-				<h2>{props.info.acf.venue_or_anything_number_information}</h2>
+				<h2 style={{fontFamily:`FFMark`, fontWeight:`bold`}}>{props.info.acf.venue_or_anything_number_information}</h2>
 				<p style={{textTransform: `uppercase`, fontWeight:`600`, fontSize:`14px`, letterSpacing:`2.03px`, lineHeight:`1`, padding:`0`}}>{props.info.acf.venue_or_anything_number_information_small_text}</p>
 				<div className="level">
 					<div className="level-item" style={{fontFamily: `FFMark`, fontSize:`80px`, color: `#fff`, fontWeight:`bold`}}>{props.info.acf.info_one}</div>
 					<div className="level-item mid" 
-						style={{fontFamily: `FFMark`, fontSize:`25px`, fontWeight:`bold`, color: `#fff`, lineHeight:`1.15`, maxWidth:`50%`}}>{props.info.acf.info_two}
+						style={{fontFamily: `FFMark`, fontSize:`25px`, fontWeight:`bold`, color: `#fff`, lineHeight:`1.15`, maxWidth:`50%`, paddingLeft: `15px`}}>{props.info.acf.info_two}
 					</div>
 					<div className="level-item oktaStyle">
 						{threeImage ? (
@@ -117,11 +117,11 @@ const InfoGraphics = (props) => {
 			</div>
 			<div className="column has-text-centered-mobile" id="colTwo">
 				{props.info.acf.logistics_label ? (
-				<p style={{fontFamily: `FFMark`, fontSize:`12px`, fontWeight: `bold`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.logistics_label}</p>
+				<p style={{fontFamily: `FFMark`, fontSize:`11px`, fontWeight: `bold`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, paddingLeft:`20px`, letterSpacing: `0.53px`, textAlign:`left`, backgroundSize:`auto`, backgroundPosition:`0 0`}}>{props.info.acf.logistics_label}</p>
 				): null }
-				<br />
 				
-				<div className="columns">
+				
+				<div className="columns is-vcentered">
 					{logisticsImage ? (
 					<div className="column is-3">
 						<img src={props.info.acf.logistics_image.source_url} alt={props.info.acf.image_title_one_info} width="auto" height="auto"/>
@@ -133,9 +133,8 @@ const InfoGraphics = (props) => {
 					</div>
 				</div>
 				
-				<br />
 				{imageThreeInfo ? (
-				<img src={props.info.acf.image_three_info.source_url} alt={props.info.acf.image_title_one_info} />
+				<Img fluid={props.info.acf.image_three_info.localFile.childImageSharp.fluid} alt={props.info.acf.image_title_one_info} />
 				): null }
 				
 				{props.info.acf.image_title_one_info ? (
@@ -145,38 +144,36 @@ const InfoGraphics = (props) => {
 				</div>
 				): null }
 				
-				<div className="smallText" style={{textTransform:`capitalize`, letterSpacing:`0.5px`, lineHeight:`1`}}>{props.info.acf.images_three_and_four_description}</div>
-				<br/ ><br />
+				<div className="smallText appDirect" style={{textTransform:`capitalize`, letterSpacing:`0.5px`, lineHeight:`1`}}>{props.info.acf.images_three_and_four_description}</div>
+				
 				{props.info.acf.another_brand_label ? (
-				<p style={{fontFamily: `FFMark`,fontSize:`12px`, fontWeight: `bold`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.another_brand_label}</p>
+				<p style={{fontFamily: `FFMark`,fontSize:`11px`, fontWeight: `bold`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, paddingLeft:`20px`, letterSpacing: `0.53px`, textAlign:`left`, backgroundSize:`auto`, backgroundPosition:`0 0`}}>{props.info.acf.another_brand_label}</p>
 				):null}
-				<br />
+				
 				
 				{props.info.acf.another_brand_big_text ? (
 					<div>
-						<div className="bigText">{props.info.acf.another_brand_big_text}</div><hr />
+						<div className="bigText slackStyle charityStyle">{props.info.acf.another_brand_big_text}</div><hr />
 						<div id="lastSmallText" className="smallText" dangerouslySetInnerHTML={{ __html: props.info.acf.another_brand_small_text }} />
 					</div>
 				): null }
 				
 			</div>
 			<div className="column has-text-centered-mobile" id="colThree">
+				{props.info.acf.brand_activation_label && brandActivationImage ? (
 				<div className="brandActivation" style={{position: `relative`}}>
-					{props.info.acf.brand_activation_label ? (
-					<p style={{fontFamily: `FFMark`,fontSize:`12px`, fontWeight: `bold`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`,paddingLeft:`25px`, letterSpacing: `0.53px`, textAlign:`left`}}>{props.info.acf.brand_activation_label}</p>
-					): null}
-					{brandActivationImage ? (
+					<p style={{fontFamily: `FFMark`,fontSize:`11px`, fontWeight: `bold`, textTransform:`uppercase`, backgroundImage:`url(${StrokeImg})`, backgroundRepeat:`no-repeat`, paddingLeft:`20px`, letterSpacing: `0.53px`, textAlign:`left`, backgroundSize:`auto`, backgroundPosition:`0 0`}}>{props.info.acf.brand_activation_label}</p>
 					<img className="brandActivationImage" style={{position:`absolute`, right: `9em`, top: `0.5em`, maxWidth: `50%`, height: `50%`}} src={brandActivationImage} alt="shoe image" />
-					):null }
 				</div>
+				):null }
+	{props.info.acf.brand_activation_big_text ? (			
+	<div className="bigText">{props.info.acf.brand_activation_big_text}</div> ):null}
+	{props.info.acf.brand_activation_small_text ? (
+	<div className="smallText">{props.info.acf.brand_activation_small_text}<br /><br /></div>
+	):null}
 				
-				<br />
-				<div className="bigText">{props.info.acf.brand_activation_big_text}</div>
-				<div className="smallText">{props.info.acf.brand_activation_small_text}</div>
-				
-				<br /><br />
 				{imageFourInfo ? (
-				<img className="thirdColImage" src={props.info.acf.image_four_info.source_url} alt={props.info.acf.image_title_one_info} style={{maxWidth:`67%`}}/>
+				<Img className="thirdColImage" fluid={props.info.acf.image_four_info.localFile.childImageSharp.fluid} alt={props.info.acf.image_title_one_info} style={{maxWidth:`67%`}}/>
 				): null}
 				
 				
@@ -197,7 +194,7 @@ const InfoGraphics = (props) => {
 			</div>
 		</div>
 		): null }
-		<br />
+		
 		{props.info.acf.extra_text_box_testimonial ? (
 			<div className="columns is-mobile is-centered" style={{marginTop:`1rem`}}>
 			  <div className="column is-half" style={{border: `1px solid #66BFF2`}}>

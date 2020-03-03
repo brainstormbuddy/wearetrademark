@@ -37,8 +37,8 @@ export default CaseStudy => {
     	firstImage = singleCaseStudy.acf.first_image.source_url;
   	}
   	if (singleCaseStudy.acf.second_landscape_image && singleCaseStudy.acf.second_landscape_image.source_url ) {
-//secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.localFile.childImageSharp.fluid.src; 
-    	secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.source_url;   	
+secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.localFile.childImageSharp.fluid.src; 
+    	//secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.source_url;   	
   	}
   	if (singleCaseStudy.acf.case_study_gallery ) {
     	caseStudyGallery = singleCaseStudy.acf.case_study_gallery;
@@ -233,7 +233,8 @@ export default CaseStudy => {
 					</div>
 					<div className="rightSideImage">
 					{rightImage ? (
-						<img src={singleCaseStudy.acf.right_corner_image_info.source_url} alt="" />
+						<Img
+						fluid={singleCaseStudy.acf.right_corner_image_info.localFile.childImageSharp.fluid} alt="" />
 					): null }
 					
 				</div>
@@ -338,6 +339,13 @@ export const query = graphql`
 	        venue__logistics_label
 	        right_corner_image_info {
 	          source_url
+	          localFile {
+	            childImageSharp {
+	              fluid(maxWidth: 1000, quality: 100) {
+	                ...GatsbyImageSharpFluid
+	              }
+	            }
+	          }
 	        }
 	        portrait_image_small_text
 	        portrait_image_heading
@@ -350,12 +358,33 @@ export const query = graphql`
 	        image_title_one_info
 	        image_two_info {
 	          source_url
+	          localFile {
+	            childImageSharp {
+	              fluid(quality: 100) {
+	                ...GatsbyImageSharpFluid
+	              }
+	            }
+	          }
 	        }
 	        image_three_portrait {
 	          source_url
+	          localFile {
+	            childImageSharp {
+	              fluid(maxWidth: 1000, quality: 100) {
+	                ...GatsbyImageSharpFluid
+	              }
+	            }
+	          }
 	        }
 	        image_three_info {
 	          source_url
+	          localFile {
+	            childImageSharp {
+	              fluid(maxWidth: 1000, quality: 100) {
+	                ...GatsbyImageSharpFluid
+	              }
+	            }
+	          }
 	        }
 	        info_three_image {
 	          source_url
@@ -365,6 +394,13 @@ export const query = graphql`
 	        }
 	        image_four_info {
 	          source_url
+	          localFile {
+	            childImageSharp {
+	              fluid(maxWidth: 1000, quality: 100) {
+	                ...GatsbyImageSharpFluid
+	              }
+	            }
+	          }
 	        }
 	        another_brand_right_image{
 		        source_url
@@ -391,6 +427,15 @@ export const query = graphql`
 		    alt_text
 		    id
 		    source_url
+		    localFile {
+	            childImageSharp {
+	              fluid(maxWidth: 1920, quality: 100, jpegProgressive: true) {
+		              srcWebp
+		              src
+	                ...GatsbyImageSharpFluid
+	              }
+	            }
+	        }
 	      }
 	      case_study_gallery{
 		    source_url
