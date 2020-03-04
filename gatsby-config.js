@@ -132,7 +132,7 @@ module.exports = {
         // Ignore
         ignore: ['react-slideshow-image', 'react-responsive-carousel'],
         // Purge only the main css file
-        purgeOnly: ['/all.sass','styles/'],
+        purgeOnly: ['/all.sass','styles/', 'fonts/'],
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array

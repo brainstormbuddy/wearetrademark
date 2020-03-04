@@ -61,7 +61,7 @@ const ClientLogoMobile = () => {
 			<div className="columns is-centered">
 				<Carousel showIndicators={false} showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={false} showStatus={false}>
 					{imgAray01.map((element, i)=> (
-						<div key={i} className="column is-half">
+						<div key={i} className="column is-3">
 							{images01[i]}
 						</div>
 					))}

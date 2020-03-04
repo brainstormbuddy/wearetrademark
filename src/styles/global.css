@@ -32,6 +32,9 @@ hr{
 .page.Work.navDown .sidebar{
 	top: auto;
 }
+.single.casestudy.xtrademark .caseStudyTop{
+	padding-top:0;
+}
 .single.casestudy.xtrademark.navDown .caseStudyTop{
 	padding-top:250px;
 }
@@ -265,7 +268,7 @@ hr{
 		.rw-words{
 			display:block;
 		}
-		.contactTitle{background-position: left center;}
+		.contactTitle{background-position: left center;margin-right: -1.5rem;}
 		.contactTitle h2{
 			font-size: 50.2px;
 			position: relative;
@@ -296,6 +299,7 @@ hr{
 			80% { opacity: 0; max-width: 0;}
 			100% { opacity: 0; }
 		}
+		
 	}
 	@media screen and (max-width: 540px){
 

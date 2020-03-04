@@ -126,9 +126,7 @@ const ContactForm = styled.div`
 			display: none;
 		}	
 	}
-	@media screen and (max-width: 767px){
-		
-	}
+	
 `;
 
 export default ContactForm
