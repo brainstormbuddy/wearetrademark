@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Helmet from 'react-helmet'
 import ModalVideo from 'react-modal-video'
 
 import FullscreenIcon from './img/fullscreen.svg'
@@ -22,6 +23,12 @@ class CaseStudyModal extends React.Component {
   render () {
     return (
       <div>
+      		{this.state.isOpen ? (
+      		<Helmet >
+				<body className="home xtrademark modalOpen" />
+			</Helmet>
+			):null}
+      
         <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId={this.props.idVideo} onClose={() => this.setState({isOpen: false})} />
         <div className="case-meta">
   			<a onClick={this.openModal} className="play-video">Play video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />

@@ -101,7 +101,7 @@ secondLandscapeImage = singleCaseStudy.acf.second_landscape_image.localFile.chil
 	        	<meta name="description" content={`${singleCaseStudy.content}`}/>
 				<body className={"single casestudy xtrademark" + " "+ singleCaseStudy.title} />
 			</Helmet>
-			<CaseStudyStyle>
+			<CaseStudyStyle className="caseStudyTop">
 		      	<section className="hero">
 		      		<div className="columns is-vcentered is-marginless casestudyHeader">
 						<div className="column is-7 is-paddingless" style={{position:`relative`}}>

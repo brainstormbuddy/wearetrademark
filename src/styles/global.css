@@ -29,6 +29,14 @@ hr{
 .yellowLogo img
 {max-width: 60%;}
 
+.page.Work.navDown .sidebar{
+	top: auto;
+}
+.single.casestudy.xtrademark.navDown .caseStudyTop{
+	padding-top:250px;
+}
+
+
 #navMenu a.navbar-item{
 	color: #FFFFFF;
 	font-size: 14px;

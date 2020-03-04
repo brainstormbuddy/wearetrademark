@@ -1,4 +1,5 @@
 import React , { Component } from 'react'
+import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 
 import LogoWhite from '../img/LogoWhite.svg'
@@ -25,20 +26,96 @@ class Navbar extends Component {
   
   render() { 
 	  
-	let url, lastUrl, contactUrl, contactLastUrl
+	let url, 
+	lastUrl, 
+	contactUrl, 
+	contactLastUrl, 
+	aboutUrl, 
+	aboutLastUrl, 
+	blogUrl, 
+	blogLastUrl,
+	privacyUrl,
+	privacyLastUrl,
+	sitemapUrl,
+	sitemapLastUrl,
+	workUrl,
+	workLastUrl
+	
+	
     if (typeof window !== `undefined`) {
       url = window.location.href;
       lastUrl= url.includes("casestudy");
     } 
     if (typeof window !== `undefined`) {
       contactUrl = window.location.href;
-      contactLastUrl= url.includes("contact");
+      contactLastUrl= contactUrl.includes("contact");
     } 
+    
+    if (typeof window !== `undefined`) {
+      workUrl = window.location.href;
+      workLastUrl= workUrl.includes("work");
+    }
+    
+    if (typeof window !== `undefined`) {
+      aboutUrl = window.location.href;
+      aboutLastUrl= aboutUrl.includes("about");
+    }
+    if (typeof window !== `undefined`) {
+      blogUrl = window.location.href;
+      blogLastUrl= blogUrl.includes("blog");
+    }
+    if (typeof window !== `undefined`) {
+      privacyUrl = window.location.href;
+      privacyLastUrl= privacyUrl.includes("privacy-policy");
+    }
+    if (typeof window !== `undefined`) {
+      sitemapUrl = window.location.href;
+      sitemapLastUrl= sitemapUrl.includes("sitemap");
+    }
+    
 	       
           return (
 	        <div>  
 	        {this.state.childVisible ?  
             <nav className="has-bg-black has-text-centered padding-top-2 padding-bottom-2 slide-down">
+            <Helmet title={`${userConfig.name} | ${userConfig.title}`}>
+				<body className="home xtrademark navDown" />
+			</Helmet>
+			{workLastUrl ? (
+	            <Helmet title={`${userConfig.name} | ${userConfig.title}`}>
+					<body className="page Work navDown" />
+				</Helmet>
+	        ): null}
+	        {lastUrl ? (
+	            <Helmet title={`${userConfig.name} | ${userConfig.title}`}>
+					<body className="single casestudy xtrademark navDown" />
+				</Helmet>
+	        ): null}
+            {aboutLastUrl ? (
+	            <Helmet title={`${userConfig.name} | ${userConfig.title}`}>
+					<body className="page About navDown" />
+				</Helmet>
+	        ): null}
+            {contactLastUrl ? (
+	            <Helmet title={`${userConfig.name} | ${userConfig.title}`}>
+					<body className="page Contact navDown" />
+				</Helmet>
+	        ): null}
+	        {blogLastUrl ? (
+	            <Helmet title={`${userConfig.name} | ${userConfig.title}`}>
+					<body className="page Blog navDown" />
+				</Helmet>
+	        ): null}
+	        {privacyLastUrl ? (
+	            <Helmet title={`${userConfig.name} | ${userConfig.title}`}>
+					<body className="page Privacy Policy navDown" />
+				</Helmet>
+	        ): null}
+	        {sitemapLastUrl ? (
+	            <Helmet title={`${userConfig.name} | ${userConfig.title}`}>
+					<body className="page Sitemap navDown" />
+				</Helmet>
+	        ): null}
             	
             	<div className="mobile-menu is-mobile is-hidden-desktop columns has-text-left">
             		<div className="column">

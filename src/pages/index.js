@@ -53,7 +53,7 @@ const FullPage = () => (
 				    		</div>
 				    	</div>
 				    	
-					    <section className="section" id="watchVideo" style={{padding: `0`}}>
+					    <section className="section" style={{padding: `0`}}>
 					    	<Navbar />
 						    <div className="container">
 						    	<SectionWhatMarkWillYouLeave />

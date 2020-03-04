@@ -20,7 +20,8 @@ const TopSection = () => {
 	`)
 	
 	return (
-		<WhatMarkWillYouLeave className="hero is-medium">
+		
+		<WhatMarkWillYouLeave className="hero is-medium" id="watchVideo">
 		<div className="hero-body">
 <svg>
     <defs>

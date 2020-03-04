@@ -27,9 +27,9 @@ const Slideshow = () => {
 					  source_url
 					  localFile {
 			            childImageSharp {
-			              fluid(maxWidth: 1920, quality: 100, jpegProgressive: true) {
-				              srcWebp
+			              fluid(maxWidth: 1920, quality: 100) {
 				              src
+				              srcWebp
 			                ...GatsbyImageSharpFluid
 			              }
 			            }
@@ -73,7 +73,7 @@ const Slideshow = () => {
           
           
           
-          <div key={i} className="each-slide" style={{width:`100vw`,backgroundImage: `url(${casestudy.acf.background_image_home_case_study.source_url})`, backgroundColor: `${casestudy.acf.background_color_home_case_study}`, backgroundPosition:`center center`, backgroundRepeat:`no-repeat`, backgroundSize:`contain`}} >
+          <div key={i} className="each-slide lazyload" style={{width:`100vw`,backgroundImage: `url(${casestudy.acf.background_image_home_case_study.localFile.childImageSharp.fluid.srcWebp})`, backgroundColor: `${casestudy.acf.background_color_home_case_study}`, backgroundPosition:`center center`, backgroundRepeat:`no-repeat`, backgroundSize:`50%`}} >
           	<div className="hero is-fullheight">
             	<div className="hero-body">
             	<div className="container">
@@ -84,7 +84,7 @@ const Slideshow = () => {
 
 <svg>
     <defs>
-    <clipPath id="clip-01" clipPathUnits="objectBoundingBox" transform="scale(0.00061959, 0.00090)">
+    <clipPath id="clip-01" clipPathUnits="objectBoundingBox" transform="scale(0.000599999999988899999, 0.00090)">
         <path d="M1076.42652,940.677286 C1049.27954,967.796939 1005.25972,967.796939 978.109323,940.677286 L810.967357,773.724593 L643.82881,940.677286 C616.678412,967.796939 572.658594,967.796939 545.508196,940.677286 C518.361217,913.554219 518.361217,869.587664 545.508196,842.471427 L712.650162,675.515318 L545.508196,508.562625 C518.361217,481.446388 518.361217,437.476418 545.508196,410.356765 C572.658594,383.237113 616.678412,383.237113 643.82881,410.356765 L810.967357,577.309459 L978.109323,410.356765 C1005.25972,383.237113 1049.27954,383.237113 1076.42652,410.356765 C1103.58033,437.476418 1103.58033,481.446388 1076.42652,508.562625 L909.28797,675.515318 L1076.42652,842.471427 C1103.58033,869.587664 1103.58033,913.554219 1076.42652,940.677286 L1076.42652,940.677286 Z" id="path-1"></path>
     </clipPath>
     </defs>
@@ -111,9 +111,11 @@ const Slideshow = () => {
 				
 					<div className="columns is-mobile is-centered">
 					  <div className="column is-12-mobile is-12-tablet is-6-desktop  x-icon">		
+					  	<div className="caseStudyDetails">
 		              		<h2 className="title has-text-white">{casestudy.title}</h2>
 		              		<h3 className="subtitle has-text-white">{casestudy.acf.project_event_name}</h3>
 		              		<div dangerouslySetInnerHTML={{ __html: casestudy.content }}/>
+		              	</div>
 		              </div> {/* end column */}
 		            </div> {/* end columns */}
 		        

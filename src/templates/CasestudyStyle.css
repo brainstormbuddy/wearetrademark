@@ -299,7 +299,9 @@
 	top:50px;
 }
 
-
+.single.casestudy.xtrademark.AppDirect  .gatsby-image-wrapper{
+	margin-bottom: 10px;	
+}
 
 .fullsizedVideo iframe{
 	position: absolute;

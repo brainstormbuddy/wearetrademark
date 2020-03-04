@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 const CasestudyStyle = styled.div`
 
+	.caseStudyDetails {
+    	min-height: 250px;
+	}
 	svg {
 		width: 0;
 		height: 0;
@@ -13,7 +16,8 @@ const CasestudyStyle = styled.div`
 	  	transform: scale(2);
 	  	position: relative;
 	  	top:-100px;
-	  	max-width: 536px;
+	  	left:5px;
+	  	max-width: 537px;
 	  	max-height: 300px;
 	}
 	.video-container video {
@@ -42,7 +46,7 @@ h2.title{
 }
 h3.subtitle{
 	font-family: 'FFMarkW1GMedium';
-	font-size: 16px;
+	font-size: 14px;
 	letter-spacing: 2px;
 	line-height: 16px;
 	text-transform: uppercase;
@@ -57,12 +61,11 @@ p{
 	position: relative;
 }
 
-
 .react-slideshow-container .nav{
-	height: 0;
 	width: 0;
 	border-radius:0;
 	display:block;
+	z-index: 2;
 }
 
 .react-slideshow-container .nav,
@@ -79,7 +82,7 @@ p{
 }
 
 .react-slideshow-container .nav:first-of-type{
-	right: 52%;
+	right: 54%;
     bottom: 50vh;
     margin-right:0;
 }
@@ -200,7 +203,7 @@ p{
 @media screen and (max-width: 700px){
 	.react-slideshow-container .nav:first-of-type,
 	.react-slideshow-container .nav:last-of-type{
-		bottom: 70vh;
+		bottom: 57vh;
 	}
 }
 @media screen and (max-width: 655px){
@@ -220,7 +223,12 @@ p{
 		right: -70px;	
 	}
 }
-
+@media screen and (max-width: 500px){
+	.react-slideshow-container .nav:first-of-type,
+	.react-slideshow-container .nav:last-of-type{
+		bottom: 65vh;
+	}
+}
 
 @media screen and (max-width: 375px){
 	.video-container{
@@ -235,9 +243,18 @@ p{
 		line-height: 20px;
 	}
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) and (max-height:568px){
+	.react-slideshow-container .nav:first-of-type,
+	.react-slideshow-container .nav:last-of-type{
+		bottom:90vh;
+	}	
+}
 
-	
+@media screen and (max-width: 320px) and (max-height:480px){
+	.react-slideshow-container .nav:first-of-type,
+	.react-slideshow-container .nav:last-of-type{
+		bottom: 100vh;
+	}	
 }
 
 
