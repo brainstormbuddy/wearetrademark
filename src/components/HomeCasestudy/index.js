@@ -52,13 +52,12 @@ const Slideshow = () => {
 //  	}
 
 	let properties = {
-	  autoplay: false,
+	  autoplay: true,
 	  duration: 5000,
 	  transitionDuration: 500,
 	  infinite: true,
 	  indicators: false,
 	  arrows: true
-	  
 	}
 	
 	    

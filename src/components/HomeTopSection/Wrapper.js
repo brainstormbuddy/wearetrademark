@@ -19,7 +19,7 @@ const WhatMarkWillYouLeave = styled.div`
 		color: #0D1B23;
 		font-size: 12px;
 		text-transform: uppercase;
-		font-family: 'FFMark';
+		font-family: 'FFMark', sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.8px;
 		line-height: 24px;

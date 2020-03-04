@@ -41,7 +41,7 @@
 }
 .filter-categories em,
 .filter-location em{
-	font-family: 'Mort Modern 24 Text';
+	font-family: 'Mort Modern 24 Text', sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	font-style: italic;	
@@ -188,7 +188,7 @@
     top: 15%;
     background-color: #FFC709;
     color: #fff;
-    font-family: 'FFMark';
+    font-family: 'FFMark', sans-serif;
     font-size: 15px;
     font-weight: bold;
     line-height: 1.6;

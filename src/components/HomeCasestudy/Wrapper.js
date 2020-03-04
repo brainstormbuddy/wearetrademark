@@ -40,12 +40,12 @@ const CasestudyStyle = styled.div`
 h2.title{
 	font-size: 40px;
 	line-height: 42px;
-	font-family: 'Mort Modern 03 Large';
+	font-family: 'Mort Modern 03 Large', sans-serif;
 	font-weight: 500;
 	font-style: normal;
 }
 h3.subtitle{
-	font-family: 'FFMarkW1GMedium';
+	font-family: 'FFMarkW1GMedium', sans-serif;
 	font-size: 14px;
 	letter-spacing: 2px;
 	line-height: 16px;
