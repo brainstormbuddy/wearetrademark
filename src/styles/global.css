@@ -87,19 +87,27 @@ hr{
 
 #fullpage #watchVideo .fp-tableCell{
 	vertical-align: top;
-}
-
-
-.slide-up, .slide-down {
+}    
+    
+.slide-up, 
+.slide-down {
   overflow:hidden;
 }
 .slide-up{
-  transform: translateY(-10%);
-  transition: all .5s ease-out;
+  -webkit-transform:translateY(-10%);
+  -moz-transform:translateY(-10%);
+  transform:translateY(-10%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.slide-down{  
-  transform: translateY(0);
-  transition: all .8s ease-out;
+.slide-down{ 
+  -webkit-transform:translateY(0%);
+  -moz-transform:translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 } 
 
 #caseStudy{

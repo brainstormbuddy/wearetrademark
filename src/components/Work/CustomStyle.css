@@ -1,22 +1,21 @@
 .filterDiv {
   display: none; 
 }
-
 .show {
   display: block;
 }
 
 .sidebar {
-  width:300px;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  color: #000;
-  padding-top: 110px;
-  height: 100%;
- }
-
+	width:300px;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	color: #000;
+	padding-top: 121px;
+	height: 100%;
+}
+ 
 .filter-categories-parent {
     padding-bottom: 1rem;
 }

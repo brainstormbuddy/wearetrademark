@@ -106,7 +106,8 @@ class WorkPage extends Component {
 		</WorkStyle>
 		</div>		
 				
-			) :			
+			) :	
+			
 			<WorkStyle className="is-fullheight indexCaseStudies sidebar-closed">
 			<div className="container is-fluid is-marginless">
 				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`, marginTop: `0`}}>
@@ -137,7 +138,7 @@ class WorkPage extends Component {
 			<div className="container is-fluid is-marginless">
 				<AllCases sidebarClassName = {sidebarClosed}/>
 			</div>
-		</WorkStyle>			
+		</WorkStyle>
 		}
 		
 		</div>
