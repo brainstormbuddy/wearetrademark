@@ -23,7 +23,18 @@ class HomeTopModalVideo extends React.Component {
   render () {
     return (
       <div>
-        <ModalVideo channel={this.props.source} isOpen={this.state.isOpen} videoId={this.props.videoid} onClose={() => this.setState({isOpen: false})} />
+        <ModalVideo 
+        	channel={this.props.source}
+        	vimeo={{
+				byline: false,
+				autoplay: true,
+				autopause: true,
+				title: false
+			}}
+			isOpen={this.state.isOpen} 
+			videoId={this.props.videoid} 
+			onClose={() => this.setState({isOpen: false})} 
+        />
 	        <div className="columns is-mobile is-centered">
 				<div className="column is-half-desktop is-full-mobile is-full-tablet">
 			        <div className="watch-video has-text-centered">

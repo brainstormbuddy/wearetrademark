@@ -8,8 +8,8 @@ import '../modal-video.sass'
 
 class MyModalVideo extends React.Component {
  
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.state = {
       isOpen: false
     }
@@ -23,7 +23,12 @@ class MyModalVideo extends React.Component {
   render () {
     return (
       <div>
-        <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='L61p2uyiMSo' onClose={() => this.setState({isOpen: false})} />
+        <ModalVideo 
+        	channel='vimeo'
+			isOpen={this.state.isOpen} 
+			videoId={this.props.idVideo}
+			onClose={() => this.setState({isOpen: false})} 
+        />
         <div className="watch-video has-text-left-fullhd has-text-left-widescreen has-text-left-desktop has-text-left-tablet has-text-centered-mobile">
 			<a onClick={this.openModal}>Watch Video <img src={FullscreenIcon} 
 				alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `15px`}}/></a>

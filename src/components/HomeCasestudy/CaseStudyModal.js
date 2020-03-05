@@ -29,7 +29,23 @@ class CaseStudyModal extends React.Component {
 			</Helmet>
 			):null}
       
-        <ModalVideo channel='vimeo' isOpen={this.state.isOpen} videoId={this.props.idVideo} onClose={() => this.setState({isOpen: false})} />
+        <ModalVideo 
+        	channel='vimeo'
+        	vimeo={{
+				width:'940px', 
+				height:'550px',
+				byline: false,
+				autoplay: true,
+				autopause: true,
+				title: false
+			}}
+			isOpen={this.state.isOpen} 
+			videoId={this.props.idVideo} 
+			onClose={() => this.setState({isOpen: false})}
+			allowFullScreen= {true}
+			ratio = {`16:9`}
+			
+        />
         <div className="case-meta">
   			<a onClick={this.openModal} className="play-video">Play video <img src={FullscreenIcon} alt="FullscreenIcon" width="20" height="20" style={{verticalAlign: `middle`, marginLeft: `10px`}}/></a><br />
   			<a href={this.props.caseURL}>Case study</a>

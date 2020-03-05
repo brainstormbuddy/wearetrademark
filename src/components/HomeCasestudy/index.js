@@ -52,14 +52,13 @@ const Slideshow = () => {
 //  	}
 
 	let properties = {
-	  autoplay: true,
+	  autoplay: false,
 	  duration: 5000,
 	  transitionDuration: 500,
 	  infinite: true,
 	  indicators: false,
 	  arrows: true
 	}
-	
 	    
     return (
       <CasestudyStyle>
@@ -72,7 +71,7 @@ const Slideshow = () => {
           
           
           
-          <div key={i} className="each-slide lazyload" style={{width:`100vw`,backgroundImage: `url(${casestudy.acf.background_image_home_case_study.localFile.childImageSharp.fluid.srcWebp})`, backgroundColor: `${casestudy.acf.background_color_home_case_study}`, backgroundPosition:`center center`, backgroundRepeat:`no-repeat`, backgroundSize:`50%`}} >
+          <div key={i} className="each-slide" style={{backgroundImage: `url(${casestudy.acf.background_image_home_case_study.localFile.childImageSharp.fluid.srcWebp})`, backgroundColor: `${casestudy.acf.background_color_home_case_study}`, backgroundPosition:`center center`, backgroundRepeat:`no-repeat`, backgroundSize:`50%`}} >
           	<div className="hero is-fullheight">
             	<div className="hero-body">
             	<div className="container">
@@ -96,7 +95,6 @@ const Slideshow = () => {
 							</div>
 							
 								
-					
 					  		<CaseStudyModal 
 					  			idVideo={casestudy.acf.video_url}
 					  			caseURL={`/casestudy/${casestudy.slug}`}

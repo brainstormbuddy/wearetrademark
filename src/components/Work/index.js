@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 
-import { useStaticQuery, Link, graphql } from 'gatsby'
+import { StaticQuery, useStaticQuery, Link, graphql } from 'gatsby'
 
 import FilterSidebar from './Sidebar'
 
@@ -42,24 +42,24 @@ class WorkPage extends Component {
 	let sidebarOpened='is-third-desktop is-one-third-widescreen is-one-quarter-fullhd';	
 	let sidebarClosed='is-one-quarter-desktop';	
 	
-	
-	//var btnContainer = document.getElementById("myBtnContainer");
-	//var btns = document.getElementsByClassName("btn");
-//	var btns = 8;
-
-//	for (var i = 0; i < btns.length; i++) {
-//	  btns[i].addEventListener("click", function() {
-//	    var current = document.getElementsByClassName("active");
-//	    current[0].className = current[0].className.replace(" active", "");
-//	    this.className += " active";
-//	  });
-//	}
 		
-	
-	
-	
 	return (
 		
+		<StaticQuery
+        	query={graphql`  
+			{
+				wordpressPage(slug: {eq: "work"}) {
+			    acf {
+			      heading_title_work
+			      video_id_work
+			    }
+			  }
+		    }
+		`}
+		
+		render={data => {
+        const wordpressWork = data.wordpressPage.acf;
+		return(		
 		<div>
 			{this.state.sidebarVisible ? (
 			<div>
@@ -91,7 +91,7 @@ class WorkPage extends Component {
 								<div className="column is-5-tablet is-3-desktop is-3-widescreen is-3-fullhd is-paddingless">
 									<h2 className="has-text-left-desktop has-text-centered-mobile reelTxtSidebar">Our latest reel</h2>
 								</div>
-								<div className="column is-3-desktop is-full-mobile is-6-tablet is-3-widescreen modalVdo"><ModalVideo /></div>
+								<div className="column is-3-desktop is-full-mobile is-6-tablet is-3-widescreen modalVdo"><ModalVideo idVideo={wordpressWork.video_id_work} /></div>
 							</div>
 								
 							</div>
@@ -123,9 +123,9 @@ class WorkPage extends Component {
 									<div className="hrline"></div>
 								</div>
 								<div className="column is-5-tablet is-3-desktop is-3-widescreen is-3-fullhd" style={{padding: `0`}}>
-									<h2 className="has-text-left-desktop has-text-centered-mobile reelTxt">Our latest reel</h2>
+									<h2 className="has-text-left-desktop has-text-centered-mobile reelTxt">{wordpressWork.heading_title_work}</h2>
 								</div>
-								<div className="column is-3-desktop is-full-mobile is-6-tablet"><ModalVideo /></div>
+								<div className="column is-3-desktop is-full-mobile is-6-tablet"><ModalVideo idVideo={wordpressWork.video_id_work} /></div>
 							</div>	
 								
 							</div>
@@ -141,8 +141,10 @@ class WorkPage extends Component {
 		}
 		
 		</div>
-	);
-	
+					);
+				}}
+			/>
+		);
 	}
 };
 
