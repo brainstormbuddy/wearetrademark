@@ -63,9 +63,15 @@ const ClientLogoMobile = () => {
 		    acf {
 		      logos_client {
 			    title
+			    source_url
+			    media_details {
+		          width
+		          height
+		        }
 		        localFile {
 		          childImageSharp {
-		            fluid(maxWidth: 500, quality: 100) {
+		            fluid(maxWidth: 500, pngQuality: 100) {
+		              src
 		              srcWebp
 		              ...GatsbyImageSharpFluid
 		            }
@@ -85,8 +91,8 @@ const ClientLogoMobile = () => {
 				<Carousel showIndicators={false} showThumbs={false} useKeyboardArrows={true} autoPlay={true} infiniteLoop={true} showStatus={false} centerMode={false}>
 					{data.wordpressPage.acf.logos_client.map((element, i)=> (
 						<div key={i} className="column is-6-mobile" style={{margin:`auto`}}>
-							<Img 
-						fluid={element.localFile.childImageSharp.fluid} alt={element.title} />
+							<img className="lazyload"
+						data-src={element.localFile.childImageSharp.fluid.srcWebp} alt={element.title} width={element.media_details.width} height={element.media_details.height}/>
 						</div>
 					))}
 				</Carousel>

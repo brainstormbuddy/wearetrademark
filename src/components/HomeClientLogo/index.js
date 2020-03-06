@@ -64,6 +64,8 @@ const ClientLogo = () => {
 		            fluid(maxWidth: 500, quality: 100) {
 		              srcWebp
 		              ...GatsbyImageSharpFluid
+		              presentationWidth
+		              presentationHeight
 		            }
 		          }
 		        }
