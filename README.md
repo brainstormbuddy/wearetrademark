@@ -24,3 +24,5 @@ To build, run
 
 
 ## Screenshots
+![alt text](https://github.com/zakirsajib/New-X-Trademark/blob/master/assets/desktop.jpg)
+![alt text](https://github.com/zakirsajib/New-X-Trademark/blob/master/assets/mobile.jpg)

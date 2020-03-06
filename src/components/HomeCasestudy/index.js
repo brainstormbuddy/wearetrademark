@@ -71,7 +71,7 @@ const Slideshow = () => {
           
           
           
-          <div key={i} className="each-slide" style={{backgroundImage: `url(${casestudy.acf.background_image_home_case_study.localFile.childImageSharp.fluid.srcWebp})`, backgroundColor: `${casestudy.acf.background_color_home_case_study}`, backgroundPosition:`center center`, backgroundRepeat:`no-repeat`, backgroundSize:`50%`}} >
+          <div key={i} className="each-slide lazyload" style={{backgroundImage: `url(${casestudy.acf.background_image_home_case_study.localFile.childImageSharp.fluid.srcWebp})`, backgroundColor: `${casestudy.acf.background_color_home_case_study}`, backgroundPosition:`center center`, backgroundRepeat:`no-repeat`, backgroundSize:`50%`}} >
           	<div className="hero is-fullheight">
             	<div className="hero-body">
             	<div className="container">
