@@ -31,7 +31,7 @@ const TopSection = () => {
 </svg>
 		{/* https://stackoverflow.com/questions/18426410/vimeo-video-not-working-with-html5-tag */}
 		<div className="columns is-mobile is-centered">
-			<div className="column is-three-quarters-fullhd is-half-widescreen is-half-desktop is-three-quarters-tablet is-three-quarters-mobile">
+			<div className="column is-half-fullhd is-half-widescreen is-half-desktop is-three-quarters-tablet is-three-quarters-mobile">
 				<div className="video-container">
 					<video loop autoPlay muted playsInline>
 						<source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
