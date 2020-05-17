@@ -132,12 +132,14 @@ class Navbar extends Component {
 	                    Work
 	                  </Link>
 	                  
+	                  {/*
 	                  <Link
 	                    className="navbar-item"
 	                    to="about"
 	                  >
 	                    About
 	                  </Link>
+	                  */}
 	                  
 	                  <Link
 	                    className="navbar-item"
@@ -146,12 +148,14 @@ class Navbar extends Component {
 	                    Contact
 	                  </Link>
 	                  
+	                  {/*
 	                  <Link
 	                    className="navbar-item"
 	                    to="blog"
 	                  >
 	                    Blog
 	                  </Link>
+	                  */}
 	                </div>
 				</div>
             	
@@ -185,12 +189,14 @@ class Navbar extends Component {
 	                        Work
 	                      </Link>
 	                      
+	                     {/* 
 	                      <Link
 	                        className="navbar-item"
 	                        to="about"
 	                      >
 	                        About
 	                      </Link>
+	                      */}
 	                      
 	                      <Link
 	                        className="navbar-item"
@@ -199,12 +205,14 @@ class Navbar extends Component {
 	                        Contact
 	                      </Link>
 	                      
+	                      {/*
 	                      <Link
 	                        className="navbar-item"
 	                        to="blog"
 	                      >
 	                        Blog
 	                      </Link>
+	                      */}
 	                  </div>
 	                  : null }
 	              </div>
@@ -247,12 +255,14 @@ class Navbar extends Component {
 	                        Work
 	                      </Link>
 	                      
+	                      {/*
 	                      <Link
 	                        className="navbar-item"
 	                        to="about"
 	                      >
 	                        About
 	                      </Link>
+	                      */}
 	                      
 	                      <Link
 	                        className="navbar-item"
@@ -261,12 +271,14 @@ class Navbar extends Component {
 	                        Contact
 	                      </Link>
 	                      
+	                      {/*
 	                      <Link
 	                        className="navbar-item"
 	                        to="blog"
 	                      >
 	                        Blog
 	                      </Link>
+	                      */}
 	                  </div>
 	                  : null }
 	              </div>
