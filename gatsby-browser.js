@@ -1,5 +1,5 @@
 import "./src/fonts/fonts.css"
-import "./src/styles/global.css"
+import "./src/styles/global.scss"
 import 'lazysizes'
 
 

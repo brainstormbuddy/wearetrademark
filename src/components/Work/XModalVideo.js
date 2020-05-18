@@ -2,8 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import ModalVideo from 'react-modal-video'
 
-import FullscreenIcon from './fullscreen.svg'
-import '../modal-video.sass'
+import FullscreenIcon from './img/fullscreen.svg'
+
+import 'react-modal-video/scss/modal-video.scss'
 
 
 class MyModalVideo extends React.Component {

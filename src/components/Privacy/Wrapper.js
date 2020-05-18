@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 
+import Fill1 from './img/Fill-1.svg'
+
 const PrivacyStyle = styled.div`
+	
+	background: url(${Fill1});
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: auto;
+
 	
 	.column.col-left{
 		border-right: 1px solid #4E6F7B;

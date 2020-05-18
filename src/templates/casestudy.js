@@ -9,14 +9,14 @@ import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import RelativeCase from '../components/Work/RelativeCases'
 import RelativeCaseMobile from '../components/Work/RelativeCasesMobile'
+
 import Vimeo from '@u-wave/react-vimeo'
-//import ModalVideo from './CasestudyModalVideo'
 
 import ReactDOM from 'react-dom'
 import Modal from 'react-modal'
 
-import FullscreenIcon from './fullscreen.svg'
-import ScrollArrow from './scroll-arrow.svg'
+import FullscreenIcon from './img/fullscreen.svg'
+import ScrollArrow from './img/scroll-arrow.svg'
 
 import Infographics from './Infographics'
 

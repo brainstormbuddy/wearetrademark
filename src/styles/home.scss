@@ -1,0 +1,109 @@
+.home.xtrademark {
+  .slide-up {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    min-width: 134px;
+    max-width: 134px;
+    height: 0;
+    display: table;
+    margin: auto;
+  }
+
+  .slide-down {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9;
+  }
+
+  &.navDown #watchVideo {
+    margin-top: 150px;
+  }
+
+  &.modalOpen {
+    .react-slideshow-container .nav {
+      display: none;
+    }
+
+    .slide-up {
+      z-index: 1;
+    }
+  }
+}
+
+.arrowTopBottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+
+.arrowBG {
+  background-color: rgba(31, 30, 13, 0.5);
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  display: table;
+  margin: 0 auto;
+
+  i {
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    display: table;
+    padding: 4px;
+    position: relative;
+    left: 23px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    top: 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    bottom: -20px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .home.xtrademark.navDown #watchVideo {
+    margin-top: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home.xtrademark {
+    .slide-up, .slide-down {
+      position: relative;
+    }
+
+    .slide-up {
+      width: 100%;
+    }
+
+    &.navDown #watchVideo {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .arrowTopBottom {
+    display: none;
+  }
+}

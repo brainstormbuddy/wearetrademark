@@ -60,13 +60,13 @@ module.exports = {
         perPage: userConfig.postsPerPage,
         concurrentRequests: 500,
         includedRoutes: [
-          "**/categories",
-          "**/posts",
+          //"**/categories",
+          //"**/posts",
           "**/pages",
           "**/media",
-          "**/tags",
-          "**/taxonomies",
-          "**/users",
+          //"**/tags",
+          //"**/taxonomies",
+          //"**/users",
           "**/casestudy",
         ],
         // Set to true to debug endpoints on 'gatsby build'
@@ -132,7 +132,7 @@ module.exports = {
         // Ignore
         ignore: ['react-slideshow-image', 'react-responsive-carousel'],
         // Purge only the main css file
-        purgeOnly: ['/all.sass','styles/', 'fonts/'],
+        purgeOnly: ['styles/', 'fonts/'],
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array

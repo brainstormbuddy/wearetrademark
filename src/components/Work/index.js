@@ -9,7 +9,7 @@ import AllCases from './AllCases'
 
 import ModalVideo from './XModalVideo'
 
-import FilterList from './Filter-list.svg'
+import FilterList from './img/Filter-list.svg'
 
 import WorkStyle from './Wrapper'
 import './CustomStyle.css'
@@ -79,8 +79,8 @@ class WorkPage extends Component {
 				</div>
 			
 				<WorkStyle onClick={() => this.onClose()} className="is-fullheight indexCaseStudies sidebar-opened" style={{marginLeft: `300px`, backgroundColor: `rgba(0,0,0,0.2)`, width:`100%`, height: `100%`, cursor: `pointer`, overflow:`hidden`}}>
-				<div className="container is-fluid is-marginless">
-				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`}}>
+				<div className="container is-fluid is-marginless is-paddingless">
+				<div className="columns hero-body is-paddingless " style={{marginBottom: `0.75rem`}}>
 					<div className="column is-full-desktop is-full-mobile is-full-tablet hero latest-reel">
 						<div className="columns hero-body is-vcentered" style={{padding: `3rem 0`}}>
 							<div className="column is-full-mobile is-half-tablet is-12-desktop is-12-widescreen is-12-fullhd">
@@ -100,7 +100,7 @@ class WorkPage extends Component {
 					</div>
 				</div>
 			</div>
-			<div className="container is-fluid is-marginless" style={{minHeight: `900px`}}>
+			<div className="container is-fluid is-marginless is-paddingless" style={{minHeight: `900px`}}>
 				<AllCases sidebarClassName = {sidebarOpened}/>
 			</div>
 		</WorkStyle>
@@ -109,7 +109,7 @@ class WorkPage extends Component {
 			) :	
 			
 			<WorkStyle className="is-fullheight indexCaseStudies sidebar-closed">
-			<div className="container is-fluid is-marginless">
+			<div className="container is-fluid is-marginless is-paddingless">
 				<div className="columns hero-body is-paddingless" style={{marginBottom: `0.75rem`, marginTop: `0`}}>
 					<div className="column hero is-one-quarter-tablet">
 						<div className="hero-body filter-box has-text-centered">
@@ -135,7 +135,7 @@ class WorkPage extends Component {
 					</div>
 				</div>
 			</div>
-			<div className="container is-fluid is-marginless">
+			<div className="container is-fluid is-marginless is-paddingless">
 				<AllCases sidebarClassName = {sidebarClosed}/>
 			</div>
 		</WorkStyle>

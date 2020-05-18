@@ -1,11 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Navbar from './Navbar'
-import './all.sass'
 
 import userConfig from '../../config'
 
-//import FooterWrapper from '../components/Footer'
 
 const TemplateWrapper = ({ children }) => (
   <div>

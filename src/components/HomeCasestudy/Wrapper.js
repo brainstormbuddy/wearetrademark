@@ -243,6 +243,14 @@ p{
 		line-height: 20px;
 	}
 }
+@media screen and (max-width: 374px){
+	.hero-body{
+		padding: 1.5rem;
+	}
+	.xx{
+		display: none;
+	}
+}
 @media screen and (max-width: 320px) and (max-height:568px){
 	.react-slideshow-container .nav:first-of-type,
 	.react-slideshow-container .nav:last-of-type{

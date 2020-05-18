@@ -1,7 +1,6 @@
 import React from 'react'
 
 import PrivacyStyle from './Wrapper'
-import './style.css'
 
 const Privacy = () => {
 	return (

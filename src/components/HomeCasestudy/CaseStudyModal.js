@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import ModalVideo from 'react-modal-video'
 
 import FullscreenIcon from './img/fullscreen.svg'
-import '../modal-video.sass'
+import 'react-modal-video/scss/modal-video.scss'
 
 class CaseStudyModal extends React.Component {
 

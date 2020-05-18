@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import FooterFill from './Fill-1.svg'
+import FooterFill from './img/Fill-1.svg'
 
 const Footer = styled.section`	
 	background-image: url(${FooterFill});

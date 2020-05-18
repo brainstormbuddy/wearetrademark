@@ -2,7 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import StrokeImg from './brush-stroke-infograph-header.png'
+import StrokeImg from './img/brush-stroke-infograph-header.png'
 
 const InfoGraphics = (props) => {
 	

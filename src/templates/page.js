@@ -15,12 +15,6 @@ import FooterWrapper from '../components/Footer'
 
 import userConfig from '../../config'
 
-//import '../components/all.sass'
-
-//import GlobalStyle from '../global-styles'
-
-//import '../styles/page.css'
-//import indexStyles from '../styles/index.module.css'
 
 export const PageTemplate = ({ title, content, slug }) => {
   return (

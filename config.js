@@ -16,5 +16,5 @@ module.exports = {
     facebook: 'https://www.facebook.com/TrademarkEventProductions/'
   },
   pathPrefix: '/',
-  siteUrl: 'https://xtrademark.netlify.com/',
+  siteUrl: 'https://xtrademark.netlify.app/',
 };

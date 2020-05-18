@@ -6,7 +6,7 @@ import ReactFullpage from '@fullpage/react-fullpage'
 
 import userConfig from '../../config'
 
-import '../styles/home.css'
+import '../styles/home.scss'
 
 import Navbar from '../components/Navbar'
 import SectionWhatMarkWillYouLeave from '../components/HomeTopSection'
@@ -72,10 +72,12 @@ const FullPage = () => (
 					    		</div>
 					    	</div>
 					    </section>
-				    	<section className="bg-green is-hidden-tablet">
-					    	<div className="container">
-					    		<SectionClientLogoMobile />
-					    	</div>
+				    	<section className="hero bg-green is-hidden-tablet">
+					    	<div className="hero-body">
+						    	<div className="container">
+						    		<SectionClientLogoMobile />
+						    	</div>
+						    </div>
 					    </section>
 					    <section className="section has-bg-black" id="homeContactForm">
 						    	<div className="container">

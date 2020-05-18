@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import Reel from './reel-bg@2x.png';
+import Reel from './img/reel-bg@2x.png';
 
 const WorkStyle = styled.section`
+	
 	@media screen and (max-width: 1023px){
 		margin-left:0!important;
 		background-color:transparent!important;
@@ -19,43 +20,6 @@ const WorkStyle = styled.section`
     	font-style: normal;
 	}
 	
-/*
-	.allcases .filterDiv img{
-		opacity: 1;
-		transform: translate3d(0,0,0);
-	}
-	
-	.allcases .filterDiv:first-child img {
-		transition-delay: .5s;
-	}
-	.allcases .filterDiv:nth-child(2) img {
-		transition-delay: .10s;
-	}
-	.allcases .filterDiv:nth-child(3) img {
-		transition-delay: .15s;
-	}
-	.allcases .filterDiv:nth-child(4) img {
-		transition-delay: .20s;
-	}
-	.allcases .filterDiv:nth-child(5) img {
-		transition-delay: .25s;
-	}
-	.allcases .filterDiv:nth-child(6) img {
-		transition-delay: .30s;
-	}
-	.allcases .filterDiv:nth-child(7) img {
-		transition-delay: .35s;
-	}
-	.allcases .filterDiv:nth-child(8) img {
-		transition-delay: .40s;
-	}
-	.allcases .filterDiv:nth-child(9) img {
-		transition-delay: .45s;
-	}
-	.allcases .filterDiv:nth-child(10) img {
-		transition-delay: .50s;
-	}
-*/
 	.is-200:hover .gatsby-image-wrapper,
 	.filterDiv:hover .gatsby-image-wrapper {
     	display: none;
@@ -250,6 +214,7 @@ const WorkStyle = styled.section`
 	}
 	
 	#vimeoVideo{display:none;}
+	
 	@media screen and (min-width: 2021px){
 		h2.reelTxt{
 			font-size: 58px;

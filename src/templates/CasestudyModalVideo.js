@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom'
 import ModalVideo from 'react-modal-video'
 
 import FullscreenIcon from './fullscreen.svg'
-import '../components/modal-video.sass'
+
+import 'react-modal-video/scss/modal-video.scss'
 
 
 class CaseStudyModalVideo extends React.Component {

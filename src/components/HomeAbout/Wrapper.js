@@ -35,7 +35,7 @@ const HomeAbout = styled.section`
 		right: -35px;
 		top:0;
 		width: 2px;
-		height: 200px;
+		height: 150px;
 		background-color: #fff;
 	}
 	
@@ -57,7 +57,6 @@ const HomeAbout = styled.section`
 		h2{
 			font-size: 40px;
 		}
-		
 		.home-about::after{
 			height: 0;
 		}

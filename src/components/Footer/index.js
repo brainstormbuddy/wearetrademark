@@ -5,7 +5,7 @@ import Footer from './Wrapper'
 import Social from './Social'
 import FooterNavbar from './FooterNav'
 
-import FooterLogo from './FooterLogo.svg'
+import FooterLogo from './img/FooterLogo.svg'
 
 const FooterWrapper = () => {
 	return(

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CallIcon from './click-to-call-icon.svg'
+import CallIcon from './img/click-to-call-icon.svg'
 
 const Callus = () => {
 	return (

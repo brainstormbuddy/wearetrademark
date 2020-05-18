@@ -85,7 +85,7 @@
 .filter-location ul li.active_item a::after,
 .filter-categories ul li.active_item a::after{
 	content: '';
-	background-image: url(White_check.png);
+	background-image: url(img/White_check.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	width: 15px;
@@ -96,7 +96,7 @@
 	z-index: 1;
 }
 .filter-categories ul li.active_item a::after{
-	background-image: url(White_check_cat.png);
+	background-image: url(img/White_check_cat.png);
 }
 
 
