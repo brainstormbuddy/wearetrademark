@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import ModalVideo from 'react-modal-video'
 
 import FullscreenIcon from './img/fullscreen.svg'

@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import ReactDOM from 'react-dom'
 import Layout from '../components/Layout'
 import ReactFullpage from '@fullpage/react-fullpage'

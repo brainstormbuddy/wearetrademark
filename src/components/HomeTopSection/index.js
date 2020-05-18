@@ -34,7 +34,7 @@ const TopSection = () => {
 			<div className="column is-half-fullhd is-half-widescreen is-half-desktop is-three-quarters-tablet is-three-quarters-mobile">
 				<div className="video-container">
 					<video loop autoPlay muted playsInline>
-						<source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
+						<source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4" />
 					</video>  
 				</div>
 			</div>
