@@ -18,13 +18,13 @@ const HomeAbout = () => {
 	
 	return (
 		
-		<Section className="section" id="goBoldly">
+		<Section className="section hero" id="goBoldly">
 	    	<div className="hero-body">
 		    	<div className="container">
 		    		<div className="columns is-mobile is-centered">
 						<div className="column is-half-desktop is-full-mobile is-full-tablet home-about">
 						{data.wordpressPage.acf.heading_section_two ? (
-							<h2 className="title has-text-white has-text-left">
+							<h2 className="has-text-white has-text-left">
 								{data.wordpressPage.acf.heading_section_two}
 							</h2>
 						): null }
